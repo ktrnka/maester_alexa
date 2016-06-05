@@ -137,24 +137,18 @@ def get_character_info(intent, session):
     session_attributes = {}
     should_end_session = False
 
-    if 'character' in intent['slots']:
-        lookup = intent["slots"]["character"]["value"].lower()
-        card_title = lookup.title()
-        if lookup in CHAR_INFO:
-            speech_output = CHAR_INFO[lookup]
-            reprompt_text = CHAR_INFO[lookup]
-        else:
-            speech_output = "I don't recognize that name. " \
-                            "Please try again."
-            reprompt_text = "I don't recognize that name. " \
-                            "You can ask by saying, " \
-                            "who is Jon Snow?"
+    character = get_slot_value(intent, "character")
+
+    if not character:
+        speech_output = "I'm not sure who you meant. Please try again."
+        reprompt_text = "I'm not sure who you meant. You can ask by saying, who is Jon Snow."
+    elif character.lower() in CHAR_INFO:
+        card_title = character
+        speech_output = CHAR_INFO[character.lower()]
+        reprompt_text = CHAR_INFO[character.lower()]
     else:
-        speech_output = "I'm not sure who you meant. " \
-                        "Please try again."
-        reprompt_text = "I'm not sure who you meant. " \
-                        "You can ask by saying, " \
-                        "who is Jon Snow?"
+        speech_output = "I don't know {}. Please try again.".format(character)
+        reprompt_text = "I don't know {}. You can ask by saying, who is Jon Snow.".format(character)
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
@@ -232,30 +226,30 @@ def get_house_words(intent, session):
     session_attributes = {}
     should_end_session = False
 
-    if 'house' in intent['slots']:
-        lookup = intent["slots"]["house"]["value"].lower()
-        card_title = lookup.title()
-        if lookup in HOUSE_WORDS:
-            speech_output = HOUSE_WORDS[lookup]
-            reprompt_text = HOUSE_WORDS[lookup]
-        else:
-            speech_output = "I don't recognize that house. " \
-                            "Please try again."
-            reprompt_text = "I don't recognize that house. " \
-                            "You can ask by saying, " \
-                            "what are the words of house stark."
+    house = get_slot_value(intent, "house")
+
+    if not house:
+        speech_output = "I'm not sure which house you meant. Please try again."
+        reprompt_text = "I'm not sure which house you meant. You can ask by saying, what are the words of house stark."
+    elif house.lower() in HOUSE_WORDS:
+        card_title = house
+        speech_output = HOUSE_WORDS[house.lower()]
+        reprompt_text = HOUSE_WORDS[house.lower()]
     else:
-        speech_output = "I'm not sure what you meant. " \
-                        "Please try again."
-        reprompt_text = "I'm not sure what you meant. " \
-                        "You can ask by saying, " \
-                        "what are the words of house stark."
+        speech_output = "I don't have information on house {}. Please try again.".format(house)
+        reprompt_text = "I don't recognize house {}. You can ask by saying, what are the words of house stark.".format(house)
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
 
 
 # --------------- Helpers that build all of the responses ----------------------
+
+def get_slot_value(intent, slot):
+    if slot not in intent["slots"]:
+        return None
+
+    return intent["slots"][slot].get("value")
 
 
 def build_speechlet_response(title, output, reprompt_text, should_end_session):
