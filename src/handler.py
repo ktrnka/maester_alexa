@@ -9,6 +9,8 @@ http://amzn.to/1LGWsLG
 
 from __future__ import print_function
 
+import random
+
 import re
 
 TRY_AGAIN = "Please try again."
@@ -151,7 +153,7 @@ def get_character_info(intent, session):
 
     character = get_slot_value(intent, "character")
 
-    example = "You can ask by saying, who is Jon Snow."
+    example = "You can ask by saying, who is {}.".format(random.choice(CHAR_INFO.keys()))
 
     if not character:
         base_error = "I'm not sure who you mean."
@@ -244,7 +246,7 @@ def get_house_words(intent, session):
 
     house = get_slot_value(intent, "house")
 
-    example = "You can ask by saying, what are the words of house stark."
+    example = "You can ask by saying, what are the words of house {}.".format(random.choice(HOUSE_WORDS.keys()))
 
     if not house:
         base_error = "I'm not sure which house you mean."
@@ -305,7 +307,7 @@ def get_actor(intent, session):
 
     character = get_slot_value(intent, "character")
 
-    example = "You can ask by saying, who plays Tyrion Lannister."
+    example = "You can ask by saying, who plays {}.".format(random.choice(random.choice(CHAR2ACTOR.keys())))
 
     if not character:
         base_error = "I'm not sure who you mean."
@@ -464,7 +466,7 @@ def get_other_roles(intent, session):
 
     actor = get_slot_value(intent, "actor")
 
-    example = "You can ask by saying, what else has Lena Headey starred in."
+    example = "You can ask by saying, what else has {} starred in.".format(random.choice(_ACTOR2ROLES.keys()))
 
     if not actor:
         base_error = "I'm not sure who you mean."
