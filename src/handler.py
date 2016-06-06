@@ -70,6 +70,10 @@ def on_intent(intent_request, session):
         return get_character_info(intent, session)
     elif intent_name == "GetHouseWords":
         return get_house_words(intent, session)
+    elif intent_name == "GetActor":
+        return get_actor(intent, session)
+    elif intent_name == "GetOtherRoles":
+        return get_other_roles(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
         return get_welcome_response()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
@@ -242,6 +246,61 @@ def get_house_words(intent, session):
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
 
+
+def get_actor(intent, session):
+    card_title = intent['name']
+    session_attributes = {}
+    should_end_session = False
+
+    character = get_slot_value(intent, "character")
+
+    if not character:
+        speech_output = "I'm not sure who you mean. Please try again."
+        reprompt_text = "I'm not sure who you mean. You can ask by saying, who plays Tyrion Lannister."
+    elif character.lower() in CHAR2ACTOR:
+        card_title = character
+        actor = CHAR2ACTOR[character.lower()]
+
+        speech_output = "{} is played by {}".format(character, actor)
+        reprompt_text = speech_output
+    else:
+        speech_output = "I don't know who plays {}. Sorry.".format(character)
+        reprompt_text = "I don't know who plays {}. You can ask by saying, who plays Tyrion Lannister.".format(character)
+
+    return build_response(session_attributes, build_speechlet_response(
+        card_title, speech_output, reprompt_text, should_end_session))
+
+
+def get_roles_string(roles):
+    if len(roles) == 1:
+        return roles[0]
+    elif len(roles) == 2:
+        return " and ".join(roles)
+    else:
+        front = ", ".join(roles[:-1])
+        return front + ", and" + roles[-1]
+
+
+def get_other_roles(intent, session):
+    card_title = intent['name']
+    session_attributes = {}
+    should_end_session = False
+
+    actor = get_slot_value(intent, "actor")
+
+    if not actor:
+        speech_output = "I'm not sure who you mean. Please try again."
+        reprompt_text = "I'm not sure who you mean. You can ask by saying, what else has Lena Headley starred in."
+    elif actor.lower() in ACTOR2ROLES:
+        card_title = actor
+        speech_output = "{} has also starred in {}".format(actor, get_roles_string(ACTOR2ROLES[actor.lower()]))
+        reprompt_text = speech_output
+    else:
+        speech_output = "I don't know about {}. Sorry.".format(actor)
+        reprompt_text = "I don't know about {}. You can ask by saying, who plays Tyrion Lannister.".format(actor)
+
+    return build_response(session_attributes, build_speechlet_response(
+        card_title, speech_output, reprompt_text, should_end_session))
 
 # --------------- Helpers that build all of the responses ----------------------
 

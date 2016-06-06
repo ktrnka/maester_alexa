@@ -50,9 +50,11 @@ def main():
         for person in item["cast"]:
             # useful info for Person: name, currentRole, actor/actress lists other movies, canonical name
             actor2char[person["name"]] = unicode(person.currentRole)
-            char2actor[unicode(person.currentRole)] = person["name"]
 
-            print(person["name"], "is", person.currentRole)
+            for character_alias in get_aliases(unicode(person.currentRole)):
+                char2actor[character_alias] = person["name"]
+
+            print(person["name"], "is", " aka ".join(get_aliases(unicode(person.currentRole))))
             ia.update(person)
             ia.update(person.currentRole)
 
@@ -93,7 +95,7 @@ def main():
     pprint.pprint(actor2known_for)
 
 
-def update_movies(ia, movies, max_updates=2):
+def update_movies(ia, movies, max_updates=10):
     """Fill in details on other movies unless they have title substring with the current one"""
     for movie in movies[:max_updates]:
         ia.update(movie)
