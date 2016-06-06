@@ -9,6 +9,13 @@ http://amzn.to/1LGWsLG
 
 from __future__ import print_function
 
+TRY_AGAIN = "Please try again."
+
+
+def lc_keys(mapping):
+    """Lowercase the keys of a dict"""
+    return {k.lower(): v for k, v in mapping.iteritems()}
+
 
 def lambda_handler(event, context):
     """ Route the incoming request based on type (LaunchRequest, IntentRequest,
@@ -131,7 +138,7 @@ _CHAR_INFO = {
     "Arya Stark": "Arya Stark is the third child and second daughter of Lord Eddard Stark and Lady Catelyn Tully. A member of House Stark, she has five siblings: brothers Robb, Bran, Rickon, half-brother Jon Snow, and older sister Sansa. She is a POV character in A Song of Ice and Fire and is portrayed by Maisie Williams in the television adaptation, Game of Thrones. Like some of her siblings, Arya sometimes dreams that she is a direwolf. Her own direwolf is Nymeria, who is named in reference to the Rhoynar warrior-queen of the same name."
 }
 
-CHAR_INFO = {k.lower(): v for k, v in _CHAR_INFO.items()}
+CHAR_INFO = lc_keys(_CHAR_INFO)
 
 
 def get_character_info(intent, session):
@@ -143,16 +150,20 @@ def get_character_info(intent, session):
 
     character = get_slot_value(intent, "character")
 
+    example = "You can ask by saying, who is Jon Snow."
+
     if not character:
-        speech_output = "I'm not sure who you meant. Please try again."
-        reprompt_text = "I'm not sure who you meant. You can ask by saying, who is Jon Snow."
+        base_error = "I'm not sure who you mean."
+        speech_output = base_error + " " + TRY_AGAIN
+        reprompt_text = base_error + " " + example
     elif character.lower() in CHAR_INFO:
         card_title = character
         speech_output = CHAR_INFO[character.lower()]
         reprompt_text = CHAR_INFO[character.lower()]
     else:
-        speech_output = "I don't know {}. Please try again.".format(character)
-        reprompt_text = "I don't know {}. You can ask by saying, who is Jon Snow.".format(character)
+        base_error = "I don't know about {}.".format(character)
+        speech_output = base_error + " " + TRY_AGAIN
+        reprompt_text = base_error + " " + example
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
@@ -232,19 +243,58 @@ def get_house_words(intent, session):
 
     house = get_slot_value(intent, "house")
 
+    example = "You can ask by saying, what are the words of house stark."
+
     if not house:
-        speech_output = "I'm not sure which house you meant. Please try again."
-        reprompt_text = "I'm not sure which house you meant. You can ask by saying, what are the words of house stark."
+        base_error = "I'm not sure which house you mean."
+        speech_output = base_error + " " + TRY_AGAIN
+        reprompt_text = base_error + " " + example
     elif house.lower() in HOUSE_WORDS:
         card_title = house
         speech_output = HOUSE_WORDS[house.lower()]
         reprompt_text = HOUSE_WORDS[house.lower()]
     else:
-        speech_output = "I don't have information on house {}. Please try again.".format(house)
-        reprompt_text = "I don't recognize house {}. You can ask by saying, what are the words of house stark.".format(house)
+        base_error = "I don't recognize house {}.".format(house)
+        speech_output = base_error + " " + TRY_AGAIN
+        reprompt_text = base_error + " " + example
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
+
+
+_CHAR2ACTOR = {u'Arya Stark': u'Maisie Williams',
+               u'Barristan Selmy': u'Ian McElhinney',
+               u'Bran Stark': u'Isaac Hempstead Wright',
+               u'Brienne of Tarth': u'Gwendoline Christie',
+               u'Bronn': u'Jerome Flynn',
+               u'Catelyn Stark': u'Michelle Fairley',
+               u'Cersei Lannister': u'Lena Headey',
+               u'Daenerys Targaryen': u'Emilia Clarke',
+               u'Davos Seaworth': u'Liam Cunningham',
+               u'Eddison Tollett': u'Ben Crompton',
+               u'Grand Maester Pycelle': u'Julian Glover',
+               u'Hodor': u'Kristian Nairn',
+               u'Jaime Lannister': u'Nikolaj Coster-Waldau',
+               u'Joffrey Baratheon': u'Jack Gleeson',
+               u'Jon Snow': u'Kit Harington',
+               u'Jorah Mormont': u'Iain Glen',
+               u'Littlefinger': u'Aidan Gillen',
+               u'Lord Varys': u'Conleth Hill',
+               u'Margaery Tyrell': u'Natalie Dormer',
+               u'Melisandre': u'Carice van Houten',
+               u'Missandei': u'Nathalie Emmanuel',
+               u'Petyr Baelish': u'Aidan Gillen',
+               u'Podrick Payne': u'Daniel Portman',
+               u'Samwell Tarly': u'John Bradley',
+               u'Sandor Clegane': u'Rory McCann',
+               u'Sansa Stark': u'Sophie Turner',
+               u'Stannis Baratheon': u'Stephen Dillane',
+               u'The Hound': u'Rory McCann',
+               u'Theon Greyjoy': u'Alfie Allen',
+               u'Tyrion Lannister': u'Peter Dinklage',
+               u'Tywin Lannister': u'Charles Dance'}
+
+CHAR2ACTOR = lc_keys(_CHAR2ACTOR)
 
 
 def get_actor(intent, session):
@@ -254,9 +304,12 @@ def get_actor(intent, session):
 
     character = get_slot_value(intent, "character")
 
+    example = "You can ask by saying, who plays Tyrion Lannister."
+
     if not character:
-        speech_output = "I'm not sure who you mean. Please try again."
-        reprompt_text = "I'm not sure who you mean. You can ask by saying, who plays Tyrion Lannister."
+        base_error = "I'm not sure who you mean."
+        speech_output = base_error + " " + TRY_AGAIN
+        reprompt_text = base_error + " " + example
     elif character.lower() in CHAR2ACTOR:
         card_title = character
         actor = CHAR2ACTOR[character.lower()]
@@ -264,8 +317,9 @@ def get_actor(intent, session):
         speech_output = "{} is played by {}".format(character, actor)
         reprompt_text = speech_output
     else:
-        speech_output = "I don't know who plays {}. Sorry.".format(character)
-        reprompt_text = "I don't know who plays {}. You can ask by saying, who plays Tyrion Lannister.".format(character)
+        base_error = "I don't know who plays {}.".format(character)
+        speech_output = base_error + " " + TRY_AGAIN
+        reprompt_text = base_error + " " + example
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
@@ -278,7 +332,128 @@ def get_roles_string(roles):
         return " and ".join(roles)
     else:
         front = ", ".join(roles[:-1])
-        return front + ", and" + roles[-1]
+        return front + ", and " + roles[-1]
+
+
+_ACTOR2ROLES = {u'Aidan Gillen': [u'Sing Street',
+                                  u'Calvary',
+                                  u'The Good Man',
+                                  u"You're Ugly Too",
+                                  u'Scrapper'],
+                u'Alfie Allen': [u'John Wick',
+                                 u'The Kid',
+                                 u'Flashbacks of a Fool',
+                                 u'Plastic'],
+                u'Ben Crompton': [u'All or Nothing',
+                                  u'Les Mis\xe9rables',
+                                  u'Nativity!',
+                                  u'Before I Go to Sleep',
+                                  u'Kill List'],
+                u'Carice van Houten': [u'The Simpsons',
+                                       u'Robot Chicken',
+                                       u'Boy Meets Girl Stories #1: Smachten',
+                                       u'In therapie',
+                                       u'Kopspijkers'],
+                u'Charles Dance': [u'Me Before You', u'Victor Frankenstein'],
+                u'Conleth Hill': [u'National Theatre Live: The Cherry Orchard',
+                                  u'A Patch of Fog',
+                                  u'Two Down',
+                                  u'Salmon Fishing in the Yemen',
+                                  u'Shooting for Socrates'],
+                u'Daniel Portman': [u"The Angels' Share"],
+                u'Emilia Clarke': [u'Futurama',
+                                   u'Me Before You',
+                                   u'Robot Chicken',
+                                   u'Shackled',
+                                   u'Terminator Genisys'],
+                u'Gwendoline Christie': [u'Star Wars: Episode VII - The Force Awakens',
+                                         u'The Imaginarium of Doctor Parnassus',
+                                         u'Wizards vs. Aliens',
+                                         u'The Hunger Games: Mockingjay - Part 2',
+                                         u'The Zero Theorem'],
+                u'Iain Glen': [u'Eye in the Sky',
+                               u'Die P\xe4pstin',
+                               u'Kick-Ass 2',
+                               u'The Iron Lady'],
+                u'Ian McElhinney': [u'A Patch of Fog',
+                                    u'A Shine of Rainbows',
+                                    u'Swansong: Story of Occi Byrne',
+                                    u'Triage',
+                                    u'Leap Year'],
+                u'Isaac Hempstead Wright': [u'Family Guy',
+                                            u'The Boxtrolls',
+                                            u'The Awakening',
+                                            u'Closed Circuit'],
+                u'Jack Gleeson': [u'Moving Day',
+                                  u'Batman Begins',
+                                  u'A Shine of Rainbows',
+                                  u'Tom Waits Made Me Cry',
+                                  u'Fishtale'],
+                u'Jerome Flynn': [u'Ripper Street',
+                                  u"Dante's Daemon",
+                                  u'A Summer Story',
+                                  u'Kafka',
+                                  u'Edward II'],
+                u'John Bradley': [u'Shameless', u'Merlin', u'Borgia', u'Traders', u'Man Up'],
+                u'Julian Glover': [u'The Young Victoria',
+                                   u'Brash Young Turks',
+                                   u"Princess Ka'iulani"],
+                u'Kit Harington': [u'How to Train Your Dragon 2',
+                                   u'Testament of Youth',
+                                   u'7 Days in Hell',
+                                   u'Spooks: The Greater Good'],
+                u'Kristian Nairn': [u'World of Warcraft: Warlords of Draenor',
+                                    u'Ripper Street'],
+                u'Lena Headey': [u'Dredd',
+                                 u'300: Rise of an Empire',
+                                 u'Low Down',
+                                 u'The Mortal Instruments: City of Bones'],
+                u'Liam Cunningham': [u'Good Vibrations',
+                                     u'War Horse',
+                                     u'Dusha shpiona',
+                                     u'Safe House',
+                                     u'Noble'],
+                u'Maisie Williams': [u'Doctor Who',
+                                     u'Supreme Tweeter',
+                                     u'Up on the Roof',
+                                     u'Corvidae',
+                                     u'Robot Chicken'],
+                u'Michelle Fairley': [u'Harry Potter and the Deathly Hallows: Part 1',
+                                      u'Philomena',
+                                      u'In the Heart of the Sea',
+                                      u'Jack et la m\xe9canique du coeur',
+                                      u"Anton Chekhov's The Duel"],
+                u'Natalie Dormer': [u'The Brunchers',
+                                    u'Poe',
+                                    u'The Tudors',
+                                    u'Elementary',
+                                    u'The Fades'],
+                u'Nathalie Emmanuel': [u'Waves',
+                                       u'Misfits',
+                                       u'Hollyoaks Later',
+                                       u'Furious Seven',
+                                       u'Hollyoaks: The Morning After the Night Before'],
+                u'Nikolaj Coster-Waldau': [u'Tusen ganger god natt',
+                                           u'Oblivion',
+                                           u'En chance til',
+                                           u'Klovn Forever',
+                                           u'The Other Woman'],
+                u'Peter Dinklage': [u'X-Men: Days of Future Past',
+                                    u'Angry Birds',
+                                    u'Low Down'],
+                u'Rory McCann': [u'Hot Fuzz',
+                                 u'Slow West',
+                                 u'Sixty Six',
+                                 u'Solomon Kane',
+                                 u'The Crew'],
+                u'Sophie Turner': [u'X-Men: Apocalypse', u'The Thirteenth Tale'],
+                u'Stephen Dillane': [u'Zero Dark Thirty',
+                                     u'Perfect Sense',
+                                     u'Fugitive Pieces',
+                                     u'Storm',
+                                     u'Papadopoulos & Sons']}
+
+ACTOR2ROLES = lc_keys(_ACTOR2ROLES)
 
 
 def get_other_roles(intent, session):
@@ -288,19 +463,24 @@ def get_other_roles(intent, session):
 
     actor = get_slot_value(intent, "actor")
 
+    example = "You can ask by saying, what else has Lena Headey starred in."
+
     if not actor:
-        speech_output = "I'm not sure who you mean. Please try again."
-        reprompt_text = "I'm not sure who you mean. You can ask by saying, what else has Lena Headley starred in."
+        base_error = "I'm not sure who you mean."
+        speech_output = base_error + " " + TRY_AGAIN
+        reprompt_text = base_error + " " + example
     elif actor.lower() in ACTOR2ROLES:
         card_title = actor
         speech_output = "{} has also starred in {}".format(actor, get_roles_string(ACTOR2ROLES[actor.lower()]))
         reprompt_text = speech_output
     else:
-        speech_output = "I don't know about {}. Sorry.".format(actor)
-        reprompt_text = "I don't know about {}. You can ask by saying, who plays Tyrion Lannister.".format(actor)
+        base_error = "I don't know about {}.".format(actor)
+        speech_output = base_error + " " + TRY_AGAIN
+        reprompt_text = base_error + " " + example
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
+
 
 # --------------- Helpers that build all of the responses ----------------------
 
