@@ -92,7 +92,6 @@ def main():
     print("Char 2 act")
     pprint.pprint(char2actor)
 
-
     print("a2roles")
     pprint.pprint(actor2known_for)
 
