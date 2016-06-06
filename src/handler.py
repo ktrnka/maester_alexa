@@ -9,6 +9,8 @@ http://amzn.to/1LGWsLG
 
 from __future__ import print_function
 
+import re
+
 TRY_AGAIN = "Please try again."
 
 
@@ -324,14 +326,14 @@ def get_actor(intent, session):
         card_title, speech_output, reprompt_text, should_end_session))
 
 
-def get_roles_string(roles):
-    if len(roles) == 1:
-        return roles[0]
-    elif len(roles) == 2:
-        return " and ".join(roles)
+def generate_and(strings):
+    if len(strings) == 1:
+        return strings[0]
+    elif len(strings) == 2:
+        return " and ".join(strings)
     else:
-        front = ", ".join(roles[:-1])
-        return front + ", and " + roles[-1]
+        front = ", ".join(strings[:-1])
+        return front + ", and " + strings[-1]
 
 
 _ACTOR2ROLES = {u'Aidan Gillen': [u'Sing Street',
@@ -470,7 +472,7 @@ def get_other_roles(intent, session):
         reprompt_text = base_error + " " + example
     elif actor.lower() in ACTOR2ROLES:
         card_title = actor
-        speech_output = "{} has also starred in {}".format(actor, get_roles_string(ACTOR2ROLES[actor.lower()]))
+        speech_output = "{} has also starred in {}".format(actor, generate_and(ACTOR2ROLES[actor.lower()]))
         reprompt_text = speech_output
     else:
         base_error = "I don't know about {}.".format(actor)
@@ -483,6 +485,14 @@ def get_other_roles(intent, session):
 
 # --------------- Helpers that build all of the responses ----------------------
 
+def munge_speech_response(text):
+    mapping = {"Dany": "Danny", "POV": "P.O.V.", "Edmure": "Edmiure"}
+
+    for source, target in mapping.iteritems():
+        text = re.sub(r"\b{}\b".format(re.escape(source)), target, text)
+
+    return text
+
 def get_slot_value(intent, slot):
     if slot not in intent["slots"]:
         return None
@@ -494,7 +504,7 @@ def build_speechlet_response(title, output, reprompt_text, should_end_session):
     return {
         'outputSpeech': {
             'type': 'PlainText',
-            'text': output
+            'text': munge_speech_response(output)
         },
         'card': {
             'type': 'Simple',
@@ -504,7 +514,7 @@ def build_speechlet_response(title, output, reprompt_text, should_end_session):
         'reprompt': {
             'outputSpeech': {
                 'type': 'PlainText',
-                'text': reprompt_text
+                'text': munge_speech_response(reprompt_text)
             }
         },
         'shouldEndSession': should_end_session

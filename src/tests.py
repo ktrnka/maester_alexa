@@ -26,6 +26,10 @@ class AssortedTests(unittest.TestCase):
         self.assertSequenceEqual(["Hai"], get_aliases("Hai"))
         self.assertSequenceEqual(["Zachary Scuderi", "Sneaky"], get_aliases("Zachary 'Sneaky' Scuderi"))
 
+    def test_speech_munge(self):
+        self.assertEqual("Danny", handler.munge_speech_response("Dany"))
+        self.assertEqual("Hi there", handler.munge_speech_response("Hi there"))
+
 
 def make_input(intent, slot_map):
     return {
@@ -73,6 +77,10 @@ class TestIntents(unittest.TestCase):
         self._assert_normal(response)
         self.assertEqual("Winter is Coming", get_speech_output(response))
 
+        # test the card info
+        self.assertEqual("Stark", response["response"]["card"]["title"])
+        self.assertIn("Winter is Coming", response["response"]["card"]["content"])
+
         # test unknown house
         response = handler.lambda_handler(make_input("GetHouseWords", {"house": "Starrk"}), self.context)
         self._assert_normal(response)
@@ -88,6 +96,10 @@ class TestIntents(unittest.TestCase):
         response = handler.lambda_handler(make_input("GetCharacterInfo", {"character": "Jon Snow"}), self.context)
         self._assert_normal(response)
         self.assertIn("Stark", get_speech_output(response))
+
+        # test the card info
+        self.assertEqual("Jon Snow", response["response"]["card"]["title"])
+        self.assertIn("Stark", response["response"]["card"]["content"])
 
         # test mangled name
         response = handler.lambda_handler(make_input("GetCharacterInfo", {"character": "John Snow"}), self.context)
@@ -105,7 +117,16 @@ class TestIntents(unittest.TestCase):
         self._assert_normal(response)
         self.assertIn("X-Men", get_speech_output(response))
 
+        # test the card info
+        self.assertEqual("Peter Dinklage", response["response"]["card"]["title"])
+        self.assertIn("X-Men", response["response"]["card"]["content"])
+
     def test_get_actor(self):
         response = handler.lambda_handler(make_input("GetActor", {"character": "Tyrion Lannister"}), self.context)
         self._assert_normal(response)
         self.assertIn("Peter", get_speech_output(response))
+
+
+        # test the card info
+        self.assertEqual("Tyrion Lannister", response["response"]["card"]["title"])
+        self.assertIn("Peter", response["response"]["card"]["content"])
