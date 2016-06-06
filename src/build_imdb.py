@@ -41,40 +41,42 @@ def main():
     char2actor = dict()
     actor2known_for = dict()
 
-    for item in ia.search_movie("Game of Thrones")[:1]:
-        # fetch the detail page info
-        ia.update(item)
+    show = ia.search_movie("Game of Thrones")[0]
 
-        # cast = main cast, guests = other people
+    # fetch the detail page info
+    ia.update(show)
+    # print("GoT show keys", show.keys())
 
-        for person in item["cast"]:
-            # useful info for Person: name, currentRole, actor/actress lists other movies, canonical name
-            actor2char[person["name"]] = unicode(person.currentRole)
+    # cast = main cast, guests = other people
 
-            for character_alias in get_aliases(unicode(person.currentRole)):
-                char2actor[character_alias] = person["name"]
+    for person in show["cast"]:
+        # useful info for Person: name, currentRole, actor/actress lists other movies, canonical name
+        actor2char[person["name"]] = unicode(person.currentRole)
 
-            print(person["name"], "is", " aka ".join(get_aliases(unicode(person.currentRole))))
-            ia.update(person)
-            ia.update(person.currentRole)
+        for character_alias in get_aliases(unicode(person.currentRole)):
+            char2actor[character_alias] = person["name"]
 
-            # print(person.currentRole.keys())
-            # print("AKA", ", ".join(person.currentRole.get("akas", [])))
-            # print("Bio", ", ".join(person.currentRole["biography"]))
-            # print("Quotes", ", ".join(person.currentRole.get("quotes", [])))
+        print(person["name"], "is", " aka ".join(get_aliases(unicode(person.currentRole))))
+        ia.update(person)
+        ia.update(person.currentRole)
 
-            # useful info for Character: name, akas, biography, quotes
+        # print(person.currentRole.keys())
+        # print("AKA", ", ".join(person.currentRole.get("akas", [])))
+        # print("Bio", ", ".join(person.currentRole["biography"]))
+        # print("Quotes", ", ".join(person.currentRole.get("quotes", [])))
 
-            other_movies = person.get("actor", person.get("actress"))
+        # useful info for Character: name, akas, biography, quotes
 
-            if other_movies:
-                other_movies = [m for m in other_movies if item["title"] not in m["title"]]
-                update_movies(ia, other_movies)
-                other_movies = find_representative_movies(other_movies)
-                other_movies = sorted(other_movies, key=lambda m: m.get("rating", 0), reverse=True)
-                pprint.pprint([(m["title"], m.get("rating", 0)) for m in other_movies[:5]])
+        other_movies = person.get("actor", person.get("actress"))
 
-                actor2known_for[person["name"]] = [m["title"] for m in other_movies[:5]]
+        if other_movies:
+            other_movies = [m for m in other_movies if show["title"] not in m["title"]]
+            update_movies(ia, other_movies)
+            other_movies = find_representative_movies(other_movies)
+            other_movies = sorted(other_movies, key=lambda m: m.get("rating", 0), reverse=True)
+            pprint.pprint([(m["title"], m.get("rating", 0)) for m in other_movies[:5]])
+
+            actor2known_for[person["name"]] = [m["title"] for m in other_movies[:5]]
 
     print("Actor list one per line")
     for actor in sorted(sorted(actor2char.keys())):
