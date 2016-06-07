@@ -5,6 +5,9 @@ import pprint
 import sys
 import argparse
 
+import elasticsearch
+import elasticsearch.helpers
+
 words_raw = """House Allyrion - No Foe May Pass
 House Ambrose - Never Resting
 House Arryn - As High as Honor
@@ -73,6 +76,7 @@ House Yronwood - We Guard the Way"""
 
 def parse_args():
     parser = argparse.ArgumentParser()
+    parser.add_argument("elasticsearch_url", help="URL for ElasticSearch")
     return parser.parse_args()
 
 
@@ -93,6 +97,22 @@ def main():
 
     print("Python lookup dict")
     pprint.pprint({k.lower(): v for k, v in words_map.items()})
+
+    if args.elasticsearch_url != "-":
+        es = elasticsearch.Elasticsearch(hosts=args.elasticsearch_url)
+        elasticsearch.helpers.bulk(es, get_actions(words_map))
+
+
+def get_actions(house2words, index_name="automated", type_name="house"):
+    for house, words in house2words.items():
+        yield {
+            '_op_type': 'create',
+            '_index': index_name,
+            '_type': type_name,
+            "name": house,
+            "words": words
+        }
+
 
 if __name__ == "__main__":
     sys.exit(main())
