@@ -2,21 +2,28 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 import argparse
+import collections
 import pprint
 import sys
+from operator import itemgetter
 
+import elasticsearch
+import elasticsearch.helpers
 import imdb
 import re
 
 
 def parse_args():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--max-actors", default=0, type=int, help="Max number of actors to process (for quick tests)")
+    parser.add_argument("elasticsearch_url", help="URL for ElasticSearch")
     return parser.parse_args()
 
 
 def find_representative_movies(movies, max_examples=5):
     movies = sorted(movies, key=lambda m: m.get("rating", 0), reverse=True)
     return [m for m in movies[:max_examples] if m.get("rating", 0) >= 6]
+
 
 def get_aliases(character_name):
     alias_pattern = re.compile(r"(.*\s)['\"](.*)['\"]\s(.*)")
@@ -44,11 +51,35 @@ def main():
     show = ia.search_movie("Game of Thrones")[0]
 
     # fetch the detail page info
-    ia.update(show)
+    ia.update(show, "episodes")
     # print("GoT show keys", show.keys())
 
+    a2c_counts = collections.defaultdict(lambda: collections.defaultdict(int))
+    c2a_counts = collections.defaultdict(lambda: collections.defaultdict(int))
+
+    for season_number, season in show["episodes"].items():
+        for episode_number, episode in season.items():
+            print("Season", season_number, "Episode", episode_number, episode.keys())
+            ia.update(episode)
+            # print("Updated episode", episode.keys())
+            # if "cast" in episode:
+            try:
+                for person in episode["cast"]:
+                    actor = person["name"]
+                    character = unicode(person.currentRole)
+                    a2c_counts[actor][character] += 1
+                    c2a_counts[character][actor] += 1
+            except KeyError:
+                print("Cast not available for {}:{}".format(season_number, episode_number))
+
+
+        for character, actor_counts in sorted(c2a_counts.items(), key=lambda p: sum(p[1].values()), reverse=True):
+            if sum(actor_counts.values()) < 3:
+                break
+            print(character, "played by", ", ".join("{}: {}".format(k, v) for k, v in sorted(actor_counts.items(), key=itemgetter(1), reverse=True)))
     # cast = main cast, guests = other people
 
+    ia.update(show)
     for person in show["cast"]:
         # useful info for Person: name, currentRole, actor/actress lists other movies, canonical name
         actor2char[person["name"]] = unicode(person.currentRole)
@@ -58,7 +89,6 @@ def main():
 
         print(person["name"], "is", " aka ".join(get_aliases(unicode(person.currentRole))))
         ia.update(person)
-        ia.update(person.currentRole)
 
         # print(person.currentRole.keys())
         # print("AKA", ", ".join(person.currentRole.get("akas", [])))
@@ -78,6 +108,9 @@ def main():
 
             actor2known_for[person["name"]] = [m["title"] for m in other_movies[:5]]
 
+        if args.max_actors > 0 and len(actor2char) >= args.max_actors:
+            break
+
     print("Actor list one per line")
     for actor in sorted(sorted(actor2char.keys())):
         print(actor)
@@ -94,6 +127,37 @@ def main():
 
     print("a2roles")
     pprint.pprint(actor2known_for)
+
+    if args.elasticsearch_url != "-":
+        es = elasticsearch.Elasticsearch(hosts=args.elasticsearch_url)
+        es.indices.delete(index="automated", ignore=400)
+        es.indices.create(index="automated", ignore=400)
+
+        elasticsearch.helpers.bulk(es, get_actions(char2actor))
+        elasticsearch.helpers.bulk(es, get_actor_actions(actor2char, actor2known_for))
+
+
+def get_actions(char2actor, index_name="automated", type_name="character"):
+    for character, actor in char2actor.items():
+        yield {
+            '_op_type': 'create',
+            '_index': index_name,
+            '_type': type_name,
+            "name": character,
+            "actor": actor
+        }
+
+
+def get_actor_actions(actor2char, actor2other, index_name="automated", type_name="actor"):
+    for actor in actor2char.keys():
+        yield {
+            '_op_type': 'create',
+            '_index': index_name,
+            '_type': type_name,
+            "name": actor,
+            "character": actor2char[actor],
+            "other_roles": actor2other[actor]
+        }
 
 
 def update_movies(ia, movies, max_updates=10):
