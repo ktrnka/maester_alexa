@@ -8,12 +8,10 @@ http://amzn.to/1LGWsLG
 """
 
 from __future__ import print_function
-
-import json
 import random
-import urllib2
-
 import re
+import requests
+
 from private import ES_SERVER
 
 TRY_AGAIN = "Please try again."
@@ -460,13 +458,13 @@ def get_other_roles(intent, session):
 # --------------- Helpers that build all of the responses ----------------------
 
 def search(server, index, type, query, min_score=0):
-    url = "{}/{}/{}/_search?q={}".format(server, index, type, urllib2.quote(query))
-    response = urllib2.urlopen(url)
+    url = "{}/{}/{}/_search".format(server, index, type)
+    response = requests.get(url, {"q": query})
 
-    if response.code != 200:
+    if response.status_code != 200:
         return None
 
-    data = json.load(response)
+    data = response.json()
     return [result for result in data["hits"]["hits"] if result["_score"] >= min_score]
 
 
@@ -508,7 +506,7 @@ def build_speechlet_response(title, output, reprompt_text, should_end_session):
 
 def build_response(session_attributes, speechlet_response):
     return {
-        'version': '1.0',
+        'version': '1.1',
         'sessionAttributes': session_attributes,
         'response': speechlet_response
     }

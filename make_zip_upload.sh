@@ -3,11 +3,18 @@
 set -e
 set -x
 
-mkdir -p temp
-cp src/handler.py temp
-cp src/private.py temp
+TMP=temp
 
-cd temp
+mkdir -p $TMP
+
+# copy any required files
+cp src/handler.py $TMP
+cp src/private.py $TMP
+
+# install any requirements
+pip install -r requirements-lambda.txt -t $TMP
+
+cd $TMP
 zip -r ../master_lambda.zip *
 cd -
-rm -rf temp
+rm -rf $TMP
