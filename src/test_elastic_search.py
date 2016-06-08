@@ -1,9 +1,9 @@
 from __future__ import print_function
+
 import pprint
 
-import elasticsearch
-import private
 import handler
+import private
 import requests
 
 try:

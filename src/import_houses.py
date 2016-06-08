@@ -1,15 +1,20 @@
-from __future__ import unicode_literals
 from __future__ import print_function
+from __future__ import unicode_literals
+
+
+"""
+Make the list of houses and optionally upload the house words to ElasticSearch.
+"""
 
 import pprint
 import sys
 import argparse
 import private
+import networking
 
 import elasticsearch
 import elasticsearch.helpers
 import requests
-from aws_requests_auth.aws_auth import AWSRequestsAuth
 
 words_raw = """House Allyrion - No Foe May Pass
 House Ambrose - Never Resting
@@ -77,8 +82,9 @@ House Wode - Touch Me Not
 House Wydman - Right Conquers Might
 House Yronwood - We Guard the Way"""
 
+
 def parse_args():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("--update-elasticsearch", default=False, action="store_true")
     return parser.parse_args()
 
@@ -98,19 +104,19 @@ def main():
     for house in words_map.keys():
         print(house)
 
-    print("Python lookup dict")
+    print("\tPython lookup dict")
     pprint.pprint({k.lower(): v for k, v in words_map.items()})
 
     if args.update_elasticsearch:
-        auth = AWSRequestsAuth(aws_access_key=private.ES_ACCESS_KEY_ID, aws_secret_access_key=private.ES_SECRET_ACCESS_KEY, aws_host=private.ES_HOST, aws_region="us-east-1", aws_service="es")
+        auth = networking.get_aws_auth()
         es = elasticsearch.Elasticsearch(hosts=private.ES_URL, connection_class=elasticsearch.RequestsHttpConnection, http_auth=auth)
 
         # clear out the type first
         requests.delete("/".join([private.ES_URL, "automated", "house"]), auth=auth)
-        elasticsearch.helpers.bulk(es, get_actions(words_map))
+        elasticsearch.helpers.bulk(es, get_insert_actions(words_map))
 
 
-def get_actions(house2words, index_name="automated", type_name="house"):
+def get_insert_actions(house2words, index_name="automated", type_name="house"):
     for house, words in house2words.items():
         yield {
             '_op_type': 'create',

@@ -9,13 +9,12 @@ http://amzn.to/1LGWsLG
 
 from __future__ import print_function
 
-import pprint
 import random
-import re
-import requests
 
 import private
-from aws_requests_auth.aws_auth import AWSRequestsAuth
+import re
+import requests
+from networking import get_aws_auth
 
 TRY_AGAIN = "Please try again."
 
@@ -459,13 +458,6 @@ def get_other_roles(intent, session):
 
 
 # --------------- Helpers that build all of the responses ----------------------
-
-def get_aws_auth():
-    return AWSRequestsAuth(aws_access_key=private.ES_ACCESS_KEY_ID,
-                           aws_secret_access_key=private.ES_SECRET_ACCESS_KEY,
-                           aws_host=private.ES_HOST,
-                           aws_region=private.ES_REGION,
-                           aws_service="es")
 
 
 def search(server, index, type, query_string, min_score=0):

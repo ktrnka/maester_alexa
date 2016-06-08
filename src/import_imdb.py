@@ -1,6 +1,12 @@
 from __future__ import print_function
 from __future__ import unicode_literals
 
+import networking
+
+"""
+Extract info from IMDB and optionally upload it to ElasticSearch
+"""
+
 import argparse
 import collections
 import pprint
@@ -14,18 +20,20 @@ import re
 
 
 def parse_args():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument("--update-elasticsearch", default=False, action="store_true")
     parser.add_argument("--max-actors", default=0, type=int, help="Max number of actors to process (for quick tests)")
-    parser.add_argument("elasticsearch_url", help="URL for ElasticSearch")
     return parser.parse_args()
 
 
 def find_representative_movies(movies, max_examples=5):
+    """FInd the top rated movies up to max_examples"""
     movies = sorted(movies, key=lambda m: m.get("rating", 0), reverse=True)
     return [m for m in movies[:max_examples] if m.get("rating", 0) >= 6]
 
 
 def get_aliases(character_name):
+    """Break down a name like Sandor 'The Hound' Clegane into two separate names"""
     alias_pattern = re.compile(r"(.*\s)['\"](.*)['\"]\s(.*)")
 
     m = alias_pattern.match(character_name)
@@ -128,16 +136,18 @@ def main():
     print("a2roles")
     pprint.pprint(actor2known_for)
 
-    if args.elasticsearch_url != "-":
+    if args.update_elasticsearch:
+        auth = networking.get_aws_auth()
+
         es = elasticsearch.Elasticsearch(hosts=args.elasticsearch_url)
         es.indices.delete(index="automated", ignore=400)
         es.indices.create(index="automated", ignore=400)
 
-        elasticsearch.helpers.bulk(es, get_actions(char2actor))
+        elasticsearch.helpers.bulk(es, get_character_actions(char2actor))
         elasticsearch.helpers.bulk(es, get_actor_actions(actor2char, actor2known_for))
 
 
-def get_actions(char2actor, index_name="automated", type_name="character"):
+def get_character_actions(char2actor, index_name="automated", type_name="character"):
     for character, actor in char2actor.items():
         yield {
             '_op_type': 'create',
