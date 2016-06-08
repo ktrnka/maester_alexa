@@ -8,11 +8,14 @@ http://amzn.to/1LGWsLG
 """
 
 from __future__ import print_function
+
+import pprint
 import random
 import re
 import requests
 
-from private import ES_SERVER
+import private
+from aws_requests_auth.aws_auth import AWSRequestsAuth
 
 TRY_AGAIN = "Please try again."
 
@@ -280,7 +283,7 @@ def get_actor(intent, session):
         speech_output = base_error + " " + TRY_AGAIN
         reprompt_text = base_error + " " + example
     else:
-        actor_hit = search(ES_SERVER, "automated", "character", "name:{}".format(character))
+        actor_hit = search(private.ES_URL, "automated", "character", "name:{}".format(character))
 
         if actor_hit:
             card_title = character
@@ -457,12 +460,19 @@ def get_other_roles(intent, session):
 
 # --------------- Helpers that build all of the responses ----------------------
 
-def search(server, index, type, query, min_score=0):
-    url = "{}/{}/{}/_search".format(server, index, type)
-    response = requests.get(url, {"q": query})
+def get_aws_auth():
+    return AWSRequestsAuth(aws_access_key=private.ES_ACCESS_KEY_ID,
+                           aws_secret_access_key=private.ES_SECRET_ACCESS_KEY,
+                           aws_host=private.ES_HOST,
+                           aws_region=private.ES_REGION,
+                           aws_service="es")
 
-    if response.status_code != 200:
-        return None
+
+def search(server, index, type, query_string, min_score=0):
+    url = "{}/{}/{}/_search".format(server, index, type)
+    response = requests.get(url, params={"q": query_string.replace(" ", "%20")}, auth=get_aws_auth())
+
+    response.raise_for_status()
 
     data = response.json()
     return [result for result in data["hits"]["hits"] if result["_score"] >= min_score]

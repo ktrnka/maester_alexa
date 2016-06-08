@@ -10,3 +10,4 @@ sqlalchemy-migrate==0.10.0
 SQLObject==3.0.0
 sqlparse==0.1.19
 Tempita==0.5.2
+aws-requests-auth

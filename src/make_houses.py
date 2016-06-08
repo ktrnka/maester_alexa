@@ -4,9 +4,12 @@ from __future__ import print_function
 import pprint
 import sys
 import argparse
+import private
 
 import elasticsearch
 import elasticsearch.helpers
+import requests
+from aws_requests_auth.aws_auth import AWSRequestsAuth
 
 words_raw = """House Allyrion - No Foe May Pass
 House Ambrose - Never Resting
@@ -76,7 +79,7 @@ House Yronwood - We Guard the Way"""
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("elasticsearch_url", help="URL for ElasticSearch")
+    parser.add_argument("--update-elasticsearch", default=False, action="store_true")
     return parser.parse_args()
 
 
@@ -98,8 +101,12 @@ def main():
     print("Python lookup dict")
     pprint.pprint({k.lower(): v for k, v in words_map.items()})
 
-    if args.elasticsearch_url != "-":
-        es = elasticsearch.Elasticsearch(hosts=args.elasticsearch_url)
+    if args.update_elasticsearch:
+        auth = AWSRequestsAuth(aws_access_key=private.ES_ACCESS_KEY_ID, aws_secret_access_key=private.ES_SECRET_ACCESS_KEY, aws_host=private.ES_HOST, aws_region="us-east-1", aws_service="es")
+        es = elasticsearch.Elasticsearch(hosts=private.ES_URL, connection_class=elasticsearch.RequestsHttpConnection, http_auth=auth)
+
+        # clear out the type first
+        requests.delete("/".join([private.ES_URL, "automated", "house"]), auth=auth)
         elasticsearch.helpers.bulk(es, get_actions(words_map))
 
 
