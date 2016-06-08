@@ -1,23 +1,9 @@
 from __future__ import unicode_literals
 from __future__ import print_function
-import sys
-import argparse
 
+import elasticsearch
 import private
 from aws_requests_auth.aws_auth import AWSRequestsAuth
-
-
-def parse_args():
-    parser = argparse.ArgumentParser()
-    return parser.parse_args()
-
-
-def main():
-    args = parse_args()
-
-
-if __name__ == "__main__":
-    sys.exit(main())
 
 
 def get_aws_auth():
@@ -26,3 +12,8 @@ def get_aws_auth():
                            aws_host=private.ES_HOST,
                            aws_region=private.ES_REGION,
                            aws_service="es")
+
+def get_elasticsearch():
+    return elasticsearch.Elasticsearch(hosts=private.ES_URL,
+                                       connection_class=elasticsearch.RequestsHttpConnection,
+                                       http_auth=get_aws_auth())

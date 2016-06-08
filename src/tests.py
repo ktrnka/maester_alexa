@@ -5,7 +5,7 @@ import argparse
 import unittest
 import handler
 
-from build_imdb import get_aliases
+from import_imdb import get_aliases
 
 
 def parse_args():

@@ -2,6 +2,8 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 import networking
+import private
+import requests
 
 """
 Extract info from IMDB and optionally upload it to ElasticSearch
@@ -98,13 +100,6 @@ def main():
         print(person["name"], "is", " aka ".join(get_aliases(unicode(person.currentRole))))
         ia.update(person)
 
-        # print(person.currentRole.keys())
-        # print("AKA", ", ".join(person.currentRole.get("akas", [])))
-        # print("Bio", ", ".join(person.currentRole["biography"]))
-        # print("Quotes", ", ".join(person.currentRole.get("quotes", [])))
-
-        # useful info for Character: name, akas, biography, quotes
-
         other_movies = person.get("actor", person.get("actress"))
 
         if other_movies:
@@ -119,40 +114,43 @@ def main():
         if args.max_actors > 0 and len(actor2char) >= args.max_actors:
             break
 
-    print("Actor list one per line")
+    print("Actor list (one per line)")
     for actor in sorted(sorted(actor2char.keys())):
         print(actor)
 
-    print("Character list one per line")
+    print("Character list (one per line)")
     for character in sorted(sorted(char2actor.keys())):
         print(character)
 
-    print("Actor to character")
+    print("Actor to character map (Python dict)")
     pprint.pprint(actor2char)
 
-    print("Char 2 act")
+    print("Character to actor map (Python dict")
     pprint.pprint(char2actor)
 
-    print("a2roles")
+    print("Actor to other roles map (Python dict")
     pprint.pprint(actor2known_for)
 
     if args.update_elasticsearch:
-        auth = networking.get_aws_auth()
+        es = networking.get_elasticsearch()
 
-        es = elasticsearch.Elasticsearch(hosts=args.elasticsearch_url)
-        es.indices.delete(index="automated", ignore=400)
-        es.indices.create(index="automated", ignore=400)
+        # make sure the index exists
+        es.indices.create(index=private.ES_INDEX, ignore=400)
+
+        # delete anything of the current types
+        for type in ["character", "actor"]:
+            requests.delete("/".join([private.ES_URL, private.ES_INDEX, "house"]), auth=networking.get_aws_auth())
 
         elasticsearch.helpers.bulk(es, get_character_actions(char2actor))
         elasticsearch.helpers.bulk(es, get_actor_actions(actor2char, actor2known_for))
 
 
-def get_character_actions(char2actor, index_name="automated", type_name="character"):
+def get_character_actions(char2actor, index_name=private.ES_INDEX, type_name="character"):
     for character, actor in char2actor.items():
         yield {
-            '_op_type': 'create',
-            '_index': index_name,
-            '_type': type_name,
+            "_op_type": "create",
+            "_index": index_name,
+            "_type": type_name,
             "name": character,
             "actor": actor
         }
@@ -161,9 +159,9 @@ def get_character_actions(char2actor, index_name="automated", type_name="charact
 def get_actor_actions(actor2char, actor2other, index_name="automated", type_name="actor"):
     for actor in actor2char.keys():
         yield {
-            '_op_type': 'create',
-            '_index': index_name,
-            '_type': type_name,
+            "_op_type": "create",
+            "_index": index_name,
+            "_type": type_name,
             "name": actor,
             "character": actor2char[actor],
             "other_roles": actor2other[actor]

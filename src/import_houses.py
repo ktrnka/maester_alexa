@@ -109,19 +109,20 @@ def main():
 
     if args.update_elasticsearch:
         auth = networking.get_aws_auth()
-        es = elasticsearch.Elasticsearch(hosts=private.ES_URL, connection_class=elasticsearch.RequestsHttpConnection, http_auth=auth)
+        es = networking.get_elasticsearch()
 
         # clear out the type first
-        requests.delete("/".join([private.ES_URL, "automated", "house"]), auth=auth)
+        es.indices.create(index=private.ES_INDEX, ignore=400)
+        requests.delete("/".join([private.ES_URL, private.ES_INDEX, "house"]), auth=auth)
         elasticsearch.helpers.bulk(es, get_insert_actions(words_map))
 
 
-def get_insert_actions(house2words, index_name="automated", type_name="house"):
+def get_insert_actions(house2words, index_name, type_name):
     for house, words in house2words.items():
         yield {
-            '_op_type': 'create',
-            '_index': index_name,
-            '_type': type_name,
+            "_op_type": "create",
+            "_index": index_name,
+            "_type": type_name,
             "name": house,
             "words": words
         }
