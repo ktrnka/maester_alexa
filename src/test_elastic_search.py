@@ -2,6 +2,7 @@ import pprint
 
 import urllib2
 import json
+import private
 
 def search(server, index, type, query, min_score=0):
     url = "{}/{}/{}/_search?q={}".format(server, index, type, urllib2.quote(query))
@@ -13,7 +14,6 @@ def search(server, index, type, query, min_score=0):
     data = json.load(response)
     return [result for result in data["hits"]["hits"] if result["_score"] >= min_score]
 
-server = "dont commit this lol"
 
-for hit in search(server, "automated", "actor", "name:McCann"):
+for hit in search(private.ES_SERVER, "automated", "actor", "name:McCann"):
     print hit["_source"]["name"], "is played by", hit["_source"]["other_roles"], "with score", hit["_score"]

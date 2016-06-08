@@ -9,9 +9,12 @@ http://amzn.to/1LGWsLG
 
 from __future__ import print_function
 
+import json
 import random
+import urllib2
 
 import re
+from private import ES_SERVER
 
 TRY_AGAIN = "Please try again."
 
@@ -265,41 +268,6 @@ def get_house_words(intent, session):
         card_title, speech_output, reprompt_text, should_end_session))
 
 
-_CHAR2ACTOR = {u'Arya Stark': u'Maisie Williams',
-               u'Barristan Selmy': u'Ian McElhinney',
-               u'Bran Stark': u'Isaac Hempstead Wright',
-               u'Brienne of Tarth': u'Gwendoline Christie',
-               u'Bronn': u'Jerome Flynn',
-               u'Catelyn Stark': u'Michelle Fairley',
-               u'Cersei Lannister': u'Lena Headey',
-               u'Daenerys Targaryen': u'Emilia Clarke',
-               u'Davos Seaworth': u'Liam Cunningham',
-               u'Eddison Tollett': u'Ben Crompton',
-               u'Grand Maester Pycelle': u'Julian Glover',
-               u'Hodor': u'Kristian Nairn',
-               u'Jaime Lannister': u'Nikolaj Coster-Waldau',
-               u'Joffrey Baratheon': u'Jack Gleeson',
-               u'Jon Snow': u'Kit Harington',
-               u'Jorah Mormont': u'Iain Glen',
-               u'Littlefinger': u'Aidan Gillen',
-               u'Lord Varys': u'Conleth Hill',
-               u'Margaery Tyrell': u'Natalie Dormer',
-               u'Melisandre': u'Carice van Houten',
-               u'Missandei': u'Nathalie Emmanuel',
-               u'Petyr Baelish': u'Aidan Gillen',
-               u'Podrick Payne': u'Daniel Portman',
-               u'Samwell Tarly': u'John Bradley',
-               u'Sandor Clegane': u'Rory McCann',
-               u'Sansa Stark': u'Sophie Turner',
-               u'Stannis Baratheon': u'Stephen Dillane',
-               u'The Hound': u'Rory McCann',
-               u'Theon Greyjoy': u'Alfie Allen',
-               u'Tyrion Lannister': u'Peter Dinklage',
-               u'Tywin Lannister': u'Charles Dance'}
-
-CHAR2ACTOR = lc_keys(_CHAR2ACTOR)
-
-
 def get_actor(intent, session):
     card_title = intent['name']
     session_attributes = {}
@@ -307,22 +275,25 @@ def get_actor(intent, session):
 
     character = get_slot_value(intent, "character")
 
-    example = "You can ask by saying, who plays {}.".format(random.choice(random.choice(CHAR2ACTOR.keys())))
+    example = "You can ask by saying, who plays {}.".format("Arya Stark")
 
     if not character:
         base_error = "I'm not sure who you mean."
         speech_output = base_error + " " + TRY_AGAIN
         reprompt_text = base_error + " " + example
-    elif character.lower() in CHAR2ACTOR:
-        card_title = character
-        actor = CHAR2ACTOR[character.lower()]
-
-        speech_output = "{} is played by {}".format(character, actor)
-        reprompt_text = speech_output
     else:
-        base_error = "I don't know who plays {}.".format(character)
-        speech_output = base_error + " " + TRY_AGAIN
-        reprompt_text = base_error + " " + example
+        actor_hit = search(ES_SERVER, "automated", "character", "name:{}".format(character))
+
+        if actor_hit:
+            card_title = character
+            actor = actor_hit[0]["_source"]["actor"]
+
+            speech_output = "{} is played by {}".format(character, actor)
+            reprompt_text = speech_output
+        else:
+            base_error = "I don't know who plays {}.".format(character)
+            speech_output = base_error + " " + TRY_AGAIN
+            reprompt_text = base_error + " " + example
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
@@ -486,6 +457,17 @@ def get_other_roles(intent, session):
 
 
 # --------------- Helpers that build all of the responses ----------------------
+
+def search(server, index, type, query, min_score=0):
+    url = "{}/{}/{}/_search?q={}".format(server, index, type, urllib2.quote(query))
+    response = urllib2.urlopen(url)
+
+    if response.code != 200:
+        return None
+
+    data = json.load(response)
+    return [result for result in data["hits"]["hits"] if result["_score"] >= min_score]
+
 
 def munge_speech_response(text):
     mapping = {"Dany": "Danny", "POV": "P.O.V.", "Edmure": "Edmiure"}
