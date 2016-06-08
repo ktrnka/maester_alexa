@@ -287,8 +287,9 @@ def get_actor(intent, session):
         if actor_hit:
             card_title = character
             actor = actor_hit[0]["_source"]["actor"]
+            character_long = actor_hit[0]["_source"]["name"]
 
-            speech_output = "{} is played by {}".format(character, actor)
+            speech_output = "{} is played by {}".format(character_long, actor)
             reprompt_text = speech_output
         else:
             base_error = "I don't know who plays {}.".format(character)
