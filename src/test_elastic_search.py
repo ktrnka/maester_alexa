@@ -7,7 +7,7 @@ import private
 import requests
 
 try:
-    for hit in handler.search(private.ES_URL, "automated", "actor", "character:Arya"):
+    for hit in handler.search(private.ES_URL, private.ES_INDEX, "character", "name:Tommen"):
         pprint.pprint(hit)
 except requests.exceptions.HTTPError as e:
     print(e)

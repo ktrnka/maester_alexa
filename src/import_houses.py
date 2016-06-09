@@ -114,7 +114,7 @@ def main():
         # clear out the type first
         es.indices.create(index=private.ES_INDEX, ignore=400)
         requests.delete("/".join([private.ES_URL, private.ES_INDEX, "house"]), auth=auth)
-        elasticsearch.helpers.bulk(es, get_insert_actions(words_map))
+        elasticsearch.helpers.bulk(es, get_insert_actions(words_map, private.ES_INDEX, "house"))
 
 
 def get_insert_actions(house2words, index_name, type_name):
