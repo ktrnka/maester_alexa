@@ -1,6 +1,7 @@
 from __future__ import print_function
 from __future__ import unicode_literals
 
+import io
 
 """
 Make the list of houses and optionally upload the house words to ElasticSearch.
@@ -86,6 +87,7 @@ House Yronwood - We Guard the Way"""
 def parse_args():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("--update-elasticsearch", default=False, action="store_true")
+    parser.add_argument("house_file", help="Output file with one house per line for slots")
     return parser.parse_args()
 
 
@@ -100,12 +102,10 @@ def main():
             _, house = house.split(None, 1)
             words_map[house] = words.strip()
 
-    print("List of houses")
-    for house in words_map.keys():
-        print(house)
-
-    print("\tPython lookup dict")
-    pprint.pprint({k.lower(): v for k, v in words_map.items()})
+    with io.open(args.house_file, "w", encoding="UTF-8") as houses_out:
+        for house in sorted(words_map.keys()):
+            houses_out.write(house)
+            houses_out.write("\n")
 
     if args.update_elasticsearch:
         auth = networking.get_aws_auth()
