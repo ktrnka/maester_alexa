@@ -27,7 +27,7 @@ Cassie Friel
 Charles Dance
 Charlotte Hope
 Chuku Modu
-Ciarán Hinds
+Ciaran Hinds
 Clive Mantle
 Clive Russell
 Conan Stevens
@@ -56,7 +56,7 @@ Emilia Clarke
 Emun Elliott
 Enzo Cilenti
 Eros Vlahos
-Esmé Bianco
+Esme Bianco
 Eugene Simon
 Faye Marsay
 Finn Jones
@@ -71,7 +71,7 @@ Gerard Jordan
 Gethin Anthony
 Glen Barry
 Gwendoline Christie
-Hafþór Júlíus Björnsson
+Hafbor Julius Bjornsson
 Hannah Murray
 Hannah Waddingham
 Harry Lloyd
@@ -158,7 +158,7 @@ Pedro Pascal
 Peter Dinklage
 Peter Vaughan
 Philip McGinley
-Pilou Asbæk
+Pilou Asbaek
 Ralph Ineson
 Rea Separovic
 Reece Noi
