@@ -56,16 +56,20 @@ def get_aliases(character_name):
 
 def get_cast(actor2person, a2c_counts, c2a_counts, min_appearances, max_actors_role):
     """Generator over Person objects that meet the min number of appearances, filtering any that appear in roles played by lots of actors"""
-    for actor, person_obj in actor2person.items():
-        chars = a2c_counts[actor]
-        example_role = chars.keys()[0]
+    for actor, character_counts in a2c_counts.items():
+        if len(character_counts) > 1:
+            print("{} has played multiple roles: {}".format(actor, character_counts.items()))
 
-        if len(c2a_counts[example_role]) > max_actors_role:
-            print("Skipping {} - top role is {} with {} actors".format(actor, example_role, len(c2a_counts[example_role])))
+    for character, actor_counts in c2a_counts.items():
+        if sum(actor_counts.values()) < min_appearances:
             continue
 
-        if sum(chars.values()) >= min_appearances:
-            yield person_obj
+        if len(actor_counts) > max_actors_role:
+            print("Skipping {} with {} actors".format(character, len(actor_counts)))
+            continue
+
+        for actor in actor_counts.keys():
+            yield actor2person[actor]
 
 
 def save_slot_values(filename, values):
