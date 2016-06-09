@@ -175,73 +175,6 @@ def get_character_info(intent, session):
         card_title, speech_output, reprompt_text, should_end_session))
 
 
-HOUSE_WORDS = {u'allyrion': u'No Foe May Pass',
-               u'ambrose': u'Never Resting',
-               u'arryn': u'As High as Honor',
-               u'ashford': u'Our Sun Shines Bright',
-               u'baratheon': u'Ours is the Fury',
-               u'beesbury': u'Beware Our Sting',
-               u'bolton': u'Our Blades Are Sharp',
-               u'buckwell': u'Pride and Purpose',
-               u'bulwer': u'Death Before Disgrace',
-               u'caron': u'No Song So Sweet',
-               u'cerwyn': u'Honed and Ready',
-               u'codd': u'Though All Men Do Despise Us',
-               u'crakehall': u'None so Fierce',
-               u'egen': u'By Day or Night',
-               u"flint of widow's watch": u'Ever Vigilant',
-               u'follard': u'None so Wise',
-               u'footly': u'Tread Lightly Here',
-               u'fossoway of cider hall': u'A Taste of Glory',
-               u'fowler': u'Let Me Soar',
-               u'graceford': u'Work Her Will',
-               u'grandison': u'Rouse Me Not',
-               u'greyjoy': u'We Do Not Sow',
-               u'hastwyck': u'None So Dutiful',
-               u'hightower': u'We Light the Way',
-               u'hornwood': u'Righteous in Wrath',
-               u'jordayne': u'Let It Be Written',
-               u'karstark': u'The Sun of Winter',
-               u'lannister': u'Hear Me Roar! Their unofficial motto, just as well known, states, "A Lannister always pays his debts."',
-               u'lonmouth': u'The Choice Is Yours',
-               u'mallister': u'Above the Rest',
-               u'marbrand': u'Burning Bright',
-               u'martell': u'Unbowed, Unbent, Unbroken',
-               u'merryweather': u'Behold Our Bounty',
-               u'mooton': u'Wisdom and Strength',
-               u'mormont': u'Here We Stand',
-               u'oakheart': u'Our Roots Go Deep',
-               u'peckledon': u'Unflinching',
-               u'penrose': u'Set Down Our Deeds',
-               u'piper': u'Brave and Beautiful',
-               u'plumm': u'Come Try Me',
-               u'redfort': u'As Strong as Stone',
-               u'royce': u'We Remember',
-               u'sarsfield': u'True to the Mark',
-               u'serrett': u'I Have No Rival',
-               u'smallwood': u'From These Beginnings',
-               u'stark': u'Winter is Coming',
-               u'stokeworth': u'Proud to Be Faithful',
-               u'swyft': u'Awake! Awake!',
-               u'swygert': u'Truth Conquers',
-               u'tallhart': u'Proud and Free',
-               u'targaryen': u'Fire and Blood',
-               u'tarly': u'First in Battle',
-               u'tollett': u'When All is Darkest',
-               u'toyne': u'Fly High, Fly Far',
-               u'trant': u'So End Our Foes',
-               u'tully': u'Family, Duty, Honor',
-               u'tyrell': u'Growing Strong',
-               u'velaryon': u'The Old, the True, the Brave',
-               u'waxley': u'Light in Darkness',
-               u'wendwater': u'For All Seasons',
-               u'wensington': u'Sound the Charge',
-               u'westerling': u'Honor, not Honors',
-               u'wode': u'Touch Me Not',
-               u'wydman': u'Right Conquers Might',
-               u'yronwood': u'We Guard the Way'}
-
-
 def get_house_words(intent, session):
     card_title = intent['name']
     session_attributes = {}
@@ -249,20 +182,24 @@ def get_house_words(intent, session):
 
     house = get_slot_value(intent, "house")
 
-    example = "You can ask by saying, what are the words of house {}.".format(random.choice(HOUSE_WORDS.keys()))
+    example = "You can ask by saying, what are the words of house {}.".format("Stark")
 
     if not house:
         base_error = "I'm not sure which house you mean."
         speech_output = base_error + " " + TRY_AGAIN
         reprompt_text = base_error + " " + example
-    elif house.lower() in HOUSE_WORDS:
-        card_title = house
-        speech_output = HOUSE_WORDS[house.lower()]
-        reprompt_text = HOUSE_WORDS[house.lower()]
     else:
-        base_error = "I don't recognize house {}.".format(house)
-        speech_output = base_error + " " + TRY_AGAIN
-        reprompt_text = base_error + " " + example
+        house_hits = search(private.ES_URL, private.ES_INDEX, "house", "name:{}".format(house))
+        if house_hits:
+            result = house_hits[0]
+            card_title = result["_source"]["name"]
+
+            speech_output = result["_source"]["words"]
+            reprompt_text = speech_output
+        else:
+            base_error = "I don't know the words of house {}.".format(house)
+            speech_output = base_error + " " + TRY_AGAIN
+            reprompt_text = base_error + " " + example
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
@@ -282,14 +219,14 @@ def get_actor(intent, session):
         speech_output = base_error + " " + TRY_AGAIN
         reprompt_text = base_error + " " + example
     else:
-        actor_hit = search(private.ES_URL, "automated", "character", "name:{}".format(character))
+        actor_hit = search(private.ES_URL, private.ES_INDEX, "character", "name:{}".format(character))
 
         if actor_hit:
             card_title = character
-            actor = actor_hit[0]["_source"]["actor"]
+            actors = actor_hit[0]["_source"]["actors"]
             character_long = actor_hit[0]["_source"]["name"]
 
-            speech_output = "{} is played by {}".format(character_long, actor)
+            speech_output = "{} is played by {}".format(character_long, generate_and(actors))
             reprompt_text = speech_output
         else:
             base_error = "I don't know who plays {}.".format(character)
@@ -310,127 +247,6 @@ def generate_and(strings):
         return front + ", and " + strings[-1]
 
 
-_ACTOR2ROLES = {u'Aidan Gillen': [u'Sing Street',
-                                  u'Calvary',
-                                  u'The Good Man',
-                                  u"You're Ugly Too",
-                                  u'Scrapper'],
-                u'Alfie Allen': [u'John Wick',
-                                 u'The Kid',
-                                 u'Flashbacks of a Fool',
-                                 u'Plastic'],
-                u'Ben Crompton': [u'All or Nothing',
-                                  u'Les Mis\xe9rables',
-                                  u'Nativity!',
-                                  u'Before I Go to Sleep',
-                                  u'Kill List'],
-                u'Carice van Houten': [u'The Simpsons',
-                                       u'Robot Chicken',
-                                       u'Boy Meets Girl Stories #1: Smachten',
-                                       u'In therapie',
-                                       u'Kopspijkers'],
-                u'Charles Dance': [u'Me Before You', u'Victor Frankenstein'],
-                u'Conleth Hill': [u'National Theatre Live: The Cherry Orchard',
-                                  u'A Patch of Fog',
-                                  u'Two Down',
-                                  u'Salmon Fishing in the Yemen',
-                                  u'Shooting for Socrates'],
-                u'Daniel Portman': [u"The Angels' Share"],
-                u'Emilia Clarke': [u'Futurama',
-                                   u'Me Before You',
-                                   u'Robot Chicken',
-                                   u'Shackled',
-                                   u'Terminator Genisys'],
-                u'Gwendoline Christie': [u'Star Wars: Episode VII - The Force Awakens',
-                                         u'The Imaginarium of Doctor Parnassus',
-                                         u'Wizards vs. Aliens',
-                                         u'The Hunger Games: Mockingjay - Part 2',
-                                         u'The Zero Theorem'],
-                u'Iain Glen': [u'Eye in the Sky',
-                               u'Die P\xe4pstin',
-                               u'Kick-Ass 2',
-                               u'The Iron Lady'],
-                u'Ian McElhinney': [u'A Patch of Fog',
-                                    u'A Shine of Rainbows',
-                                    u'Swansong: Story of Occi Byrne',
-                                    u'Triage',
-                                    u'Leap Year'],
-                u'Isaac Hempstead Wright': [u'Family Guy',
-                                            u'The Boxtrolls',
-                                            u'The Awakening',
-                                            u'Closed Circuit'],
-                u'Jack Gleeson': [u'Moving Day',
-                                  u'Batman Begins',
-                                  u'A Shine of Rainbows',
-                                  u'Tom Waits Made Me Cry',
-                                  u'Fishtale'],
-                u'Jerome Flynn': [u'Ripper Street',
-                                  u"Dante's Daemon",
-                                  u'A Summer Story',
-                                  u'Kafka',
-                                  u'Edward II'],
-                u'John Bradley': [u'Shameless', u'Merlin', u'Borgia', u'Traders', u'Man Up'],
-                u'Julian Glover': [u'The Young Victoria',
-                                   u'Brash Young Turks',
-                                   u"Princess Ka'iulani"],
-                u'Kit Harington': [u'How to Train Your Dragon 2',
-                                   u'Testament of Youth',
-                                   u'7 Days in Hell',
-                                   u'Spooks: The Greater Good'],
-                u'Kristian Nairn': [u'World of Warcraft: Warlords of Draenor',
-                                    u'Ripper Street'],
-                u'Lena Headey': [u'Dredd',
-                                 u'300: Rise of an Empire',
-                                 u'Low Down',
-                                 u'The Mortal Instruments: City of Bones'],
-                u'Liam Cunningham': [u'Good Vibrations',
-                                     u'War Horse',
-                                     u'Dusha shpiona',
-                                     u'Safe House',
-                                     u'Noble'],
-                u'Maisie Williams': [u'Doctor Who',
-                                     u'Supreme Tweeter',
-                                     u'Up on the Roof',
-                                     u'Corvidae',
-                                     u'Robot Chicken'],
-                u'Michelle Fairley': [u'Harry Potter and the Deathly Hallows: Part 1',
-                                      u'Philomena',
-                                      u'In the Heart of the Sea',
-                                      u'Jack et la m\xe9canique du coeur',
-                                      u"Anton Chekhov's The Duel"],
-                u'Natalie Dormer': [u'The Brunchers',
-                                    u'Poe',
-                                    u'The Tudors',
-                                    u'Elementary',
-                                    u'The Fades'],
-                u'Nathalie Emmanuel': [u'Waves',
-                                       u'Misfits',
-                                       u'Hollyoaks Later',
-                                       u'Furious Seven',
-                                       u'Hollyoaks: The Morning After the Night Before'],
-                u'Nikolaj Coster-Waldau': [u'Tusen ganger god natt',
-                                           u'Oblivion',
-                                           u'En chance til',
-                                           u'Klovn Forever',
-                                           u'The Other Woman'],
-                u'Peter Dinklage': [u'X-Men: Days of Future Past',
-                                    u'Angry Birds',
-                                    u'Low Down'],
-                u'Rory McCann': [u'Hot Fuzz',
-                                 u'Slow West',
-                                 u'Sixty Six',
-                                 u'Solomon Kane',
-                                 u'The Crew'],
-                u'Sophie Turner': [u'X-Men: Apocalypse', u'The Thirteenth Tale'],
-                u'Stephen Dillane': [u'Zero Dark Thirty',
-                                     u'Perfect Sense',
-                                     u'Fugitive Pieces',
-                                     u'Storm',
-                                     u'Papadopoulos & Sons']}
-
-ACTOR2ROLES = lc_keys(_ACTOR2ROLES)
-
-
 def get_other_roles(intent, session):
     card_title = intent['name']
     session_attributes = {}
@@ -438,20 +254,25 @@ def get_other_roles(intent, session):
 
     actor = get_slot_value(intent, "actor")
 
-    example = "You can ask by saying, what else has {} starred in.".format(random.choice(_ACTOR2ROLES.keys()))
+    example = "You can ask by saying, what else has {} starred in.".format("Emilia Clarke")
 
     if not actor:
         base_error = "I'm not sure who you mean."
         speech_output = base_error + " " + TRY_AGAIN
         reprompt_text = base_error + " " + example
-    elif actor.lower() in ACTOR2ROLES:
-        card_title = actor
-        speech_output = "{} has also starred in {}".format(actor, generate_and(ACTOR2ROLES[actor.lower()]))
-        reprompt_text = speech_output
     else:
-        base_error = "I don't know about {}.".format(actor)
-        speech_output = base_error + " " + TRY_AGAIN
-        reprompt_text = base_error + " " + example
+        actor_hits = search(private.ES_URL, private.ES_INDEX, "actor", "name:{}".format(actor))
+
+        if actor_hits and actor_hits[0]["_source"]["other_roles"]:
+            card_title = actor
+            other_roles = actor_hits[0]["_source"]["other_roles"]
+            speech_output = "{} has also starred in {}".format(actor, generate_and(other_roles))
+            reprompt_text = speech_output
+        else:
+            base_error = "I don't know about {}'s other roles.".format(actor)
+            speech_output = base_error + " " + TRY_AGAIN
+            reprompt_text = base_error + " " + example
+
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))

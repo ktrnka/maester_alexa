@@ -126,7 +126,12 @@ class TestIntents(unittest.TestCase):
         self._assert_normal(response)
         self.assertIn("Peter", get_speech_output(response))
 
-
         # test the card info
         self.assertEqual("Tyrion Lannister", response["response"]["card"]["title"])
         self.assertIn("Peter", response["response"]["card"]["content"])
+
+        # test a char with multiple actors
+        response = handler.lambda_handler(make_input("GetActor", {"character": "Tommen"}), self.context)
+        self._assert_normal(response)
+        self.assertIn("Dean-Charles Chapman", get_speech_output(response))
+        self.assertIn("Callum Wharry", get_speech_output(response))
