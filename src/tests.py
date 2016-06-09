@@ -113,13 +113,13 @@ class TestIntents(unittest.TestCase):
 
     def test_actor_other_roles(self):
         # test correct response
-        response = handler.lambda_handler(make_input("GetOtherRoles", {"actor": "Peter Dinklage"}), self.context)
+        response = handler.lambda_handler(make_input("GetOtherRoles", {"actor": "Lena Headey"}), self.context)
         self._assert_normal(response)
-        self.assertIn("X-Men", get_speech_output(response))
+        self.assertIn("Dredd", get_speech_output(response))
 
         # test the card info
-        self.assertEqual("Peter Dinklage", response["response"]["card"]["title"])
-        self.assertIn("X-Men", response["response"]["card"]["content"])
+        self.assertEqual("Lena Headey", response["response"]["card"]["title"])
+        self.assertIn("Dredd", response["response"]["card"]["content"])
 
     def test_get_actor(self):
         response = handler.lambda_handler(make_input("GetActor", {"character": "Tyrion Lannister"}), self.context)
