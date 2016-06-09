@@ -1,6 +1,8 @@
 from __future__ import print_function
 from __future__ import unicode_literals
 
+import io
+
 import networking
 import private
 import requests
@@ -26,6 +28,10 @@ def parse_args():
     parser.add_argument("--update-elasticsearch", default=False, action="store_true")
     parser.add_argument("--no-other-roles", default=False, action="store_true")
     parser.add_argument("--max-actors", default=0, type=int, help="Max number of actors to process (for quick tests)")
+
+    parser.add_argument("character_file", help="Output file with one character per line for slots")
+    parser.add_argument("actor_file", help="Output file with one actor per line for slots")
+
     return parser.parse_args()
 
 
@@ -60,6 +66,14 @@ def get_cast(actor2person, a2c_counts, c2a_counts, min_appearances, max_actors_r
 
         if sum(chars.values()) >= min_appearances:
             yield person_obj
+
+
+def save_slot_values(filename, values):
+    with io.open(filename, "w", encoding="UTF-8") as out:
+        for house in sorted(values):
+            out.write(house)
+            out.write("\n")
+
 
 
 def main():
@@ -118,22 +132,9 @@ def main():
     # redo the char2actor mapping with the count stats on the actors
     char2actor = {c: sorted(c2a_counts[c].keys(), key=lambda a: c2a_counts[c][a], reverse=True) for c in char2actor.keys()}
 
-    print("Actor list (one per line)")
-    for actor in sorted(sorted(actor2char.keys())):
-        print(actor)
-
-    print("\nCharacter list (one per line)")
-    for character in sorted(sorted(characters)):
-        print(character)
-
-    print("\nActor to character map (Python dict)")
-    pprint.pprint(actor2char)
-
-    print("\nCharacter to actor map (Python dict)")
-    pprint.pprint(char2actor)
-
-    print("\nActor to other roles map (Python dict)")
-    pprint.pprint(actor2known_for)
+    # save slot-value files
+    save_slot_values(args.actor_file, actor2char.keys())
+    save_slot_values(args.character_file, characters)
 
     if args.update_elasticsearch:
         es = networking.get_elasticsearch()
