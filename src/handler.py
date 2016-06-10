@@ -10,7 +10,6 @@ http://amzn.to/1LGWsLG
 from __future__ import print_function
 
 import random
-
 import private
 import re
 import requests
@@ -73,8 +72,12 @@ def on_launch(launch_request, session):
 def on_intent(intent_request, session):
     """ Called when the user specifies an intent for this skill """
 
-    print("on_intent requestId=" + intent_request['requestId'] +
-          ", sessionId=" + session['sessionId'])
+    print("on_intent requestId={}, sessionId={}, intent={}, slots={}".format(
+                intent_request["requestId"],
+                session["sessionId"],
+                intent_request["intent"]["name"],
+                intent_request["intent"]["slots"]))
+
 
     intent = intent_request['intent']
     intent_name = intent_request['intent']['name']
