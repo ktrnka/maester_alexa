@@ -3,7 +3,7 @@ from __future__ import print_function
 
 import private
 from aws_requests_auth.aws_auth import AWSRequestsAuth
-
+import elasticsearch
 
 def get_aws_auth():
     """Get HTTP authentication for our Elastic Search AWS user"""
@@ -15,7 +15,6 @@ def get_aws_auth():
 
 def get_elasticsearch():
     """Get an Elastic Search handle with AWS authentication"""
-    import elasticsearch
     return elasticsearch.Elasticsearch(hosts=private.ES_URL,
                                        connection_class=elasticsearch.RequestsHttpConnection,
                                        http_auth=get_aws_auth())

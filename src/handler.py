@@ -10,10 +10,13 @@ http://amzn.to/1LGWsLG
 from __future__ import print_function
 
 import random
+
+import networking
 import private
 import re
 import requests
-from networking import get_aws_auth
+import elasticsearch
+
 
 TRY_AGAIN = "Please try again."
 
@@ -192,7 +195,7 @@ def get_house_words(intent, session):
         speech_output = base_error + " " + TRY_AGAIN
         reprompt_text = base_error + " " + example
     else:
-        house_hits = search(private.ES_URL, private.ES_INDEX, "house", "name:{}".format(house))
+        house_hits = search("house", {"name": house})
         if house_hits:
             result = house_hits[0]
             card_title = result["_source"]["name"]
@@ -222,7 +225,7 @@ def get_actor(intent, session):
         speech_output = base_error + " " + TRY_AGAIN
         reprompt_text = base_error + " " + example
     else:
-        actor_hit = search(private.ES_URL, private.ES_INDEX, "character", "name:{}".format(character))
+        actor_hit = search("character", {"name": character})
 
         if actor_hit:
             card_title = character
@@ -264,7 +267,7 @@ def get_other_roles(intent, session):
         speech_output = base_error + " " + TRY_AGAIN
         reprompt_text = base_error + " " + example
     else:
-        actor_hits = search(private.ES_URL, private.ES_INDEX, "actor", "name:{}".format(actor))
+        actor_hits = search("actor", {"name": actor})
 
         if actor_hits and actor_hits[0]["_source"]["other_roles"]:
             card_title = actor
@@ -284,14 +287,21 @@ def get_other_roles(intent, session):
 # --------------- Helpers that build all of the responses ----------------------
 
 
-def search(server, index, type, query_string, min_score=0):
-    url = "{}/{}/{}/_search".format(server, index, type)
-    response = requests.get(url, params={"q": query_string.replace(" ", "%20")}, auth=get_aws_auth())
+def search(doc_type, query_doc, min_score=0):
+    """
+    search the DB for matching information
 
-    response.raise_for_status()
+    Note: I haven't tested this when ES is down or firewalled.
+    :param doc_type: The database table (Elastic search sort of calls them types)
+    :param query_doc: dict listing the fields and field values to search
+    :param min_score: Filter any results below this score
+    :return: List of elasticsearch documents with score (info is in _source)
+    """
+    assert isinstance(query_doc, dict)
+    es = networking.get_elasticsearch()
+    res = es.search(index=private.ES_INDEX, doc_type=doc_type, body={"query": {"match": query_doc}})
 
-    data = response.json()
-    return [result for result in data["hits"]["hits"] if result["_score"] >= min_score]
+    return [result for result in res["hits"]["hits"] if result["_score"] >= min_score]
 
 
 def munge_speech_response(text):

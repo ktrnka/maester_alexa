@@ -11,3 +11,4 @@ SQLObject==3.0.0
 sqlparse==0.1.19
 Tempita==0.5.2
 aws-requests-auth
+elasticsearch>=1.0.0,<2.0.0
