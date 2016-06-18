@@ -1,10 +1,5 @@
 """
-This sample demonstrates a simple skill built with the Amazon Alexa Skills Kit.
-The Intent Schema, Custom Slots, and Sample Utterances for this skill, as well
-as testing instructions are located at http://amzn.to/1LzFrj6
-
-For additional samples, visit the Alexa Skills Kit Getting Started guide at
-http://amzn.to/1LGWsLG
+Main handling code for Amazon Lambda
 """
 
 from __future__ import print_function
@@ -14,9 +9,6 @@ import random
 import networking
 import private
 import re
-import requests
-import elasticsearch
-
 
 TRY_AGAIN = "Please try again."
 
@@ -30,8 +22,7 @@ def lambda_handler(event, context):
     """ Route the incoming request based on type (LaunchRequest, IntentRequest,
     etc.) The JSON body of the request is provided in the event parameter.
     """
-    print("event.session.application.applicationId=" +
-          event['session']['application']['applicationId'])
+    print("event.session.application.applicationId=" + event['session']['application']['applicationId'])
 
     """
     Uncomment this if statement and populate with your skill's application ID to
@@ -43,8 +34,7 @@ def lambda_handler(event, context):
     #     raise ValueError("Invalid Application ID")
 
     if event['session']['new']:
-        on_session_started({'requestId': event['request']['requestId']},
-                           event['session'])
+        on_session_started({'requestId': event['request']['requestId']}, event['session'])
 
     if event['request']['type'] == "LaunchRequest":
         return on_launch(event['request'], event['session'])
@@ -57,30 +47,27 @@ def lambda_handler(event, context):
 def on_session_started(session_started_request, session):
     """ Called when the session starts """
 
-    print("on_session_started requestId=" + session_started_request['requestId']
-          + ", sessionId=" + session['sessionId'])
+    print("on_session_started requestId=" + session_started_request['requestId'] + ", sessionId=" + session['sessionId'])
 
 
 def on_launch(launch_request, session):
-    """ Called when the user launches the skill without specifying what they
-    want
+    """
+    Called when the user launches the skill without specifying what they
+    want like "Alexa open Ask a maester
     """
 
-    print("on_launch requestId=" + launch_request['requestId'] +
-          ", sessionId=" + session['sessionId'])
-    # Dispatch to your skill's launch
+    print("on_launch requestId=" + launch_request['requestId'] + ", sessionId=" + session['sessionId'])
     return get_welcome_response()
 
 
 def on_intent(intent_request, session):
-    """ Called when the user specifies an intent for this skill """
+    """Called when the user specifies an intent for this skill like Alexa ask a maester who is Jon Snow"""
 
     print("on_intent requestId={}, sessionId={}, intent={}, slots={}".format(
                 intent_request["requestId"],
                 session["sessionId"],
                 intent_request["intent"]["name"],
                 intent_request["intent"]["slots"]))
-
 
     intent = intent_request['intent']
     intent_name = intent_request['intent']['name']
@@ -107,8 +94,7 @@ def on_session_ended(session_ended_request, session):
 
     Is not called when the skill returns should_end_session=true
     """
-    print("on_session_ended requestId=" + session_ended_request['requestId'] +
-          ", sessionId=" + session['sessionId'])
+    print("on_session_ended requestId=" + session_ended_request['requestId'] + ", sessionId=" + session['sessionId'])
     # add cleanup logic here
 
 
