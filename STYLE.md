@@ -5,4 +5,4 @@ Style and architecture notes
 * I'm trying to follow PEP-8 but not a zealot about line length
 * I'm trying to use double-quoted strings over single-quoted when possible (still lots of Amazon code to change)
 * Trying to break up the code into smaller files but the sample handler was a megafile
-* 
+* unicode literals, print function, etc - aiming to be Python 3 compatible and PyCharm can help with warnings.
