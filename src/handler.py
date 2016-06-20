@@ -154,14 +154,18 @@ def get_character_info(intent, session):
         base_error = "I'm not sure who you mean."
         speech_output = base_error + " " + TRY_AGAIN
         reprompt_text = base_error + " " + example
-    elif character.lower() in CHAR_INFO:
-        card_title = character
-        speech_output = CHAR_INFO[character.lower()]
-        reprompt_text = CHAR_INFO[character.lower()]
     else:
-        base_error = "I don't know about {}.".format(character)
-        speech_output = base_error + " " + TRY_AGAIN
-        reprompt_text = base_error + " " + example
+        hits = search("char_summary", {"name": character})
+        if hits:
+            result = hits[0]
+            card_title = result["_source"]["name"]
+
+            speech_output = result["_source"]["summary"]
+            reprompt_text = speech_output
+        else:
+            base_error = "I don't know about {}.".format(character)
+            speech_output = base_error + " " + TRY_AGAIN
+            reprompt_text = base_error + " " + example
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
