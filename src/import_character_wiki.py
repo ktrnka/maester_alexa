@@ -22,7 +22,7 @@ import requests
 def parse_args():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("--update-elasticsearch", default=False, action="store_true")
-    parser.add_argument("input_json")
+    parser.add_argument("input_json", nargs="+", help="One or more input Json files with later files overriding earlier files")
     parser.add_argument("character_file", help="Output file with one char per line for slots")
     return parser.parse_args()
 
@@ -32,15 +32,16 @@ def main():
 
     char_map = dict()
 
-    with io.open(args.input_json, "r", encoding="UTF-8-sig") as json_in:
-        data = json.load(json_in)
+    for input_json in args.input_json:
+        with io.open(input_json, "r", encoding="UTF-8-sig") as json_in:
+            data = json.load(json_in)
 
-    for char_name, char_obj in data.iteritems():
-        if not char_obj["summary"] or "(" in char_name:
-            continue
+        for char_name, char_obj in data.iteritems():
+            if not char_obj["summary"] or "(" in char_name:
+                continue
 
-        char_name = char_name.replace("%27", "'")
-        char_map[char_name] = " ".join(char_obj["summary"])
+            char_name = char_name.replace("%27", "'")
+            char_map[char_name] = " ".join(char_obj["summary"])
 
     with io.open(args.character_file, "w", encoding="UTF-8") as chars_out:
         for c in sorted(char_map.keys()):

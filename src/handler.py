@@ -108,11 +108,10 @@ def get_welcome_response():
 
     session_attributes = {}
     card_title = "Welcome"
-    speech_output = "Welcome to Ask a Maester. Try asking who is Jon Snow."
+    speech_output = "Hello there. You can ask who is Jon Snow, what are the words of House Stark, who plays Arya Stark, or what else has Lena Headey starred in."
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
-    reprompt_text = "Ask about a character such as, " \
-                    "who is Jon Snow."
+    reprompt_text = "Ask about a character such as, who is Jon Snow."
     should_end_session = False
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))

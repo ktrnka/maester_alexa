@@ -1,0 +1,27 @@
+{
+    "Jon Snow": {
+        "character_name": "Jon Snow",
+        "summary": [
+            "Jon Snow is the bastard son of Eddard Stark, by a mother whose identity is a source of speculation. He was raised by his father alongside his true-born half-siblings, but joins the Night's Watch when he nears adulthood. He is constantly accompanied by his albino direwolf Ghost. At the beginning of A Game of Thrones, Jon is fourteen years old.  He is one of the major POV characters in the books. In the television adaptation Game of Thrones, Jon is portrayed by Kit Harington."
+        ]
+    },
+    "Sansa Stark": {
+        "character_name": "Sansa Stark",
+        "summary": [
+            "Sansa Stark is a member of House Stark and is the elder daughter of Lady Catelyn and Lord Eddard Stark. She has three brothers (Robb, Bran and Rickon), a younger sister, Arya, and a half-brother, Jon Snow. Sansa Stark is one of the major POV characters in the books. In the television adaptation Game of Thrones, she is played by Sophie Turner."
+        ]
+    },
+    "Daenerys Targaryen": {
+        "character_name": "Daenerys Targaryen",
+        "summary": [
+            "Princess Daenerys Targaryen, known as Daenerys Stormborn and Dany, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke."
+        ]
+    },
+    "Tyrion Lannister": {
+        "character_name": "Tyrion Lannister",
+        "summary": [
+            "Tyrion Lannister is a member of House Lannister and is the third and youngest child of Lord Tywin Lannister and the late Joanna Lannister. His older siblings are Cersei Lannister, the queen of King Robert Baratheon, and Ser Jaime Lannister, a knight of Robert's Kingsguard.",
+            "Tyrion is a dwarf; because of this he is sometimes mockingly called the Imp and the Halfman. He is one of the major POV characters in the books. In the television adaptation Game of Thrones, Tyrion is played by Peter Dinklage."
+        ]
+    }
+}
