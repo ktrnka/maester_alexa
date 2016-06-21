@@ -37,7 +37,7 @@ def main():
             data = json.load(json_in)
 
         for char_name, char_obj in data.iteritems():
-            if not char_obj["summary"] or "(" in char_name:
+            if "(" in char_name:
                 continue
 
             char_name = char_name.replace("%27", "'")
@@ -60,14 +60,14 @@ def main():
 
 def get_insert_actions(char2summary, index_name, type_name):
     for character_name, summary in char2summary.items():
-        yield {
-            "_op_type": "create",
-            "_index": index_name,
-            "_type": type_name,
-            "name": character_name,
-            "summary": summary
-        }
-
+        if summary:
+            yield {
+                "_op_type": "create",
+                "_index": index_name,
+                "_type": type_name,
+                "name": character_name,
+                "summary": summary
+            }
 
 if __name__ == "__main__":
     sys.exit(main())

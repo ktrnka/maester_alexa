@@ -1,8 +1,18 @@
 A Game of Thrones
 Abelar Hightower
+Acorn Hall
+Addam
+Addam Frey
 Addam Marbrand
+Addam Osgrey
 Addam Velaryon
+Addison Hill
 Aegon Blackfyre
+Aegon I Targaryen
+Aegon II Targaryen
+Aegon III Targaryen
+Aegon IV Targaryen
+Aegon V Targaryen
 Aegor Rivers
 Aelinor Penrose
 Aemma Arryn
@@ -25,6 +35,7 @@ Aggo
 Aglantine
 Agrivane
 Aladale Wynch
+Alan
 Alannys Harlaw
 Alaric of Eysen
 Alayaya
@@ -37,6 +48,7 @@ Alequo Adarys
 Alerie Hightower
 Alesander Frey
 Alesander Staedmon
+Alesander Torrent
 Alester Florent
 Alester Norcross
 Alester Oakheart
@@ -74,12 +86,14 @@ Alysanne Hightower
 Alysanne Lefford
 Alysanne Osgrey
 Alysanne Targaryen
+Alysanne of Tarth
 Alyssa Arryn
 Alyssa Blackwood
 Alyx Frey
 Amabel
 Amarei Crakehall
 Ambrode
+Ambrose Butterwell
 Amerei Frey
 Amory Lorch
 Andals
@@ -95,13 +109,16 @@ Androw Frey
 Anguy
 Annara Farring
 Antario Jast
+Anvil Ryn
 Anya Waynwood
 Arbor
 Archibald Yronwood
 Ardrian Celtigar
 Areo Hotah
+Argilac
 Argrave the Defiant
 Arianne Martell
+Arianne of Tarth
 Arlan of Pennytree
 Armeca
 Armen
@@ -114,16 +131,21 @@ Arrec Durrandon
 Arron
 Arron Qorgyle
 Arryk
+Arson
 Arthor Karstark
 Arthur Ambrose
 Arthur Dayne
 Artos Stark
+Artys Arryn
 Arwood Frey
 Arwyn Frey
 Arwyn Oakheart
 Arya Stark
+Arys Oakheart
 Asha Greyjoy
 Ashara Dayne
+Ashford Tourney
+Assadora of Ibben
 Asshai
 Aubrey Ambrose
 Aurane Waters
@@ -133,6 +155,8 @@ Azor Ahai
 Azzak
 Bael the Bard
 Baela Targaryen
+Baelor Blacktyde
+Baelor Hightower
 Baelor I Targaryen
 Ballabar
 Balman Byrch
@@ -148,6 +172,7 @@ Barbrey Dustin
 Barra
 Barre
 Barristan Selmy
+Barsena Blackhair
 Barth
 Barthogan Stark
 Bass
@@ -157,15 +182,19 @@ Bear Island
 Bearded Ben
 Beardless Dick
 Becca
+Becca the Baker
 Beck
 Bedwyck
 Belandra
+Belaquo Bonebreaker
 Beldecar
+Belgrave
 Belis
 Bella
 Bellegere Otherys
 Bellena Hawick
 Bellonara Otherys
+Belwas
 Ben
 Ben Blackthumb
 Ben Bones
@@ -198,14 +227,17 @@ Bethany Redwyne
 Bethany Rosby
 Betharios of Braavos
 Bhakaz zo Loraq
+Bharbo
 Big Boil
 Biter
 Bitterbridge
 Black Balaq
 Black Bernarr
+Black Jack Bulwer
 Black Walder Rivers
 Black cells
 Blackfish
+Blackfyre Rebellion
 Blackhaven
 Blane
 Blind Doss
@@ -228,7 +260,9 @@ Boy
 Braavos
 Bradamar Frey
 Bran Stark
+Bran the Builder
 Brandon Norrey
+Brandon Stark
 Brandon Tallhart
 Branston Cuy
 Brave Companions
@@ -245,6 +279,7 @@ Brown Bernarr
 Brusco
 Bryan Fossoway
 Bryan Frey
+Bryan of Oldtown
 Bryce Caron
 Bryen
 Bryen Caron
@@ -265,6 +300,7 @@ Cadwyl
 Cadwyn
 Caleotte
 Calon
+Camarron of the Count
 Canker Jeyne
 Carellen Smallwood
 Carolei Waynwood
@@ -305,6 +341,7 @@ Clement Crabb
 Clement Piper
 Cleon
 Cleos Frey
+Cletus Yronwood
 Cley Cerwyn
 Cleyton Caswell
 Clifford Conklyn
@@ -340,7 +377,9 @@ Creighton Longbough
 Creighton Redfort
 Cressen
 Criston Cole
+Crossroads Inn
 Crownlands
+Crows Nest
 Cuger
 Cutjack
 Cynthea Frey
@@ -349,6 +388,8 @@ Daario Naharis
 Dacey Mormont
 Dacks
 Daegon Shepherd
+Daemon I Blackfyre
+Daemon II Blackfyre
 Daemon Sand
 Daemon Targaryen
 Daena Targaryen
@@ -396,6 +437,7 @@ Della Frey
 Delonne Allyrion
 Delp
 Denestan
+Dennet
 Dennis Plumm
 Denyo Terys
 Denys Arryn
@@ -409,6 +451,7 @@ Desmond
 Desmond Grell
 Desmond Redwyne
 Devan Seaworth
+Devyn Sealskinner
 Deziel Dalt
 Dhazzar
 Dick
@@ -454,6 +497,8 @@ Drowned God
 Dryn
 Dudley
 Dunaver
+Duncan Targaryen
+Dunk
 Dunsen
 Dunstan Drumm
 Duram Bar Emmon
@@ -499,8 +544,10 @@ Elia Sand
 Elinor Tyrell
 Ellaria Sand
 Ellery Vance
+Ellyn Tarbeck
 Elmar Frey
 Elron
+Elwood
 Elwood Meadows
 Elyana Vypren
 Elyas Willum
@@ -544,6 +591,7 @@ Falena Stokeworth
 Falia Flowers
 Falyse Stokeworth
 Farlen
+Fearless Ithoke
 Feastfires
 Fern
 Ferny
@@ -567,6 +615,7 @@ Gage
 Galazza Galare
 Galbart Glover
 Galladon of Morne
+Galladon of Tarth
 Gallard
 Galt
 Galtry the Green
@@ -584,9 +633,12 @@ Garrison Prester
 Garse Flowers
 Garse Goodbrook
 Garth Greenfield
+Garth Greyfeather
+Garth Hightower
 Garth Tyrell
 Garth XII Gardener
 Garth of Greenaway
+Garth of Oldtown
 Gascoyne
 Gavin
 Gawen Glover
@@ -605,9 +657,11 @@ Gerold Grafton
 Gerold Hightower
 Gerold Lannister
 Gerren
+Gerrick Kingsblood
 Gerris Drinkwater
 Gevin Harlaw
 Ghael
+Ghiscari Empire
 Ghost of High Heart
 Giants
 Gilbert Farring
@@ -621,11 +675,13 @@ Goady
 Godric Borrell
 Godry Farring
 Godwyn
+Goghor the Giant
 Gold Cloak
 Golden Company
 Golden Tooth
 Goldengrove
 Goodwin
+Gorghan of Old Ghis
 Gormon Peake
 Gormon Tyrell
 Gormond Drumm
@@ -655,6 +711,7 @@ Grey Glen
 Grey King
 Grey Worm
 Greydon Goodbrother
+Greyjoy Rebellion
 Greyshield
 Greywater Watch
 Griffin King
@@ -671,6 +728,7 @@ Gulian Qorgyle
 Gulian Swann
 Guncer Sunglass
 Gunthor Hightower
+Gunthor son of Gurn
 Gurn
 Guthor Grimm
 Guyard Morrigen
@@ -691,6 +749,7 @@ Gyles Rosby
 Gyloro Dothare
 Gynir
 Gysella Goodbrother
+Haegon Blackfyre
 Haggo
 Haggon
 Hairy Hal
@@ -807,6 +866,7 @@ House Targaryen
 House Tarly
 House Templeton
 House Tully
+Howd Wanderer
 Howland Reed
 Hubard Rambton
 Hugh
@@ -833,9 +893,11 @@ Illyrio Mopatis
 Ilyn Payne
 Imry Florent
 Inn of the Kneeling Man
+Iron Emmett
 Iron Fleet
 Iron Islands
 Ironbelly
+Ironmen
 Irri
 Jacelyn Bywater
 Jack-Be-Lucky
@@ -856,6 +918,7 @@ Jaqen H'ghar
 Jared Frey
 Jaremy Rykker
 Jarl
+Jarmen Buckwell
 Jason Lannister
 Jason Mallister
 Jasper Arryn
@@ -884,6 +947,7 @@ Jeyne Swann
 Jeyne Waters
 Jeyne Westerling
 Jhaqo
+Jhezane
 Jhiqui
 Jhogo
 Joanna Lannister
@@ -908,6 +972,7 @@ Jon Heddle
 Jon Hollard
 Jon Lynderly
 Jon Myre
+Jon O'Nutten
 Jon Penny
 Jon Penrose
 Jon Pox
@@ -916,6 +981,7 @@ Jon Snow
 Jon Vance
 Jon Waters
 Jon Wylde
+Jonella Cerwyn
 Jonnel Stark
 Jonos Bracken
 Jonos Frey
@@ -985,9 +1051,11 @@ Kojja Mo
 Koss
 Kovarro
 Kraznys mo Nakloz
+Krazz
 Kromm
 Kurleket
 Kurz
+Kyle
 Kyle Condon
 Kyle Royce
 Kyleg
@@ -1069,11 +1137,13 @@ Lord Commander of the Kingsguard
 Lord Staunton
 Lord Varys
 Lordsport
+Loren Lannister
 Lorent Lorch
 Lorent Marbrand
 Lorent Tyrell
 Loreza Sand
 Lorimer
+Lormelle
 Lorren
 Lothar
 Lothar Frey
@@ -1101,6 +1171,7 @@ Lucos
 Lucos Chyttering
 Luke of Longtown
 Lum
+Luthor Tyrell
 Luton
 Luwin
 Lyanna Mormont
@@ -1133,11 +1204,15 @@ Mad Huntsman
 Maddy
 Maege Mormont
 Maegelle Frey
+Maegor I Targaryen
 Maekar I Targaryen
 Maekar Targaryen
 Maelor Targaryen
+Maelys Blackfyre
 Maester Aemon
 Maester Luwin
+Maesters#Archmaester
+Maesters#Grand Maester
 Mag Mar Tun Doh Weg
 Maggy
 Mago
@@ -1229,10 +1304,12 @@ Merianne Frey
 Meribald
 Merling Queen
 Merlon Crakehall
+Mern Gardener
 Mero
 Merrell Florent
 Merrett Frey
 Merrit
+Merry Meg
 Meryn Trant
 Mezzara
 Michael Mertyns
@@ -1258,9 +1335,12 @@ Mordane
 Moredo Prestayn
 Moreo Tumitis
 Morgarth
+Morgil
 Moribald Chester
+Morna White Mask
 Moro
 Moro's Bloodrider
+Morosh the Myrman
 Morra
 Morrec
 Morros Slynt
@@ -1273,6 +1353,7 @@ Morya Frey
 Moryn Tyrell
 Mossador
 Most Devout
+Mother Mole
 Mountains of the Moon
 Mullin
 Mully
@@ -1290,6 +1371,7 @@ Mya Stone
 Mycah
 Mychel Redfort
 Mylenda Caron
+Myles
 Myles Manwoody
 Myles Mooton
 Myles Smallwood
@@ -1298,12 +1380,14 @@ Myranda
 Myranda Royce
 Myrcella Baratheon
 Myria Jordayne
+Myriah Martell
 Myrielle Lannister
 Myrtle
 Mysaria
 Naerys Targaryen
 Nage
 Nail
+Nan
 Narbert
 Narbo
 Ned
@@ -1327,6 +1411,7 @@ Norren
 Notch
 Nute
 Nymella Toland
+Nymeria
 Nymeria Sand
 Nymos
 Nysterica
@@ -1335,6 +1420,7 @@ Obella Sand
 Oberyn Martell
 Ocley
 Ogo
+Old Bill Bones
 Old Crackbones
 Old Grey Gull
 Old Henly
@@ -1342,6 +1428,7 @@ Old Tattersalt
 Oldcastle
 Oldtown
 Olene Tyrell
+Olenna Redwyne
 Olenna Tyrell
 Ollidor
 Ollo Lophand
@@ -1359,6 +1446,9 @@ Ordello
 Orell
 Orivel
 Orland of Oldtown
+Ormond Osgrey
+Ormond Westerling
+Ormond Yronwood
 Ormund Wylde
 Oro Tendyris
 Orphan Oss
@@ -1379,6 +1469,7 @@ Oswell Whent
 Oswyn
 Othell Yarwyck
 Otho Bracken
+Othor
 Otter Gimpknee
 Otto Hightower
 Ottomore
@@ -1403,6 +1494,7 @@ Pentos
 Perra Frey
 Perriane Frey
 Perros Blackmont
+Perwyn Frey
 Perwyn Osgrey
 Peter Plumm
 Petyr Baelish
@@ -1410,6 +1502,7 @@ Petyr Frey
 Philip Foote
 Philip Plumm
 Pia
+Pinkmaiden
 Plummer
 Podrick Payne
 Poetess
@@ -1429,6 +1522,7 @@ Pudding
 Puddingfoot
 Purple Wedding
 Pyat Pree
+Pycelle
 Pyg
 Pyke
 Pylos
@@ -1443,6 +1537,7 @@ Qarl the Thrall
 Qarlton Chelsted
 Qarro Volentin
 Qarth
+Qezza
 Qhono
 Qhorin Halfhand
 Qohor
@@ -1527,6 +1622,7 @@ Rhaego
 Rhaella Targaryen
 Rhaelle Targaryen
 Rhaenyra Targaryen
+Rhaenys Targaryen
 Rhea Florent
 Rhea Royce
 Rhialta Vance
@@ -1538,6 +1634,7 @@ Richard Horpe
 Richard Lonmouth
 Rickard Karstark
 Rickard Ryswell
+Rickard Stark
 Rickard Thorne
 Rickard Tyrell
 Rickard Wylde
@@ -1554,9 +1651,12 @@ Robb Stark
 Robert Arryn
 Robert Ashford
 Robert Baratheon
+Robert Brax
 Robert Flowers
+Robert Frey
 Robert Paege
 Robett Glover
+Robin
 Robin Arryn
 Robin Flint
 Robin Greyjoy
@@ -1576,6 +1676,7 @@ Rodrik Stark
 Rodwell Stark
 Roelle
 Roger Hogg
+Roger Ryswell
 Roger of Pennytree
 Roggo
 Rohanne Webber
@@ -1586,6 +1687,7 @@ Rolland Darklyn
 Rolland Longthorpe
 Rolland Storm
 Rolland Uffering
+Rolley
 Rolly Duckfield
 Rolph Spicer
 Romny Weaver
@@ -1611,6 +1713,7 @@ Roslin Frey
 Rossart
 Rowan
 Royce Coldwater
+Ruby Ford
 Rudge
 Rufus Leek
 Rugen
@@ -1633,6 +1736,7 @@ Rylene Florent
 Ryles
 Ryman Frey
 Rymolf
+Rymund the Rhymer
 Ryon Allyrion
 S'vrone
 Saathos
@@ -1679,6 +1783,7 @@ Serra Frey
 Serwyn of the Mirror Shield
 Seven Kingdoms
 Shadow Tower
+Shadrick
 Shady Glen
 Shae
 Shagga
@@ -1709,12 +1814,14 @@ Skinner
 Skittrick
 Sky Blue Su
 Skyte
+Sleepy Jack
 Sloey
 Small Paul
 Smiling Knight
 Snakewood
 Softfoot
 Soldier
+Soren Shieldbreaker
 Sour Alyn
 Southshield
 Spare Boot
@@ -1747,6 +1854,7 @@ Steffon Stackspear
 Steffon Swyft
 Steffon Varner
 Stevron Frey
+Stiv
 Stokeworth
 Stone Crows
 Stone Hedge
@@ -1760,6 +1868,7 @@ Stormcrows
 Strongsong
 Stygg
 Styr
+Summer Islands
 Sumner Crakehall
 Sunspear
 Sweetport Sound
@@ -1800,8 +1909,14 @@ Terrance Lynderly
 Terrence Kenning
 Terrence Toyne
 Terro
+The Crag
+The Dreadfort
+The Great Spring Sickness
 The Hedge Knight
 The Hound
+The Reach
+The Twins
+The Wall
 Thenn
 Thenn Warg
 Theo Frey
@@ -1810,6 +1925,7 @@ Theobald
 Theodan Wells
 Theodore Tyrell
 Theomar Smallwood
+Theomore
 Theomore Harlaw
 Theon Greyjoy
 Theon Stark
@@ -1853,6 +1969,7 @@ Torren Liddle
 Torrhen Karstark
 Torrhen Stark
 Torrhen's Square
+Torwold Browntooth
 Torwynd
 Tothmure
 Tourney at Ashford Meadow
@@ -1897,6 +2014,7 @@ Tytos Blackwood
 Tytos Brax
 Tytos Frey
 Tytos Lannister
+Tywin Frey
 Tywin Lannister
 Ulf son of Umar
 Ulf the Ill
@@ -1911,12 +2029,14 @@ Umma
 Unella
 Unsullied
 Urek Ironmaker
+Urras Ironfoot
 Urrathon
 Urreg
 Urrigon Greyjoy
 Urron Greyiron
 Urswyck
 Urzen
+Utherydes Wayn
 Uthor Tollett
 Uthor Underleaf
 Utt
@@ -1926,6 +2046,7 @@ Val
 Vala
 Valaena Velaryon
 Valarr Targaryen
+Vale
 Varamyr
 Vardis Egen
 Vargo Hoat
@@ -1939,6 +2060,9 @@ Victaria Tyrell
 Victarion Greyjoy
 Victor Tyrell
 Violet
+Visenya Targaryen
+Viserys I Targaryen
+Viserys II Targaryen
 Viserys Plumm
 Viserys Targaryen
 Vixen
@@ -1948,6 +2072,7 @@ Vylarr
 Vyman
 Waif
 Walda Bolton
+Walda Rivers
 Walder Brax
 Walder Frey
 Walder Goodbrook
@@ -1956,12 +2081,14 @@ Walder Rivers
 Walder Vance
 Waldon Wynch
 Walgrave
+Wallace Waynwood
 Wallen
 Walton
 Walton Frey
 Walton Stark
 Waltyr Frey
 Walys Flowers
+War of the Usurper
 Warren
 Warryn Beesbury
 Wat
@@ -1969,6 +2096,7 @@ Wate
 Watt
 Watty
 Wayfarer's Rest
+Waymar Royce
 Weasel
 Weeper
 Weese
@@ -1982,10 +2110,14 @@ Werlag
 Westerlands
 Wex Pyke
 Whalen Frey
+White Harbor
+Whitewalls tourney
 Widow's Watch
 Wight
 Wilbert
 Wilbert Osgrey
+Wildling
+Will
 Will Humble
 Willam
 Willam Dustin
@@ -2030,6 +2162,7 @@ Yara Greyjoy
 Yellow Dick
 Yezzan zo Qaggaz
 Ygon Farwynd
+Ygon Oldfather
 Ygritte
 Yna
 Yohn Farwynd
