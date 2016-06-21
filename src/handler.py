@@ -288,7 +288,8 @@ def search(doc_type, query_doc, min_score=0):
     """
     assert isinstance(query_doc, dict)
     es = networking.get_elasticsearch()
-    res = es.search(index=private.ES_INDEX, doc_type=doc_type, body={"query": {"match": query_doc}})
+    with_and = {k: {"query": v, "operator": "and"} for k, v in query_doc.items()}
+    res = es.search(index=private.ES_INDEX, doc_type=doc_type, body={"query": {"match": with_and}})
 
     return [result for result in res["hits"]["hits"] if result["_score"] >= min_score]
 

@@ -111,6 +111,13 @@ class TestIntents(unittest.TestCase):
         self._assert_normal(response)
         self.assertNotIn("Stark", get_speech_output(response))
 
+    def test_character_missing(self):
+        # test correct response
+        response = handler.lambda_handler(make_input("GetCharacterInfo", {"character": "Robert Baratheon"}), self.context)
+        self._assert_normal(response)
+        self.assertIn("don't know", get_speech_output(response))
+
+
     def test_actor_other_roles(self):
         # test correct response
         response = handler.lambda_handler(make_input("GetOtherRoles", {"actor": "Lena Headey"}), self.context)
