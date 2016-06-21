@@ -51,7 +51,9 @@
     },
     "Aegon Frey (son of Aenys)": {
         "character_name": "Aegon Frey (son of Aenys)",
-        "summary": []
+        "summary": [
+            "Aegon Frey, better known as Aegon Bloodborn, is the eldest son of Ser Aenys Frey and Tyana Wylde. He became an outlaw."
+        ]
     },
     "Aegon Frey (son of Stevron)": {
         "character_name": "Aegon Frey (son of Stevron)",
@@ -59,7 +61,9 @@
     },
     "Aegon I Targaryen": {
         "character_name": "Aegon I Targaryen",
-        "summary": []
+        "summary": [
+            "Aegon I Targaryen, also known as Aegon the Conqueror and Aegon the Dragon, was the first Lord of the Seven Kingdoms and king on the Iron Throne, having conquered six of the Seven Kingdoms during the Conquest. He was the founder of the ruling Targaryen dynasty of Westeros."
+        ]
     },
     "Aegon II Targaryen": {
         "character_name": "Aegon II Targaryen",
@@ -67,15 +71,21 @@
     },
     "Aegon III Targaryen": {
         "character_name": "Aegon III Targaryen",
-        "summary": []
+        "summary": [
+            "Aegon III Targaryen, also known as Aegon the Younger, and later Aegon the Dragonbane, was the seventh king of the Targaryen line to sit the Iron Throne."
+        ]
     },
     "Aegon IV Targaryen": {
         "character_name": "Aegon IV Targaryen",
-        "summary": []
+        "summary": [
+            "King Aegon IV Targaryen, known as Aegon the Unworthy, was the eleventh Targaryen to sit the Iron Throne, and is considered to be one of the worst Targaryen kings. He sired numerous bastards, legitimizing them on his deathbed, an act that led to five Blackfyre Rebellions."
+        ]
     },
     "Aegon Targaryen (son of Aenys I)": {
         "character_name": "Aegon Targaryen (son of Aenys I)",
-        "summary": []
+        "summary": [
+            "Prince Aegon Targaryen was a member of House Targaryen and was the second child, and eldest son and heir, of King Aenys I Targaryen and Queen Alyssa Velaryon. He was a dragonrider who after his father's death rode his father's dragon, Quicksilver."
+        ]
     },
     "Aegon Targaryen (son of Baelon)": {
         "character_name": "Aegon Targaryen (son of Baelon)",
@@ -87,11 +97,16 @@
     },
     "Aegon Targaryen (son of Rhaegar)": {
         "character_name": "Aegon Targaryen (son of Rhaegar)",
-        "summary": []
+        "summary": [
+            "Prince Aegon Targaryen was the second child and only son of Prince Rhaegar Targaryen and Elia Martell."
+        ]
     },
     "Aegon V Targaryen": {
         "character_name": "Aegon V Targaryen",
-        "summary": []
+        "summary": [
+            "Aegon V Targaryen was a Lord of the Seven Kingdoms and the fifteenth Targaryen to sit the Iron Throne. In his youth, he went by the nickname Egg and squired for Ser Duncan the Tall.",
+            "Aegon became king after a Great Council bypassed a number of candidates earlier in the line of succession, and after his elder brother, Maester Aemon, refused the throne. As the fourth son of Maekar I, himself a fourth son, Aegon was called Aegon the Unlikely."
+        ]
     },
     "Aegor Rivers": {
         "character_name": "Aegor Rivers",
@@ -166,24 +181,6 @@
     "Aerion Targaryen": {
         "character_name": "Aerion Targaryen",
         "summary": [
-            ":For the Lord of Dragonstone, and the father of King Aegon I Targaryen, see Aerion Targaryen (son of Daemion).",
-            "{{Character",
-            "| Character_name = 40px|left Aerion Targaryen 40px|right40px",
-            "| image = 400px",
-            "| image_caption = Aerion Targaryen by Mathia Arkoniel\u00a9",
-            "| Alias = Aerion Brightflame<br>Aerion Brightfire<br>Aerion the Monstrous<br>The Bright Prince<br>The Prince Who Thought He Was a Dragon",
-            "| Title = Prince",
-            "| Allegiance = House Targaryen<br>Second Sons",
-            "| Race =",
-            "| Culture = Valyrian",
-            "| Spouse = Daenora Targaryen",
-            "| Place_of_Birth =",
-            "| Date_of_Birth = or between <ref>See the Aerion Targaryen (Brightflame) calculation.</ref>",
-            "| Place_of_Death =",
-            "| Date_of_Death = ",
-            "| Books = The World of Ice and Fire (mentioned)<br>The Hedge Knight (appears)<br>The Sworn Sword (mentioned)<br>The Mystery Knight (mentioned)<br>A Clash of Kings (mentioned)<br>A Storm of Swords (mentioned)<br>A Dance with Dragons (mentioned)",
-            "| coat-of-arms = a red three-headed dragon on black; one head orange, one yellow, one red, breathing golden flames",
-            "}}",
             "Prince Aerion Targaryen, also known as Aerion the Monstrous, or Aerion Brightflame as he liked to call himself, was the second son of King Maekar I Targaryen."
         ]
     },
@@ -247,22 +244,6 @@
     "Aladale Wynch": {
         "character_name": "Aladale Wynch",
         "summary": [
-            "\u00ad{{Character",
-            "| Character_name = 50px|left Aladale Wynch 50px|right",
-            "| image = <br><br>",
-            "| image_caption =",
-            "| Alias =",
-            "| Title = Ser",
-            "| Allegiance = House Wynch<br>Night's Watch",
-            "| Race =",
-            "| Culture = Ironborn",
-            "| Spouse =",
-            "| Place_of_Birth =",
-            "| Date_of_Birth =",
-            "| Place_of_Death = Bridge of Skulls",
-            "| Date_of_Death =  ",
-            "| Books = A Clash of Kings (mentioned)<br>A Storm of Swords (mentioned)",
-            "}}",
             "Ser Aladale Wynch is a knight of House Wynch. He is a ranger of the Night's Watch."
         ]
     },
@@ -446,7 +427,6 @@
     "Alyn": {
         "character_name": "Alyn",
         "summary": [
-            ":For articles with the same or similar names, see Alyn (disambiguation).",
             "Alyn is a member of the household guard of Lord Eddard Stark at Winterfell."
         ]
     },
@@ -712,20 +692,6 @@
     "Arbor": {
         "character_name": "Arbor",
         "summary": [
-            "{|",
-            "{{Location map| File:The Reach",
-            "| label = The Arbor",
-            "| label_size = 100",
-            "| lat = -81",
-            "| long = -148",
-            "| position = right",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Reach and the location of the Arbor",
-            "| alt = The Reach and the location of the Arbor",
-            "}}",
-            "|}",
             "The Arbor is a golden island",
             "The port town of Ryamsport is located on the Arbor, as well as the settlements of Vinetown and Starfish Harbor."
         ]
@@ -983,55 +949,31 @@
     },
     "Baelon Targaryen (son of Aerys)": {
         "character_name": "Baelon Targaryen (son of Aerys)",
-        "summary": []
+        "summary": [
+            "Baelon Targaryen was a member of House Targaryen and the son of Lord Aerys Targaryen of Dragonstone. Despite having been the second if Aerys' three sons, Baelon ruled as Lord of Dragonstone."
+        ]
     },
     "Baelon Targaryen (son of Viserys I)": {
         "character_name": "Baelon Targaryen (son of Viserys I)",
-        "summary": []
+        "summary": [
+            "Prince Baelon Targaryen was the second born son of King Viserys I Targaryen and his wife, Queen Aemma Arryn."
+        ]
     },
     "Baelor Blacktyde": {
         "character_name": "Baelor Blacktyde",
-        "summary": []
+        "summary": [
+            "Baelor Blacktyde is Lord of Blacktyde and head of House Blacktyde. Baelor captains the Nightflyer."
+        ]
     },
     "Baelor Hightower": {
         "character_name": "Baelor Hightower",
-        "summary": []
+        "summary": [
+            "Ser Baelor Hightower, also known as Baelor Brightsmile, is a knight of House Hightower. He is the eldest son and heir of Lord Leyton Hightower. Baelor is wed to Rhonda Rowan."
+        ]
     },
     "Baelor I Targaryen": {
         "character_name": "Baelor I Targaryen",
         "summary": [
-            ":This page is about the king named Baelor Targaryen. For other characters with the same name, see Baelor Targaryen.Image:Disambig.png",
-            "{{Infobox monarch",
-            "| name          = 50px|left Baelor I 50px|right",
-            "| image         = 350px",
-            "| image_caption\t= Portrait of Baelor I by Amok\u00a9",
-            "| reign\t\t= ",
-            "| coronation\t=",
-            "| othertitles\t= King of the Andals, the Rhoynar and the First Men<br>Lord of the Seven Kingdoms<br>Protector of the Realm",
-            "| alias         = Baelor the Beloved<br>Baelor the Blessed<br>Baelor the Befuddled",
-            "| fullname\t= Baelor Targaryen the First of His Name",
-            "| predecessor\t= Daeron I Targaryen",
-            "| successor\t= Viserys II Targaryen",
-            "| heir\t\t=",
-            "| queen\t\t= Daena Targaryen",
-            "| consort\t=",
-            "| spouse\t=",
-            "| issue\t\t= None",
-            "| royalhouse\t= House Targaryen",
-            "| father\t= Aegon III Targaryen",
-            "| mother\t= Daenaera Velaryon",
-            "| dateofbirth\t= <ref>See the Baelor I Targaryen calculation.</ref>",
-            "| placeofbirth\t= King's Landing",
-            "| dateofdeath\t= ",
-            "| placeofdeath\t= King's Landing",
-            "| dateofburial\t=",
-            "| placeofburial\t=",
-            "| culture\t=",
-            "| coat-of-arms\t=",
-            "| Books         = The World of Ice and Fire (mentioned)<br>The Sworn Sword (mentioned)<br>A Game of Thrones (mentioned)<br>A Storm of Swords (mentioned)<br>A Feast for Crows (mentioned)<br>A Dance with Dragons (mentioned)",
-            "| Played_by\t=",
-            "| TV_series\t=",
-            "}}",
             "Baelor I Targaryen, known as the Beloved and the Blessed, was the ninth Targaryen king to reign on the Iron Throne as Lord of the Seven Kingdoms. Known for his piety, Baelor was a septon as well as a king. He was the second son of King Aegon III Targaryen and Queen Daenaera Velaryon, and ruled after the death of his older brother, King Daeron I Targaryen.",
             "None of the Targaryen kings are as beloved as Baelor. He loved the smallfolk and the gods in equal parts, yet imprisoned his own sisters. The Great Sept of Baelor in King's Landing features a statue of him."
         ]
@@ -1039,24 +981,6 @@
     "Baelor Targaryen (son of Daeron II)": {
         "character_name": "Baelor Targaryen (son of Daeron II)",
         "summary": [
-            ":This page is about the prince named \"Baelor Targaryen\". For other characters called \"Baelor Targaryen\", please see Baelor Targaryen.Image:Disambig.png",
-            "{{Character",
-            "| Character_name= 50px|right Baelor Targaryen 50px|left",
-            "| image\t\t= 300px",
-            "| image_caption\t= Baelor Targaryen by Amok. http://www.dabelbrothers.com/ \u00a9Roaring Studios\u00a9",
-            "| Alias\t\t= Baelor Breakspear<br>The Hammer",
-            "| Title\t\t= Prince of Dragonstone<br>Protector of the Realm<br>Hand of the King",
-            "| Allegiance\t= House Targaryen",
-            "| Race\t\t=",
-            "| Culture\t=",
-            "| Spouse\t= Jena Dondarrion",
-            "| Place_of_Birth=",
-            "| Date_of_Birth\t= <ref>See the Baelor Targaryen calculation.</ref>",
-            "| Place_of_Death= Ashford",
-            "| Date_of_Death\t= ",
-            "| Books\t\t= The World of Ice and Fire (mentioned)<br>The Hedge Knight (appears)<br>The Sworn Sword (mentioned)<br>The Mystery Knight (mentioned)<br>A Storm of Swords (mentioned)",
-            "}}",
-            "File:Baelor targaryen by oznerol 1516.png|right|thumb|250px|Baelor Targaryen by http://oznerol-1516.deviantart.com/ Oznerol-1516\u00a9",
             "Prince Baelor Targaryen, known as Baelor Breakspear, was a prince of House Targaryen and was the eldest son and heir of King Daeron II Targaryen and Mariah Martell. Named after King Baelor I,."
         ]
     },
@@ -1181,20 +1105,6 @@
     "Bear Island": {
         "character_name": "Bear Island",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = Bear Island",
-            "| lat = 48",
-            "| long = -85",
-            "| position = bottom",
-            "| mark = File:Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 400",
-            "| float = right",
-            "| caption = The North and the location of Bear Island",
-            "| alt =  The North and the location of Bear Island",
-            "}}",
-            "|}",
             "Bear Island is a remote island in the North that is home to House Mormont. It lies within the Bay of Ice north of Deepwood Motte and south of the Frozen Shore. The Mormonts live at Mormont Keep.<ref>A Song of Ice and Fire Campaign Guide</ref>",
             "The island contains old gnarled oaks, tall pines, flowering thornbushes, moss-covered grey stones, and steep hills with streams. Aside from a few crofters, the inhabitants of Bear Island live along the coasts and fish the seas."
         ]
@@ -1214,7 +1124,6 @@
     "Becca": {
         "character_name": "Becca",
         "summary": [
-            ":For the baker, see Becca the Baker.",
             "Becca is a former lover of King Robert I, probably during his stay in the Vale of Arryn as a ward of Lord Jon Arryn. It is possible that she is Mya Stone's mother. She has black hair and soft eyes."
         ]
     },
@@ -1269,26 +1178,6 @@
     "Bellegere Otherys": {
         "character_name": "Bellegere Otherys",
         "summary": [
-            ":For the courtesan, see Bellegere Otherys",
-            "{{Character",
-            "| Character_name = Bellegere Otherys",
-            "| image          = 300px",
-            "| image_caption  = Aegon the Unworthy's mistress, by Magali Villeneuve, as depicted in The World of Ice and Fire",
-            "| Alias = the Black Pearl of Braavos",
-            "| Title =",
-            "| Allegiance =",
-            "| Race = Mixed (Braavosi-Summer Islander)",
-            "| Played by =",
-            "| Culture = Braavosi",
-            "| Spouse =",
-            "| Place_of_Birth =",
-            "| Date_of_Birth =",
-            "| Place_of_Death =",
-            "| Date_of_Death =",
-            "| Books = The World of Ice and Fire (mentioned)<br>A Feast for Crows (mentioned)<br>The Winds of Winter (mentioned)",
-            "| TV_series =",
-            "| coat-of-arms =",
-            "}}",
             "Bellegere Otherys, also known as the Black Pearl of Braavos, was a smuggler, trader, occasional pirate, and the captain of the Widow Wind. but that is not correct.<ref>Not a Blog: http://grrm.livejournal.com/429752.html?thread=21745080#%2Ft21745080 Wars, Woes, Work</ref>)"
         ]
     },
@@ -1305,7 +1194,6 @@
     "Bellonara Otherys": {
         "character_name": "Bellonara Otherys",
         "summary": [
-            ":For Bellenora Otherys, see here.",
             "Bellonara Otherys, the Black Pearl of Braavos, is the mother of Bellegere Otherys, the current courtesan called the Black Pearl of Braavos. Bellonara was the Black Pearl before her daughter, as her mother had been before her and her grandmother before that. She is descended from Bellegere Otherys, a pirate queen who was the first Black Pearl, and King Aegon IV Targaryen."
         ]
     },
@@ -1379,15 +1267,21 @@
     },
     "Benjen Stark": {
         "character_name": "Benjen Stark",
-        "summary": []
+        "summary": [
+            "Benjen Stark, also known as Ben Stark, is the younger brother of Lord Eddard Stark and First Ranger of the Night's Watch. In the television adaptation Game of Thrones he is portrayed by Joseph Mawle and in a Season 6 flashback by Matteo Elezi."
+        ]
     },
     "Benjen Stark (Bitter)": {
         "character_name": "Benjen Stark (Bitter)",
-        "summary": []
+        "summary": [
+            "King Benjen Stark, better known as Benjen the Bitter, was King in the North and Lord of Winterfell. He is buried in the crypts beneath Winterfell."
+        ]
     },
     "Benjen Stark (Sweet)": {
         "character_name": "Benjen Stark (Sweet)",
-        "summary": []
+        "summary": [
+            "King Benjen Stark, better known as Benjen the Sweet, was King in the North and Lord of Winterfell. He is buried in the crypts beneath Winterfell."
+        ]
     },
     "Bennard Brune": {
         "character_name": "Bennard Brune",
@@ -1546,20 +1440,6 @@
     "Bitterbridge": {
         "character_name": "Bitterbridge",
         "summary": [
-            "{|",
-            "{{Location map| File:The Reach",
-            "| label = Bitterbridge",
-            "| label_size = 100",
-            "| lat = 43",
-            "| long = 79",
-            "| position = right",
-            "| marksize = 12",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Reach and the location of Bitterbridge",
-            "| alt = The Reach and the location of Bitterbridge",
-            "}}",
-            "|}",
             "Bitterbridge, formerly known as Stonebridge, is the seat of House Caswell in the Reach. It is situated where the river Mander meets the Roseroad. It takes its name from an ancient stone bridge that crosses the Mander. The castle is small, made of stone and timber. The keep is not that tall, but the land is low and flat and makes it seem taller."
         ]
     },
@@ -1592,20 +1472,6 @@
     "Blackhaven": {
         "character_name": "Blackhaven",
         "summary": [
-            "{|",
-            "{{Location map| File:The Stormlands",
-            "| label = Blackhaven",
-            "| label_size = 90",
-            "| lat = - 48",
-            "| long = -82",
-            "| position = top",
-            "| marksize = 12",
-            "| width = 400",
-            "| float = right",
-            "| caption = The stormlands and the location of Blackhaven (red)",
-            "| alt = The stormlands and the location of Blackhaven",
-            "}}<!--\"The Lands of Ice and Fire\" shows that Blackhaven is south of Grassy Vale, east of Nightsong, and northwest of Wyl-->",
-            "|}",
             "Blackhaven is the seat of House Dondarrion in the southwestern stormlands. Part of the Dornish Marches, it is located in the northern Red Mountains near the Dornish border, north of the Wyl and south of the Cockleswhent. The fortress guards against invasions from Dorne and from outlaws hiding in the mountains.<ref>A Song of Ice and Fire Campaign Guide</ref>",
             "<!--It sits at the bottom of the Boneway, as the last stop before one enters the passes of the Dornish Marches.<ref>A Game of Thrones RPG and Resource Book, Guardians of Order</ref>-->"
         ]
@@ -1639,20 +1505,6 @@
     "Bloody Gate": {
         "character_name": "Bloody Gate",
         "summary": [
-            "{|",
-            "{{Location map| File:The Vale",
-            "| label = Bloody Gate",
-            "| label_size = 100",
-            "| lat = -33",
-            "| long = -30",
-            "| position = right",
-            "| marksize = 12",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Vale and the location of the Bloody Gate",
-            "| alt = The Vale and the location of the Bloody Gate",
-            "}}",
-            "|}",
             "The Bloody Gate is a series of battlements placed across the mountain road that leads into the Vale of Arryn from the Mountains of the Moon."
         ]
     },
@@ -1736,7 +1588,9 @@
     },
     "Bran Stark": {
         "character_name": "Bran Stark",
-        "summary": []
+        "summary": [
+            "Brandon Stark, typically called Bran, is the second son of Lord Eddard Stark and Lady Catelyn Tully. He is one of the major POV characters in the books. He has four older siblings\u2014Robb, Jon, Sansa, Arya\u2014and one younger\u2014Rickon. Like his siblings, he is constantly accompanied by his direwolf, Summer, with whom he shares a strong warg connection. He is seven years old at the beginning of A Game of Thrones. In the television adaptation Game of Thrones he is played by Isaac Hempstead-Wright.<ref name=hbo/>"
+        ]
     },
     "Bran the Builder": {
         "character_name": "Bran the Builder",
@@ -1745,33 +1599,45 @@
     "Brandon Norrey": {
         "character_name": "Brandon Norrey",
         "summary": [
-            ":This article is about the head of House Norrey. For his son, see Brandon Norrey (Younger).",
             "Lord Brandon Norrey, called the Norrey, is the clan chief of House Norrey, one of the mountain clans in the north."
         ]
     },
     "Brandon Stark": {
         "character_name": "Brandon Stark",
-        "summary": []
+        "summary": [
+            "Brandon Stark was the oldest son of Lord Rickard Stark and Lady Lyarra Stark and the heir to Winterfell prior to Robert's Rebellion. His younger siblings were Eddard, Lyanna, and Benjen."
+        ]
     },
     "Brandon Stark (Bad)": {
         "character_name": "Brandon Stark (Bad)",
-        "summary": []
+        "summary": [
+            "King Brandon Stark, better known as Brandon the Bad, was King in the North and Lord of Winterfell. He is buried in the crypts beneath Winterfell."
+        ]
     },
     "Brandon Stark (Burner)": {
         "character_name": "Brandon Stark (Burner)",
-        "summary": []
+        "summary": [
+            "King Brandon Stark, better known as Brandon the Burner, was the son of Brandon the Shipwright."
+        ]
     },
     "Brandon Stark (Shipwright)": {
         "character_name": "Brandon Stark (Shipwright)",
-        "summary": []
+        "summary": [
+            "Brandon Stark, also known as Brandon the Shipwright, was a King in the North and a head of House Stark. His son, Brandon the Burner, followed him on the throne."
+        ]
     },
     "Brandon Stark (son of Cregan)": {
         "character_name": "Brandon Stark (son of Cregan)",
-        "summary": []
+        "summary": [
+            "Lord Brandon Stark was a Lord of Winterfell and head of House Stark. He was the youngest son of Lord Cregan Stark and Lady Lynara Stark. Became Lord of Winterfell after two of his older brothers. Was married to Lady Alys Karstark, with whom he had three children; Rodwell, Beron and Arsa Stark. He also had a bastard son Lonnel Snow with Lady Wylla Fenn.",
+            "He is buried in the crypts of Winterfell."
+        ]
     },
     "Brandon Stark (the daughterless)": {
         "character_name": "Brandon Stark (the daughterless)",
-        "summary": []
+        "summary": [
+            "Brandon Stark, also called Brandon the Daughterless, was supposedly the Lord of Winterfell when the legendary Bael the Bard was just a common wildling raider."
+        ]
     },
     "Brandon Tallhart": {
         "character_name": "Brandon Tallhart",
@@ -2042,24 +1908,6 @@
     "Castle Black": {
         "character_name": "Castle Black",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = Castle Black",
-            "| lat = 70",
-            "| long = 50",
-            "| position = right",
-            "| mark = Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 350",
-            "| float = right",
-            "| caption = The North and the location of Castle Black",
-            "| alt =  The North and the location of Castle Black",
-            "}}",
-            "|}",
-            "Bird's eye view of Castle Black - by Matt Olson \u00a9|thumb|350px|right",
-            "thumb|350px|Castle Black and look of the Wall (Game of Thrones)",
-            "thumb|350px|Winch elevator used to get on top of the Wall",
-            "thumb|350px|Castle Black - Training yard (Game of Thrones)",
             "Castle Black is an ancient stronghold and is the headquarters of the Night's Watch. The castle is situated along the Wall between Queensgate to the west and Oakenshield to the east, near the center of the Wall, at the northern end of the kingsroad.<ref>A Storm of Swords, Map of Beyond the Wall</ref> The village of Mole's Town is located half a league to the south along the kingsroad.",
             "Despite there being nineteen strongholds along the Wall, Castle Black is one of only three still manned by the Night's Watch, the others being the Shadow Tower and Eastwatch-by-the-Sea. The castle once held over five thousand men, but it now currently holds about six hundred brothers."
         ]
@@ -2312,20 +2160,6 @@
     "Coldwater Burn": {
         "character_name": "Coldwater Burn",
         "summary": [
-            "{|",
-            "{{Location map| File:The Vale",
-            "| label = Coldwater Burn",
-            "| label_size = 100",
-            "| lat = 54",
-            "| long = 50",
-            "| position = right",
-            "| marksize = 12",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Vale and the location of Coldwater Burn (red)<ref name=lands>The Lands of Ice and Fire</ref>",
-            "| alt = The Vale and the location of Coldwater Burn",
-            "}}",
-            "|}",
             "Coldwater Burn<ref name=app>\"Coldwater Burn\" entry in A World of Ice and Fire</ref> or Coldwater<ref>A Dance with Dragons, Map of the South</ref> is the seat of House Coldwater in the Vale. It is located near the mouth of a river west of the Fingers.<ref name=app/> The castle of Snakewood is nearby beyond a mountain range to the south.<ref name=lands/>  According to semi-canon sources, Coldwater is within the northernmost glacial river valley of the snakewood forest.<ref>A Song of Ice and Fire Campaign Guide</ref>"
         ]
     },
@@ -2392,8 +2226,6 @@
     "Corlys Velaryon": {
         "character_name": "Corlys Velaryon",
         "summary": [
-            ":For the Kingsguard, see Corlys Velaryon (Kingsguard).",
-            ":For the ship, see Sea Snake.",
             "Corlys Velaryon, known as the Sea Snake, was a fabled Lord of the Tides, Master of Driftmark, and head of House Velaryon."
         ]
     },
@@ -2553,64 +2385,31 @@
     "Daella Targaryen (daughter of Jaehaerys I)": {
         "character_name": "Daella Targaryen (daughter of Jaehaerys I)",
         "summary": [
-            ":For other characters named \"Daella Targaryen\", please see this disambiguation page.Image:Disambig.png",
-            "{{Character",
-            "| Character_name          = 50px|left Daella Targaryen 50px|right",
-            "| image         = <br><br>",
-            "| image_caption =",
-            "| Alias =",
-            "| Title = Princess<br>Lady of the Eyrie",
-            "| Allegiance = House Targaryen<br>House Arryn",
-            "| Race =",
-            "| Culture = Valyrian",
-            "| Spouse = Lord Rodrik Arryn",
-            "| Place_of_Birth =",
-            "| Date_of_Birth = or between <ref>See the Daella Targaryen (daughter of Jaehaerys I) calculations.</ref>",
-            "| Place_of_Death =",
-            "| Date_of_Death = ",
-            "| Books = The World of Ice and Fire (mentioned)<br>The Rogue Prince (mentioned)",
-            "| coat-of-arms =",
-            "}}",
             "Princess Daella Targaryen was the daughter of King Jaehaerys I Targaryen and Queen Alysanne Targaryen. She married Lord Rodrik Arryn, and together they had one child: Aemma Arryn."
         ]
     },
     "Daella Targaryen (daughter of Maekar I)": {
         "character_name": "Daella Targaryen (daughter of Maekar I)",
         "summary": [
-            ":For other characters named \"Daella Targaryen\", please see this disambiguation page.Image:Disambig.png",
-            "{{Character",
-            "| Character_name          = 50px|left Daella Targaryen 50px|right",
-            "| image         = 300px",
-            "| image_caption = Art by Kwnnos",
-            "| Alias =",
-            "| Title = Princess",
-            "| Allegiance = House Targaryen",
-            "| Race =",
-            "| Culture = Valyrian",
-            "| Spouse =",
-            "| Place_of_Birth =",
-            "| Date_of_Birth = <ref name=Cal>See the Daella Targaryen (daughter of Maekar I) calculation.</ref>",
-            "| Place_of_Death =",
-            "| Date_of_Death =",
-            "| Books = The World of Ice and Fire (mentioned)<br>The Sworn Sword (mentioned)",
-            "| coat-of-arms =",
-            "}}",
             "Princess Daella Targaryen was the eldest daughter and fourth child of King Maekar I Targaryen and his wife Dyanna Dayne."
         ]
     },
     "Daemon I Blackfyre": {
         "character_name": "Daemon I Blackfyre",
-        "summary": []
+        "summary": [
+            "Daemon I Blackfyre, born Daemon Waters, was the bastard son of Princess Daena Targaryen and King Aegon IV Targaryen.<ref name=GreatBastards>So Spake Martin: http://www.westeros.org/Citadel/SSM/Entry/The_Great_Bastards/ The Great Bastards (December 26, 2005)</ref> Daemon swayed half the kingdom to support his claim to the Iron Throne against King Daeron II Targaryen in a war called the Blackfyre Rebellion.  He was the first and greatest of the Blackfyre Pretenders. As a bastard, Daemon bore the arms of House Targaryen with the colours reversed: a black three-headed dragon on a red field. Thus he became known as the Black Dragon."
+        ]
     },
     "Daemon II Blackfyre": {
         "character_name": "Daemon II Blackfyre",
-        "summary": []
+        "summary": [
+            "Daemon II Blackfyre, also known as Daemon the Younger,"
+        ]
     },
     "Daemon Sand": {
         "character_name": "Daemon Sand",
         "summary": [
-            "Ser Daemon Sand, known as the Bastard of Godsgrace, is the bastard son of Ser Ryon Allyrion, the heir of House Allyrion. He is one of Dorne\u2019s finest swords.",
-            "thumb|right|200px|Ser Daemon Sand as he appears in Game of Thrones."
+            "Ser Daemon Sand, known as the Bastard of Godsgrace, is the bastard son of Ser Ryon Allyrion, the heir of House Allyrion. He is one of Dorne\u2019s finest swords."
         ]
     },
     "Daemon Targaryen": {
@@ -2709,7 +2508,6 @@
     "Dake": {
         "character_name": "Dake",
         "summary": [
-            ":For the guard, see Dake (guard)",
             "Dake was a peasant who served House Osgrey."
         ]
     },
@@ -2738,7 +2536,6 @@
     "Dalla": {
         "character_name": "Dalla",
         "summary": [
-            ":There is also a serving woman named Dalla at Dragonstone.",
             "Dalla is the wife of Mance Rayder. She has a sister, Val."
         ]
     },
@@ -2799,77 +2596,6 @@
     "Dance of the Dragons": {
         "character_name": "Dance of the Dragons",
         "summary": [
-            ":For the book, see A Dance with Dragons. For the song, see \"The Dance of the Dragons\". For the episode of the TV show, see \"The Dance of Dragons\".",
-            "{{Infobox Military Conflict",
-            "| style\t\t= width:300px;",
-            "| conflict_name\t= Dance of the Dragons <br> War of succession",
-            "| part_of\t=",
-            "| image\t\t= 350px",
-            "| image2\t=",
-            "| caption\t= Prince Lucerys Velaryon and Arrax are killed by Prince Aemond Targaryen and Vhagar in one of the first confrontations of the Dance of Dragons<br>Art by Chase Stone, from The World of Ice and Fire",
-            "| date\t\t= ",
-            "| battles\t=",
-            "| location\t= Westeros",
-            "| result\t= Deaths of both claimants, Aegon II and Rhaenyra<br>Aegon III's ascension to the throne<br>Marriage of Aegon III to Jaehaera Targaryen",
-            "<!-- combatant 1 -->",
-            "| combatant1\t= House Targaryen (Blacks)",
-            ": House Arryn",
-            ": House Bar Emmon",
-            ": House Beesbury",
-            ": House Blackwood",
-            ": House Brune of Brownhollow",
-            ": House Brune of the Dyre Den",
-            ": House Celtigar",
-            ": House Crabb",
-            ": House Darklyn",
-            ": House Dustin",
-            ": House Greyjoy",
-            ": House Manderly",
-            ": House Rowan",
-            ": House Stark",
-            ": House Staunton",
-            ": House Tarly",
-            ": House Velaryon",
-            "| commander1\t= Queen Rhaenyra I",
-            ": Prince Daemon Targaryen",
-            ": Prince Jacaerys Velaryon",
-            ": Lord Corlys Velaryon",
-            ": Lord Cregan Stark",
-            ": Lord Roderick Dustin",
-            ": Lord Dalton Greyjoy",
-            ": Lord Kermit Tully",
-            ": Lord Benjicot Blackwood",
-            "| strength1\t=",
-            "| losses1\t=",
-            "<!-- combatant 2 -->",
-            "| combatant2\t= House Targaryen (Greens)",
-            ": House Baratheon",
-            ": House Crakehall",
-            ": House Fossoway of Cider Hall",
-            ": House Hightower",
-            ": House Lannister",
-            ": House Lefford",
-            ": House Mooton (originally black)",
-            ": House Peake",
-            ": House Redwyne",
-            ": House Reyne",
-            ": House Strong",
-            ": House Swyft",
-            ": House Wylde",
-            "The Triarchy",
-            "| commander2\t= King Aegon II",
-            ": Queen Dowager Alicent Hightower",
-            ": Ser Otto Hightower",
-            ": Lord Commander Criston Cole",
-            ": Prince Regent Aemond Targaryen",
-            ": Lord Ormund Hightower",
-            ": Admiral Sharako Lohar of Lys",
-            ": Ser Tyland Lannister",
-            ": Lord Borros Baratheon",
-            ": Lord Unwin Peake",
-            "| strength2\t=",
-            "| losses2\t=",
-            "}}",
             "The Dance of the Dragons was a civil war during Targaryen rule of the Seven Kingdoms. A war of succession between Aegon II and his half-sister Rhaenyra over their father Viserys I's throne, the war was fought from . It saw the deaths of both rival monarchs, and the crowning of Rhaenyra's son, Aegon III.",
             "In early 2013 George R. R. Martin announced that the anthology Dangerous Women, previously expected to include the fourth Dunk and Egg story, would instead include the novella The Princess and the Queen, which Martin described as \"(...) the true (mostly) story of the origins of the Dance of the Dragons.\" The abridged version in The Princess and the Queen consists of 30,000 words, while the complete 80,000 word history of the civil war is planned for Fire and Blood.<ref>Not A Blog: http://grrm.livejournal.com/331218.html The Princess and the Queen</ref>"
         ]
@@ -2968,9 +2694,6 @@
             "| named_for\t=",
             "| places\t=",
             "| organizations\t=",
-            "}}",
-            "thumb|upright=2.0|alt=Full-length Deepwood motte..|Deepwood Motte",
-            "Deepwood Motte. \u00a9 FFG|thumb|350px",
             "Deepwood Motte, sometimes called simply Deepwood,"
         ]
     },
@@ -3318,7 +3041,6 @@
     "Dragonstone": {
         "character_name": "Dragonstone",
         "summary": [
-            ":This article is about the castle in the crownlands. For the island, see Dragonstone (island). For the hill in the Dothraki sea, see Dragonstone (hill).",
             "Dragonstone is a castle located on the island of the same name at the entrance to Blackwater Bay. Located below the Dragonmont and shaped from stone to look like dragons, Dragonstone was the original seat of House Targaryen in Westeros, and had been colonized and fortified as the westernmost outpost of the Valyrian Freehold. The castle has a dark reputation,",
             "After Aegon's Conquest of the Seven Kingdoms, Dragonstone in the newly-created crownlands served as the seat of their heir apparent, known as the Prince of Dragonstone. After Robert Baratheon overthrew the Targaryens in Robert's Rebellion, he gave the castle to his brother Stannis, creating House Baratheon of Dragonstone.",
             "Dragonstone, though old and strong, commands the allegiance of only a few lesser lords whose islands are too thinly populated to provide any great numbers of troops, although they have some naval strength. A short distance west of Dragonstone is the island of Driftmark, which is the seat of House Velaryon, a Valyrian house and historically a naval power. Other houses sworn to Dragonstone include Celtigar of Claw Isle, who are also of Valyrian descent, Seaworth of Cape Wrath, Bar Emmon of Sharp Point, and Sunglass of Sweetport Sound.",
@@ -3334,22 +3056,6 @@
     "Dreadfort": {
         "character_name": "Dreadfort",
         "summary": [
-            ":For the seat of House Baelish, see Drearfort.",
-            "{{Infobox Settlement",
-            "| name\t\t= Dreadfort",
-            "| image\t\t=",
-            "{{Location map| File:The North.png",
-            "| label = Dreadfort",
-            "| lat = 16",
-            "| long = 75",
-            "| position = right",
-            "| mark = Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 350",
-            "| float = right",
-            "| caption =",
-            "| alt =  The North and the location of the Dreadfort",
-            "}}",
             "| image_caption\t= Artwork by lykhaon \u00a9",
             "| settlement_type= Castle",
             "| location\t= Westeros, North",
@@ -3362,7 +3068,6 @@
             "| named_for\t=",
             "| places\t=",
             "| organizations\t=",
-            "}}",
             "The Dreadfort is a fortress in the North and the seat of House Bolton in northeastern Westeros. Located on the banks of the upper Weeping Water, it is southeast of the Lonely Hills and north of the Sheepshead Hills. The Dreadfort is north of Hornwood, south of Last Hearth, and southwest of Karhold."
         ]
     },
@@ -3404,7 +3109,9 @@
     },
     "Duncan Targaryen": {
         "character_name": "Duncan Targaryen",
-        "summary": []
+        "summary": [
+            "Prince Duncan Targaryen, also known as Prince Duncan the Small and the Prince of Dragonflies, was a member of House Targaryen. He was the first son of King Aegon V Targaryen and his Queen Betha Blackwood,"
+        ]
     },
     "Dunk": {
         "character_name": "Dunk",
@@ -3455,20 +3162,6 @@
     "Eastwatch-by-the-Sea": {
         "character_name": "Eastwatch-by-the-Sea",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = Eastwatch-by-the-Sea",
-            "| lat = 70",
-            "| long = 85",
-            "| position = right",
-            "| mark = Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 400",
-            "| float = right",
-            "| caption = The North and the location of Eastwatch-by-the-Sea",
-            "| alt =  The North and the location of Eastwatch-by-the-Sea",
-            "}}",
-            "|}",
             "Eastwatch-by-the-Sea is the easternmost castle along the Wall, located on a grey, windswept shore by the Bay of Seals.",
             "The commander of Eastwatch is Cotter Pyke, while its maester is Harmune. The Night's Watch keeps several galleys at Eastwatch, including larger vessels capable of crossing the narrow sea and lean fighting vessels. The galleys patrol the Bay of Seals in part to catch smugglers who trade weapons to the wildlings. Ships stationed at Eastwatch include the Talon, the Blackbird, and the Storm Crow."
         ]
@@ -3542,7 +3235,6 @@
     "Edmure Tully": {
         "character_name": "Edmure Tully",
         "summary": [
-            ":For the historical figure, see Edmure Tully (father of Axel).",
             "Ser Edmure Tully is the son of Lord Hoster Tully and Lady Minisa Whent, and the heir to House Tully of Riverrun, the liege lords of the riverlands. He is the younger brother of Catelyn and Lysa. In the television adaptation Game of Thrones he is portrayed by Tobias Menzies.<ref name=IMDB/>"
         ]
     },
@@ -3621,23 +3313,6 @@
     "Elaena Targaryen": {
         "character_name": "Elaena Targaryen",
         "summary": [
-            ":For the daughter of Gaemon Targaryen, Lord of Dragonstone, see Elaena Targaryen",
-            "{{Character",
-            "| Character_name = 50px|left50px|rightElaena Targaryen<br>50px 50px",
-            "| image         = 300px",
-            "| image_caption = Elaena by http://en.amokanet.ru/gallery/martin/ Amok\u00a9",
-            "| Alias =",
-            "| Title = Princess",
-            "| Allegiance = House Targaryen<br>House Plumm<br>House Penrose<br>House Manwoody",
-            "| Race =",
-            "| Culture = Valyrian",
-            "| Spouse = 1st: Lord Ossifer Plumm<br>2nd: Ronnel Penrose<br>3rd: Ser Michael Manwoody",
-            "| Place_of_Birth =",
-            "| Date_of_Birth = <ref name=\"calculation\">See the Elaena Targaryen calculation.</ref>",
-            "| Place_of_Death =",
-            "| Date_of_Death = or after <ref name=\"calculation\"></ref>",
-            "| Books = The World of Ice and Fire (mentioned)<br>A Storm of Swords (mentioned)<br>A Feast for Crows (mentioned)<br>A Dance with Dragons (mentioned)",
-            "}}",
             "Princess Elaena Targaryen was the third daughter and youngest child of King Aegon III Targaryen and his wife, Queen Daenaera Velaryon."
         ]
     },
@@ -3731,7 +3406,9 @@
     },
     "Elwood": {
         "character_name": "Elwood",
-        "summary": []
+        "summary": [
+            "Elwood is a guard at Riverrun."
+        ]
     },
     "Elwood Meadows": {
         "character_name": "Elwood Meadows",
@@ -3987,21 +3664,6 @@
     "Fair Isle": {
         "character_name": "Fair Isle",
         "summary": [
-            "{|",
-            "{{Location map| File:The Westerlands",
-            "| label = Fair Isle",
-            "| label_size = 120",
-            "| lat = 38",
-            "| long = -101",
-            "| position = right",
-            "| mark = File:Wolff2.PNG",
-            "| marksize = 10",
-            "| width = 350",
-            "| float = right",
-            "| caption = The westerlands and the location of Fair Isle",
-            "| alt = The westerlands and the location of Fair Isle",
-            "}}",
-            "|}",
             "Fair Isle is an island in the Sunset Sea, separated from the rest of the westerlands by the Straits of Fair Isle. The island is controlled by House Farman, whose seat Faircastle sits on it. The Crag is northeast of Fair Isle, while a peninsula containing Kayce and Feastfires is south of the island."
         ]
     },
@@ -4036,21 +3698,6 @@
     "Feastfires": {
         "character_name": "Feastfires",
         "summary": [
-            "{|",
-            "{{Location map| File:The Westerlands",
-            "| label = Feastfires",
-            "| label_size = 100",
-            "| lat = -15",
-            "| long = -160",
-            "| position = right",
-            "| mark = File:Wolff2.PNG",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The westerlands and the location of Feastfires",
-            "| alt = The westerlands and the location of Feastfires",
-            "}}",
-            "|}",
             "Feastfires is the seat of House Prester in the westerlands. It is located at the southwestern tip of a peninsula in the Sunset Sea. The peninsula is west of Lannisport and south of Fair Isle. Feastfires is southwest of nearby Kayce.<ref>A Dance with Dragons, Map of the South</ref>"
         ]
     },
@@ -4154,21 +3801,6 @@
     "Frozen Shore": {
         "character_name": "Frozen Shore",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = Frozen Shore",
-            "| lat = 77",
-            "| long = -126",
-            "| position = right",
-            "| mark = Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 400",
-            "| float = right",
-            "| caption = The north and the location of the Frozen Shore",
-            "| alt =  The north and the location of the Frozen Shore",
-            "}}",
-            "|}",
-            "350px|thumb|Frozen Sea \u00a9 Fantasy Flight Games",
             "The Frozen Shore is a stretch of coastline that sits on the Bay of Ice beyond the Wall.<ref>A Storm of Swords, Map of the North</ref>"
         ]
     },
@@ -4235,25 +3867,6 @@
         "character_name": "Gared",
         "summary": [
             "Not to be confused with Gared Tuttle, a character from another continuity.",
-            "{{Character",
-            "| Character_name = 50px|left Gared 50px|right",
-            "| image = 250px",
-            "| Played_by = Dermot Keaney",
-            "| image_caption = Art by InfernalFinn",
-            "| Alias =",
-            "| Title =",
-            "| Allegiance =  Night's Watch",
-            "| Race =",
-            "| Culture =",
-            "| Played_by = Dermot Keaney",
-            "| Spouse =",
-            "| Place_of_Birth =",
-            "| Date_of_Birth =  or between <ref name=Calculation>See the Gared calculation.</ref>",
-            "| Place_of_Death = the North",
-            "| Date_of_Death = ",
-            "| Books = A Game of Thrones (appears)<br>A Clash of Kings (mentioned)",
-            "| TV_series = Game of Thrones",
-            "}}",
             "Gared is a ranger of the Night's Watch. His are the first words of the series."
         ]
     },
@@ -4343,11 +3956,15 @@
     },
     "Garth Greyfeather": {
         "character_name": "Garth Greyfeather",
-        "summary": []
+        "summary": [
+            "Garth Greyfeather is a ranger of the Night's Watch."
+        ]
     },
     "Garth Hightower": {
         "character_name": "Garth Hightower",
-        "summary": []
+        "summary": [
+            "Ser Garth Hightower, called Garth Greysteel, is a knight of House Hightower and the second son of Lord Leyton Hightower."
+        ]
     },
     "Garth Tyrell": {
         "character_name": "Garth Tyrell",
@@ -4369,7 +3986,9 @@
     },
     "Garth of Oldtown": {
         "character_name": "Garth of Oldtown",
-        "summary": []
+        "summary": [
+            "Garth of Oldtown is a ranger of the Night's Watch."
+        ]
     },
     "Gascoyne": {
         "character_name": "Gascoyne",
@@ -4470,7 +4089,6 @@
     "Gerold Lannister": {
         "character_name": "Gerold Lannister",
         "summary": [
-            ":For the king, see Gerold Lannister (king).",
             "Gerold Lannister, known as the Golden, was Lord of Casterly Rock and head of House Lannister. He was the second son of Lord Damon Lannister and Lady Cerissa Brax."
         ]
     },
@@ -4515,7 +4133,6 @@
     "Giants": {
         "character_name": "Giants",
         "summary": [
-            ":Bedwyck of the Night's Watch is also nicknamed Giant.",
             "Giants are a race of sentient humanoids that live in the extreme north of Westeros. House Umber includes a giant in their sigil."
         ]
     },
@@ -4612,28 +4229,12 @@
             "| named_for\t=",
             "| places\t=",
             "| organizations\t=",
-            "}}",
-            "350px|thumb|right|Golden Tooth vaults<br>\u00a9 Fantasy Flight Games",
             "The Golden Tooth, also called the Tooth, is the seat of House Lefford in the westerlands. It is located along the river road and is east of Ashemark and Sarsfield, west of Riverrun and Pinkmaiden, and north of Hornvale."
         ]
     },
     "Goldengrove": {
         "character_name": "Goldengrove",
         "summary": [
-            "{|",
-            "{{Location map| File:The Reach",
-            "| label = Goldengrove",
-            "| label_size = 90",
-            "| lat = 46",
-            "| long = -23",
-            "| position = top",
-            "| marksize = 12",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Reach and the location of Goldengrove",
-            "| alt = The Reach and the location of Goldengrove",
-            "}}",
-            "|}",
             "Goldengrove is the seat of House Rowan. It is located east of Red Lake in the northern portion of the Reach."
         ]
     },
@@ -4704,20 +4305,6 @@
     "Grassy Vale": {
         "character_name": "Grassy Vale",
         "summary": [
-            "{|",
-            "{{Location map| File:The Reach",
-            "| label = Grassy Vale",
-            "| label_size = 90",
-            "| lat = 39",
-            "| long = 154",
-            "| position = below",
-            "| marksize = 12",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Reach and the location of Grassy Vale",
-            "| alt = The Reach and the location of Grassy Vale",
-            "}}",
-            "|}",
             "Grassy Vale is a town controlled by House Meadows in the Reach. It sits along the northern shore of the Blueburn river, close to the border with the stormlands.<ref>A Dance with Dragons, Map of the South</ref> Grassfield Keep, the castle of Lord Elwood Meadows,"
         ]
     },
@@ -4734,7 +4321,6 @@
     "Grazdan mo Eraz": {
         "character_name": "Grazdan mo Eraz",
         "summary": [
-            ":For other characters with the same name, see Grazdan (disambiguation).",
             "Grazdan mo Eraz is one of the Wise Masters of Yunkai."
         ]
     },
@@ -4777,21 +4363,6 @@
     "Greenblood": {
         "character_name": "Greenblood",
         "summary": [
-            "{|",
-            "{{Location map| Dorne",
-            "| label = Greenblood",
-            "| label_size = 80",
-            "| lat = -31",
-            "| long = 86",
-            "| position = right",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = below",
-            "| caption = Dorne and the location of the Greenblood",
-            "| alt = Dorne and the location of the Greenblood",
-            "}}",
-            "|}",
-            "Orphans of the Greenblood on a vessel on the Greenblood. \u00a9 FFG|thumb|350px|right",
             "The Greenblood is a river in southern Dorne and is the principal Dornish river. The river takes its name from its murky green waters which are slow-moving and shallow.",
             "The orphans of the Greenblood live on rafts along the river."
         ]
@@ -4799,20 +4370,6 @@
     "Greenstone": {
         "character_name": "Greenstone",
         "summary": [
-            "{|",
-            "{{Location map| File:The Stormlands",
-            "| label = Greenstone",
-            "| label_size = 90",
-            "| lat = - 52",
-            "| long = 135",
-            "| position = top",
-            "| marksize = 12",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Stormlands and the location of Greenstone",
-            "| alt = The Stormlands and the location of Greenstone",
-            "}}",
-            "|}",
             "Greenstone is the seat of House Estermont on the island of Estermont in the Stormlands."
         ]
     },
@@ -4864,20 +4421,6 @@
     "Greyshield": {
         "character_name": "Greyshield",
         "summary": [
-            "{|",
-            "{{Location map| File:The Reach",
-            "| label = Greyshield",
-            "| label_size =",
-            "| lat = 16",
-            "| long = -133",
-            "| position = bottom",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Reach and the location of Greyshield",
-            "| alt = The Reach and the location of Greyshield",
-            "}}",
-            "|}",
             "Greyshield is one of the Shield Islands in the Reach. The westernmost of the isles, it lies near the mouth of the river Mander. It is the site of Grimston, the seat of House Grimm."
         ]
     },
@@ -4896,7 +4439,6 @@
             "| named_for\t=",
             "| places\t=",
             "| organizations\t=",
-            "}}",
             "Greywater Watch, also known as Greywater, is the seat of House Reed in the North. It is roughly located in an eastern headwater of the Green Fork"
         ]
     },
@@ -4921,8 +4463,6 @@
             "| named_for\t=",
             "| places\t=",
             "| organizations\t=",
-            "}}",
-            "Griffin's Roost. \u00a9 FFG|thumb|300px|right",
             "Griffin's Roost is the seat of House Connington in the Stormlands. It is a castle located between Storm's End and Crow's Nest in northwestern Cape Wrath. It is ruled by Red Ronnet Connington, the Knight of Griffin's Roost."
         ]
     },
@@ -5149,7 +4689,6 @@
     "Hake": {
         "character_name": "Hake",
         "summary": [
-            ":For the archmaester, see Hake (archmaester).",
             "Hake is a steward of the Night's Watch. He is a cook"
         ]
     },
@@ -5314,7 +4853,6 @@
     "Harmune": {
         "character_name": "Harmune",
         "summary": [
-            ":For the scribe, see Harmune (archmaester).",
             "Harmune is the maester in service to the Night's Watch at Eastwatch-by-the-Sea. He writes and reads all the correspondence for Cotter Pyke, the commander of Eastwatch."
         ]
     },
@@ -5357,24 +4895,6 @@
     "Harren Half-Hoare": {
         "character_name": "Harren Half-Hoare",
         "summary": [
-            ":For the Iron King, see Harren Hoare",
-            "{{Character",
-            "| Character_name          = Harren Half-Hoare",
-            "| image         =",
-            "| image_caption =",
-            "| Alias =",
-            "| Title =",
-            "| Allegiance =",
-            "| Race =",
-            "| Culture = Ironborn",
-            "| Spouse =",
-            "| Place_of_Birth =",
-            "| Date_of_Birth =",
-            "| Place_of_Death =",
-            "| Date_of_Death =",
-            "| Books = A Feast for Crows (Mentioned)<br>A Dance with Dragons (Mentioned)",
-            "| coat-of-arms =",
-            "}}",
             "Harren Half-Hoare is an ironborn raider.<ref>Harren may be related to House Hoare.</ref>"
         ]
     },
@@ -5387,20 +4907,6 @@
     "Harrenhal": {
         "character_name": "Harrenhal",
         "summary": [
-            "{|",
-            "{{Location map| File:The Riverlands",
-            "| label = Harrenhal",
-            "| label_size = 90",
-            "| lat = -36",
-            "| long = 32",
-            "| position = right",
-            "| marksize = 10",
-            "| width = 350",
-            "| float = right",
-            "| caption = The riverlands and the location of Harrenhal",
-            "| alt = The riverlands and the location of Harrenhal",
-            "}}",
-            "|}",
             "Harrenhal, the largest castle in the Seven Kingdoms, is the seat of House Whent in the riverlands, on the north shore of the Gods Eye lake. Since its burning by dragonfire in the War of Conquest, however, it has become a dark and ruinous place.",
             "The castle's holdings are some of the richest in Westeros, claiming vast tracts of green fertile land"
         ]
@@ -5540,22 +5046,6 @@
     "Hellholt": {
         "character_name": "Hellholt",
         "summary": [
-            "{|",
-            "{{Location map| Dorne",
-            "| label = Hellholt",
-            "| label_size = 80",
-            "| lat = -36",
-            "| long = -58",
-            "| position = right",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = below",
-            "| caption = Dorne and the location of Hellholt",
-            "| alt = Dorne and the location of Hellholt",
-            "}}",
-            "|}",
-            "Streets of Hellholt by Folko Streese. \u00a9 FFG|thumb|350px|right",
-            "thumb|350px|Hellholt Docks by Simon Dominic. \u00a9 Fantasy Flight Games.",
             "Hellholt, also called the Hellholt, is a castle and the seat of House Uller in southern Dorne. It is located near the source of the river Brimstone, east of Sandstone and west of Vaith."
         ]
     },
@@ -5632,20 +5122,6 @@
     "Highgarden": {
         "character_name": "Highgarden",
         "summary": [
-            "{|",
-            "{{Location map| File:The Reach",
-            "| label = Highgarden",
-            "| label_size = 100",
-            "| lat = 5",
-            "| long = -23",
-            "| position = right",
-            "| marksize = 12",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Reach and the location of Highgarden",
-            "| alt = The Reach and the location of Highgarden",
-            "}}",
-            "|}",
             "Highgarden is a castle which serves as the seat of House Tyrell, regional capital of the Reach and the heart of chivalry in the Seven Kingdoms. It lies on the Mander and is where the Ocean Road meets the Roseroad, making it an important crossroads.<ref>A Dance with Dragons, Map of the South</ref>",
             "Mace Tyrell is the Lord of Highgarden. The castle's household includes Lord Seneschal Garth Tyrell, Maester Lomys, the captain of the guard Igon Vyrwel, the master-at-arms Ser Vortimer Crane, and the fool Butterbumps."
         ]
@@ -5739,20 +5215,6 @@
     "Hornwood": {
         "character_name": "Hornwood",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = Hornwood",
-            "| lat = -5",
-            "| long = 59",
-            "| position = right",
-            "| mark = Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 300",
-            "| float = right",
-            "| caption = The north and the location of Hornwood",
-            "| alt =  The north and the location of Hornwood",
-            "}}",
-            "|}",
             "Hornwood is a castle in the north and the seat of House Hornwood.",
             "<!--George R. R. Martin has not published the location of Hornwood on maps yet, but the non-canon map for HBO's Game of Thrones places the castle between the Dreadfort and White Harbor, just north of the Sheepshead Hills.<ref>http://viewers-guide.hbo.com/game-of-thrones/ Game of Thrones Viewer's Guide</ref>-->"
         ]
@@ -5808,7 +5270,6 @@
     "House Baratheon": {
         "character_name": "House Baratheon",
         "summary": [
-            ":This article is about the main branch of the family, whose seat is Storm's End. For cadet branches, see House Baratheon of King's Landing and House Baratheon of Dragonstone.",
             "House Baratheon of Storm's End is one of the Great Houses of Westeros, and is the principal house in the stormlands, which they rule as Lords Paramount of the Stormlands. Their seat, Storm's End, is an ancient castle raised by the Storm Kings from the now-extinct House Durrandon. The Baratheon sigil is a crowned black stag on a field of gold. Members of the family tend to be tall and powerfully built, with black hair and blue eyes, as well as strong, square jawlines. They are known for their mercurial tempers, and their words are \"Ours is the Fury\".",
             "After Robert's Rebellion, House Baratheon split into three branches: Lord Robert Baratheon was crowned King and took residence at King's Landing, thereby creating House Baratheon of King's Landing. Robert gave the seat of Dragonstone to his younger brother, Stannis, creating House Baratheon of Dragonstone. Robert's youngest brother, Renly, became the Lord of Storm's End, continuing House Baratheon of Storm's End."
         ]
@@ -6098,20 +5559,6 @@
     "Inn of the Kneeling Man": {
         "character_name": "Inn of the Kneeling Man",
         "summary": [
-            "{|",
-            "{{Location map| File:The Riverlands",
-            "| label = Inn of the Kneeling Man",
-            "| label_size = 90",
-            "| lat = -9",
-            "| long = -45",
-            "| position = right",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The riverlands and the location of the Inn of the Kneeling Man",
-            "| alt = The riverlands and the location of the Inn of the Kneeling Man",
-            "}}",
-            "|}",
             "The Inn of the Kneeling Man is an inn in the riverlands located near the spot where Torrhen Stark, King in the North, is said to have bent the knee to Aegon the Conqueror.",
             "The main building sits along the shore where the Red Fork of the Trident bends. It has long, low wings that stretch out. The lower story is made of grey stone, the upper one of whitewashed wood. Its roof is slate and has a stables and an arbor. It reportedly brews a good ale."
         ]
@@ -6279,14 +5726,12 @@
     "Jason Lannister": {
         "character_name": "Jason Lannister",
         "summary": [
-            ":For the father-in-law of Tywin Lannister, see Jason Lannister (son of Gerold).",
             "Jason Lannister was Lord of Casterly Rock and head of House Lannister during the reigns of Viserys I and Aegon II Targaryen."
         ]
     },
     "Jason Lannister (son of Gerold)": {
         "character_name": "Jason Lannister (son of Gerold)",
         "summary": [
-            ":For the Jason Lannister who was Lord of Casterly Rock during the Dance of the Dragons, see Jason Lannister.",
             "Ser Jason Lannister was a knight from House Lannister. He was the fourth and youngest son of Lord Gerold Lannister and his second wife, Lady Rohanne Webber."
         ]
     },
@@ -6448,14 +5893,12 @@
     "Jeyne Westerling": {
         "character_name": "Jeyne Westerling",
         "summary": [
-            ":Not to be confused with Jeyne Westerling, a wife of King Maegor I Targaryen.",
             "Jeyne Westerling is the eldest daughter of Lord Gawen Westerling and Lady Sybell Spicer. In the television adaptation  Game of Thrones her character is replaced by Talisa Maegyr of Volantis, played by Oona Chaplin."
         ]
     },
     "Jeyne Westerling (wife of Maegor I)": {
         "character_name": "Jeyne Westerling (wife of Maegor I)",
         "summary": [
-            ":Not to be confused with Jeyne Westerling, the wife of Robb Stark.",
             "Queen Jeyne Westerling was a member of House Westerling. She was one of the many wives of King Maegor I Targaryen."
         ]
     },
@@ -6484,7 +5927,6 @@
     "Joanna Lannister": {
         "character_name": "Joanna Lannister",
         "summary": [
-            ":Not to be confused with Johanna Lannister, the wife of Jason Lannister.",
             "Lady Joanna Lannister was a Lady of Casterly Rock, the wife of Lord Tywin Lannister, and the mother of Cersei, Jaime and Tyrion."
         ]
     },
@@ -6509,39 +5951,6 @@
     "Joffrey Baratheon": {
         "character_name": "Joffrey Baratheon",
         "summary": [
-            ":For the Lannister King of the Rock, see Joffrey Lannister",
-            "{{Infobox monarch",
-            "| name          = 50px|left Joffrey Baratheon 50px|right",
-            "| image         = 300px",
-            "| image_caption\t=",
-            "| reign\t\t= ",
-            "| coronation\t=",
-            "| othertitles\t= King of the Andals, the Rhoynar and the First Men<br>Lord of the Seven Kingdoms<br>Protector of the Realm",
-            "| alias         = Joffrey the Illborn<br>The Young Usurper<br>Aerys the Third<br>Joffrey-called-Baratheon",
-            "| fullname\t= Joffrey Baratheon the First of His Name",
-            "| predecessor\t= Robert I Baratheon",
-            "| successor\t= Tommen I Baratheon",
-            "| heir\t\t= Tommen Baratheon",
-            "| queen\t\t= Margaery Tyrell",
-            "| consort\t=",
-            "| spouse\t=",
-            "| issue\t\t=",
-            "| royalhouse\t= House Baratheon of King's Landing",
-            "| father\t= Robert Baratheon (claimed)<br>Jaime Lannister (actual)",
-            "| mother\t= Cersei Lannister",
-            "| dateofbirth\t= <ref>See the Joffrey Baratheon calculation.</ref>",
-            "| placeofbirth\t= King's Landing",
-            "| dateofdeath\t= ",
-            "| placeofdeath\t= Red Keep, King's Landing",
-            "| dateofburial\t=",
-            "| placeofburial\t=",
-            "| culture\t=",
-            "| Played_by\t=",
-            "| Books         = A Game of Thrones (appears)<br>A Clash of Kings (appears)<br>A Storm of Swords (appears)<br>A Feast for Crows (mentioned)<br>A Dance with Dragons (mentioned)",
-            "| coat-of-arms   =",
-            "| Played_by\t= Jack Gleeson",
-            "| TV_series\t= Season 1  Season 4",
-            "}}",
             "Prince Joffrey Baratheon is known to the Seven Kingdoms as the eldest son and heir of King Robert I Baratheon and Queen Cersei Lannister.  A member of House Baratheon of King's Landing, his siblings are Princess Myrcella and Prince Tommen. In the television adaptation Game of Thrones, he is played by Jack Gleeson."
         ]
     },
@@ -6680,7 +6089,6 @@
         "character_name": "Jon Snow",
         "summary": [
             "<!--350px|thumb|Kit Harington as Jon Snow (Game of Thrones|TV series)-->",
-            ":\"Jon\" redirects here. For other characters of the same name, see Jon (disambiguation).",
             "Jon Snow is the bastard son of Eddard Stark, by a mother whose identity is a source of speculation. He was raised by his father alongside his true-born half-siblings, but joins the Night's Watch when he nears adulthood. He is constantly accompanied by his albino direwolf Ghost. At the beginning of A Game of Thrones, Jon is fourteen years old.  He is one of the major POV characters in the books. In the television adaptation Game of Thrones, Jon is portrayed by Kit Harington."
         ]
     },
@@ -6928,7 +6336,6 @@
             "| named_for\t= Karlon Stark, its founder.",
             "| places\t=",
             "| organizations\t=",
-            "}}",
             "Karhold is a strong castle and the seat of House Karstark in the North. It is located in the eastern half of the North, south of the Bay of Seals, while further to the east are the Grey Cliffs.<ref>A Dance with Dragons, Map of the North</ref>"
         ]
     },
@@ -7040,20 +6447,6 @@
     "King%27s Landing": {
         "character_name": "King%27s Landing",
         "summary": [
-            "{|",
-            "{{Location map| Crownlands",
-            "| label\t\t= King's Landing",
-            "| label_size\t= 140",
-            "| lat\t\t= -45",
-            "| long\t\t= -66",
-            "| position \t= left",
-            "| marksize\t= 15",
-            "| width\t\t= 400",
-            "| float\t\t= right",
-            "| caption\t= The Crownlands and the location of King's Landing",
-            "| alt\t\t= The Crownlands and the location of King's Landing",
-            "}}",
-            "|}",
             "400px|thumb|1 : Rosby road|Road to Rosby - 2 : Dragon Gate - 3 : Iron Gate - 4 : Dragonpit- 5 : mansion of Shae - 6 : brothel of Chataya - 7 : Old Gate - 8 : Flea Bottom - 9 : Red Keep - 10 : Street of Sisters - 11 : Gate of the Gods - 12 : Cobbler Square - 13 : Guildhall of the Alchemists - 14 : The Hook - 15 : Great Sept of Baelor - 16 : Muddy Way - 17 : Fishmonger's Square - 18 : River Gate - 19 : Tobho Mott's store - 20 : Street of Steel - 21 : Harbor- 22 : Lion Gate - 23 : River Row - 24 : Fish Market - 25 : Tourney ground - 26 : The King's Gate - 27 : Kingsroad.",
             "King's Landing is the capital of the Seven Kingdoms, located in the Crownlands on the east coast of Westeros. It is situated along the kingsroad at the mouth of the Blackwater Rush and overlooks Blackwater Bay. It is the site of the Iron Throne and the Red Keep, which is the seat of the king, Robert Baratheon from House Baratheon of King's Landing.",
             "The main city is surrounded by a wall, manned by the City Watch of King's Landing, also known as the gold cloaks. King's Landing is extremely populous, but rather unsightly and dirty compared to other cities. Poorer smallfolk build shanty settlements outside the city.  The stench of the city's waste can be smelled far beyond its walls. It is the principal harbor of the Seven Kingdoms, rivaled only by Oldtown.",
@@ -7157,7 +6550,9 @@
     },
     "Kyle": {
         "character_name": "Kyle",
-        "summary": []
+        "summary": [
+            "Ser Kyle, known as the Cat of Misty Moor and Kyle the Cat, was a hedge knight from Misty Moor."
+        ]
     },
     "Kyle (brotherhood)": {
         "character_name": "Kyle (brotherhood)",
@@ -7233,7 +6628,9 @@
     },
     "Lancel Lannister": {
         "character_name": "Lancel Lannister",
-        "summary": []
+        "summary": [
+            "Lancel Lannister is a member of House Lannister of Casterly Rock and the eldest son of Ser Kevan Lannister. Lancel and his cousin, Tyrek Lannister, are squires to King Robert I Baratheon."
+        ]
     },
     "Lancel V Lannister": {
         "character_name": "Lancel V Lannister",
@@ -7309,11 +6706,7 @@
             "| founded\t=",
             "| named_for\t=",
             "| places\t=",
-            "| organizations\t=",
-            "}}",
-            "{|",
-            "thumb|alt=Last hearth by guad.|Last Hearth by guad\u00a9",
-            "Last Hearth, sometimes known as the Last Hearth, is the seat of House Umber in the North. It lies close to the Gift in a forest east of the kingsroad. It is north of the Last River, northeast of Long Lake, and west of the Bay of Seals."
+            "| organizations\t="
         ]
     },
     "Layna": {
@@ -7361,20 +6754,6 @@
     "Lemonwood": {
         "character_name": "Lemonwood",
         "summary": [
-            "{|",
-            "{{Location map| Dorne",
-            "| label = Lemonwood",
-            "| label_size = 80",
-            "| lat = -42",
-            "| long = 120",
-            "| position = right",
-            "| marksize = 8",
-            "| width = 400",
-            "| float = below",
-            "| caption = Dorne and the location of Lemonwood",
-            "| alt = Dorne and the location of Lemonwood",
-            "}}",
-            "|}",
             "Lemonwood is the seat of House Dalt in Dorne. It lies just south of the mouth of the Greenblood, near Planky Town.<ref>A Feast for Crows, Map of the South</ref><ref>The Lands of Ice and Fire</ref>"
         ]
     },
@@ -7427,11 +6806,15 @@
     },
     "Leo Tyrell (Longthorn)": {
         "character_name": "Leo Tyrell (Longthorn)",
-        "summary": []
+        "summary": [
+            "Leo Tyrell, known as Leo Longthorn, was Lord of Highgarden and head of House Tyrell during the reign of Daeron II Targaryen."
+        ]
     },
     "Leo Tyrell (son of Victor)": {
         "character_name": "Leo Tyrell (son of Victor)",
-        "summary": []
+        "summary": [
+            "Leo Tyrell is a knight of House Tyrell, the son of Ser Victor Tyrell. He is married to Alys Beesbury. They have five children."
+        ]
     },
     "Leobald Tallhart": {
         "character_name": "Leobald Tallhart",
@@ -7611,20 +6994,6 @@
     "Longbow Hall": {
         "character_name": "Longbow Hall",
         "summary": [
-            "{|",
-            "{{Location map| File:The Vale",
-            "| label = Longbow Hall",
-            "| label_size = 100",
-            "| lat = 24",
-            "| long = 97",
-            "| position = right",
-            "| marksize = 15",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Vale and the location of Longbow Hall",
-            "| alt = The Vale and the location of Longbow Hall",
-            "}}",
-            "|}",
             "Longbow Hall is the seat of House Hunter in the Vale. It is located south of the Fingers, east of Heart's Home, and north of Old Anchor.<ref>A Dance with Dragons, Map of the South</ref> It appears to be located in the foothills between a mountain range and the east of the valley.<ref>The Lands of Ice and Fire</ref> Willamen is the maester at Longbow Hall."
         ]
     },
@@ -7686,20 +7055,6 @@
     "Lordsport": {
         "character_name": "Lordsport",
         "summary": [
-            "{|",
-            "{{Location map| File:The Iron Islands",
-            "| label = Lordsport",
-            "| label_size = 100",
-            "| lat = -20",
-            "| long = -86",
-            "| position = right",
-            "| marksize = 11",
-            "| width = 350",
-            "| float = right",
-            "| caption = The Iron Islands and the location of Lordsport",
-            "| alt = The Iron Islands and the location of Lordsport",
-            "}}",
-            "|}",
             "Lordsport is the seat of House Botley on Pyke.<ref>In A Clash of Kings, Chapter 11, it is also described as a village.</ref>",
             "Half the size of Lord Hewett's Town, Lordsport provides safe anchor for those who wish to reach the castle of Pyke, seat of House Greyjoy."
         ]
@@ -7909,15 +7264,21 @@
     },
     "Luthor Tyrell": {
         "character_name": "Luthor Tyrell",
-        "summary": []
+        "summary": [
+            "Luthor Tyrell was a Lord of Highgarden and head of House Tyrell. He is the father of the current lord, Mace Tyrell."
+        ]
     },
     "Luthor Tyrell (son of Moryn)": {
         "character_name": "Luthor Tyrell (son of Moryn)",
-        "summary": []
+        "summary": [
+            "Ser Luthor Tyrell was a knight of House Tyrell. The eldest son of Ser Moryn Tyrell. He was married to Elyn Norridge with whom he had three children; Ser Theodore, Olene and Medwick Tyrell. He is deceased."
+        ]
     },
     "Luthor Tyrell (son of Theodore)": {
         "character_name": "Luthor Tyrell (son of Theodore)",
-        "summary": []
+        "summary": [
+            "Luthor Tyrell is a member of House Tyrell. He is the only son of Ser Theodore Tyrell and Lia Serry. He is a squire."
+        ]
     },
     "Luton": {
         "character_name": "Luton",
@@ -8053,11 +7414,15 @@
     },
     "Lyonel Tyrell (lord)": {
         "character_name": "Lyonel Tyrell (lord)",
-        "summary": []
+        "summary": [
+            "Lyonel Tyrell was the Lord of Highgarden and head of House Tyrell during the Dance of the Dragons and the conquest of Dorne."
+        ]
     },
     "Lyonel Tyrell (son of Leo)": {
         "character_name": "Lyonel Tyrell (son of Leo)",
-        "summary": []
+        "summary": [
+            "Lyonel Tyrell is the son of Ser Leo Tyrell and Alys Beesbury."
+        ]
     },
     "Lyra Mormont": {
         "character_name": "Lyra Mormont",
@@ -8127,7 +7492,9 @@
     },
     "Maegor I Targaryen": {
         "character_name": "Maegor I Targaryen",
-        "summary": []
+        "summary": [
+            "Maegor I Targaryen, also known as Maegor the Cruel, was the third Targaryen king to sit the Iron Throne. He was the son of King Aegon I Targaryen and his sister-wife, Queen Visenya Targaryen. He had an older half-brother, Aenys I Targaryen."
+        ]
     },
     "Maekar I Targaryen": {
         "character_name": "Maekar I Targaryen",
@@ -8191,8 +7558,7 @@
         "character_name": "Mago",
         "summary": [
             "Mago is a rider in the khas of Ko Jhaqo.<ref>He is called 'Maggo' in the appendix of A Storm of Swords.</ref>",
-            "In the television adaptation Game of Thrones, he is played by Ivailo Dimitrov.",
-            "250px|thumb|right|Ivailo Dimitrov as Mago on the HBO adaptation"
+            "In the television adaptation Game of Thrones, he is played by Ivailo Dimitrov."
         ]
     },
     "Malcolm": {
@@ -8324,8 +7690,7 @@
     "Marillion": {
         "character_name": "Marillion",
         "summary": [
-            "Marillion is a singer. He is handsome, plays the harp, He is vain about his skills and his good looks.",
-            "thumb|right|Emun Elliott as Marillion in the HBO adaptation"
+            "Marillion is a singer. He is handsome, plays the harp, He is vain about his skills and his good looks."
         ]
     },
     "Maris": {
@@ -8523,7 +7888,6 @@
     "Maynard": {
         "character_name": "Maynard",
         "summary": [
-            ":Not to be confused with Maynard Holt or Maynard Plumm.",
             "Ser Maynard was a knight. He had red hair and a black temper."
         ]
     },
@@ -8784,8 +8148,7 @@
     "Mikken": {
         "character_name": "Mikken",
         "summary": [
-            "Mikken is the blacksmith at Winterfell. In the television adaptation Game of Thrones he is portrayed by Boyd Rankin.",
-            "250px|thumb|right|Boyd Rankin as Mikken in the HBO adaptation"
+            "Mikken is the blacksmith at Winterfell. In the television adaptation Game of Thrones he is portrayed by Boyd Rankin."
         ]
     },
     "Miklaz": {
@@ -8833,20 +8196,6 @@
     "Mole%27s Town": {
         "character_name": "Mole%27s Town",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = Mole's Town",
-            "| lat = 67",
-            "| long = 50",
-            "| position = right",
-            "| mark = Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 400",
-            "| float = right",
-            "| caption = The North and the location of Mole's Town",
-            "| alt =  The North and the location of Mole's Town",
-            "}}",
-            "|}",
             "Mole's Town is a village close to Castle Black. It lies along the kingsroad in Brandon's Gift, half a league south of the Wall.",
             "Mole's Town is bigger than it seems. Three-quarters of the village lies beneath ground in deep damp warm cellars connected by a warren of tunnels. There is a brothel located in the cellars, with nothing more than a shack no bigger than a privy on the surface. It has a red lantern that is hung over the door. It is said that brothers of the Night's Watch go to Mole's Town to dig for \"buried treasure\" (i.e. engage the services of prostitutes)."
         ]
@@ -8946,7 +8295,6 @@
     "Moro": {
         "character_name": "Moro",
         "summary": [
-            ":For the historical khal, see Moro (Century of Blood).",
             "Moro is a Dothraki khal. He is a sometime ally of Khal Drogo. He has a son, Rhogoro."
         ]
     },
@@ -9033,20 +8381,6 @@
     "Mountains of the Moon": {
         "character_name": "Mountains of the Moon",
         "summary": [
-            "{|",
-            "{{Location map| File:The Vale",
-            "| label = Mountains of the Moon",
-            "| label_size = 100",
-            "| lat = -10",
-            "| long = -75",
-            "| position = right",
-            "| marksize = 15",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Vale and the location of the Mountains of the Moon",
-            "| alt = The Vale and the location of the Mountains of the Moon",
-            "}}",
-            "|}",
             "The Mountains of the Moon are a series of mountains ruled by House Arryn of the Vale. The mountains border the riverlands to the west, the Bite to the north, and the Bay of Crabs to the south, and they surround the Vale proper."
         ]
     },
@@ -9095,7 +8429,6 @@
     "Murch": {
         "character_name": "Murch",
         "summary": [
-            ":For the huntsman see Murch (Winterfell).",
             "Murch is part of Yoren's band when it is marching north to the Wall to join the Night\u2019s Watch."
         ]
     },
@@ -9158,7 +8491,9 @@
     },
     "Myles": {
         "character_name": "Myles",
-        "summary": []
+        "summary": [
+            "Maester Myles is the maester at Sunspear. He is young and has a silky, perfumed beard."
+        ]
     },
     "Myles (squire)": {
         "character_name": "Myles (squire)",
@@ -9187,8 +8522,7 @@
     "Myr": {
         "character_name": "Myr",
         "summary": [
-            "Myr is one of the Free Cities of western Essos. Myr sits on the eastern shore of the Sea of Myrth.<ref>A Dance with Dragons, Map of the Free Cities</ref>",
-            "thumb|300px|Nine Free Cities:<br>Pentos, Braavos, Lys, Qohor, Norvos, Myr, Tyrosh, Volantis, Lorath"
+            "Myr is one of the Free Cities of western Essos. Myr sits on the eastern shore of the Sea of Myrth.<ref>A Dance with Dragons, Map of the Free Cities</ref>"
         ]
     },
     "Myranda Royce": {
@@ -9310,20 +8644,6 @@
     "Nightsong": {
         "character_name": "Nightsong",
         "summary": [
-            "{|",
-            "{{Location map| File:The Stormlands",
-            "| label = Nightsong",
-            "| label_size = 90",
-            "| lat = - 56",
-            "| long = -150",
-            "| position = top",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Stormlands and the location of Nightsong",
-            "| alt = The Stormlands and the location of Nightsong",
-            "}}",
-            "|}",
             "Nightsong is the seat of House Caron. The formidable castle<ref>A Game of Thrones RPG and Resource Book, Guardians of Order</ref> The castle is known for its Singing Towers."
         ]
     },
@@ -9372,7 +8692,6 @@
     "Norren": {
         "character_name": "Norren",
         "summary": [
-            ":For the maester of Maidenpool during the Dance of the Dragons, see Norren (House Mooton).",
             "Norren is an Archmaester of the Citadel. His ring, mask and rod are made of electrum."
         ]
     },
@@ -9396,11 +8715,15 @@
     },
     "Nymeria": {
         "character_name": "Nymeria",
-        "summary": []
+        "summary": [
+            "Nymeria was a warrior queen and a Princess of the Rhoynar. After the Rhoyne was conquered by Valyria, Nymeria led the Rhoynar to Dorne, where she took Lord Mors Martell as her husband. House Nymeros Martell has ruled Dorne since."
+        ]
     },
     "Nymeria Sand": {
         "character_name": "Nymeria Sand",
-        "summary": []
+        "summary": [
+            "Nymeria Sand, nicknamed Lady Nym, is the bastard daughter of Oberyn Martell and a noblewoman from Volantis. She is the second oldest of the infamous Sand Snakes."
+        ]
     },
     "Nymos": {
         "character_name": "Nymos",
@@ -9475,20 +8798,6 @@
     "Oldcastle": {
         "character_name": "Oldcastle",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = Oldcastle",
-            "| lat = -52",
-            "| long = 47",
-            "| position = right",
-            "| mark = Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 400",
-            "| float = right",
-            "| caption = The North and the location of Oldcastle",
-            "| alt =  The North and the location of Oldcastle",
-            "}}",
-            "|}",
             "Oldcastle is the seat of House Locke in the North. It lies on the northern shore of the Bite, southeast of White Harbor and north of the Three Sisters.<ref>A Dance with Dragons, Map of the North</ref>"
         ]
     },
@@ -9507,7 +8816,6 @@
             "| named_for\t= Being oldest City in Westeros",
             "| places\t= Hightower, Starry Sept, the Citadel",
             "| organizations\t= Maesters, City Watch of Oldtown",
-            "}}",
             "Oldtown is one of the largest cities in Westeros and is the oldest, built by the First Men before the Andal invasion.  The city is located in the southwest of the Reach, at the mouth of the river Honeywine where it opens onto Whispering Sound and the Sunset Sea beyond. It is the western terminus of the Roseroad from Highgarden and King's Landing. House Hightower have their seat at the Hightower in Oldtown. The city also hosts the Citadel."
         ]
     },
@@ -9607,19 +8915,27 @@
     },
     "Ormond (knight)": {
         "character_name": "Ormond (knight)",
-        "summary": []
+        "summary": [
+            "Ser Ormond was a knight slain in the Riverlands by forces of House Lannister during the War of the Five Kings."
+        ]
     },
     "Ormond Osgrey": {
         "character_name": "Ormond Osgrey",
-        "summary": []
+        "summary": [
+            "Ormond Osgrey was Lord of Coldmoat and head of House Osgrey during the reign of Maegor I Targaryen."
+        ]
     },
     "Ormond Westerling": {
         "character_name": "Ormond Westerling",
-        "summary": []
+        "summary": [
+            "Ser Ormond Westerling was a knight of House Westerling, during the reign of Daeron II Targaryen."
+        ]
     },
     "Ormond Yronwood": {
         "character_name": "Ormond Yronwood",
-        "summary": []
+        "summary": [
+            "Ormond Yronwood was Lord of Yronwood and head of House Yronwood. He was the father of Anders Yronwood and the son of Lord Edgar Yronwood."
+        ]
     },
     "Ormund Wylde": {
         "character_name": "Ormund Wylde",
@@ -9921,20 +9237,6 @@
     "Pebbleton": {
         "character_name": "Pebbleton",
         "summary": [
-            "{|",
-            "{{Location map| File:The Iron Islands",
-            "| label = Pebbleton",
-            "| label_size = 100",
-            "| lat = -3",
-            "| long = -100",
-            "| position = right",
-            "| marksize = 11",
-            "| width = 350",
-            "| float = right",
-            "| caption = The Iron Islands and the location of Pebbleton",
-            "| alt = The Iron Islands and the location of Pebbleton",
-            "}}",
-            "|}",
             "Pebbleton is a village on Great Wyk in the Iron Islands. It contains Pebbleton Tower, the seat of House Merlyn. The hovels that surround the tower are home to roughly seven thousand people, most of them employed in the fisheries."
         ]
     },
@@ -10151,7 +9453,6 @@
     "Pyke": {
         "character_name": "Pyke",
         "summary": [
-            ":This article is about the castle in the Iron Islands. For the island, see Pyke (island). \"Pyke\" is also a traditional bastard surname.",
             "Pyke is a castle located on the island of the same name, which is one of the eight major Iron Islands. It is the seat of House Greyjoy, whose lord is known as the Lord Reaper of Pyke. The Greyjoys have been rulers of the Iron Islands since Aegon's Conquest. The Greyjoys claim the island is named after the castle."
         ]
     },
@@ -10253,8 +9554,7 @@
     "Qotho": {
         "character_name": "Qotho",
         "summary": [
-            "Qotho is a bloodrider to Khal Drogo. In the television adaptation Game of Thrones he is played by Dar Salim.<ref>http://www.imdb.com/title/tt0944947/epcast Game of Thrones (2011) - Episodes cast on IMDB</ref>",
-            "thumb|right|250px|Dar Salim as Qotho in HBO's Game of Thrones"
+            "Qotho is a bloodrider to Khal Drogo. In the television adaptation Game of Thrones he is played by Dar Salim.<ref>http://www.imdb.com/title/tt0944947/epcast Game of Thrones (2011) - Episodes cast on IMDB</ref>"
         ]
     },
     "Quaithe": {
@@ -10314,24 +9614,6 @@
     "Quenton Greyjoy": {
         "character_name": "Quenton Greyjoy",
         "summary": [
-            ":See also: Quenton Greyjoy (cousin)",
-            "{{Character",
-            "| Character_name          = 50px|left Quenton Greyjoy 50px|right",
-            "| image         =<br><br>",
-            "| image_caption =",
-            "| Alias =",
-            "| Title =",
-            "| Allegiance = House Greyjoy",
-            "| Race =",
-            "| Culture = Ironborn",
-            "| Spouse =",
-            "| Place_of_Birth =",
-            "| Date_of_Birth = or between <ref>See the Quenton Greyjoy calculation</ref>",
-            "| Place_of_Death =",
-            "| Date_of_Death =",
-            "| Books = A Feast for Crows (Mentioned)",
-            "| coat-of-arms =",
-            "}}",
             "Quenton Greyjoy was the second son of Lord Quellon Greyjoy and Lady Stonetree. He died as an infant."
         ]
     },
@@ -10452,20 +9734,6 @@
     "Rain House": {
         "character_name": "Rain House",
         "summary": [
-            "{|",
-            "{{Location map| File:The Stormlands",
-            "| label = Rain House",
-            "| label_size = 90",
-            "| lat = - 10",
-            "| long = 145",
-            "| position = top",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The stormlands and the location of Rain House",
-            "| alt = The stormlands and the location of Rain House",
-            "}}",
-            "|}",
             "Rain House is the seat of House Wylde in the stormlands. It sits in the eastern rainwood along the southern shore of Shipbreaker Bay near the northeastern tip of Cape Wrath.<ref>A Feast for Crows, Map of the South</ref>"
         ]
     },
@@ -10559,21 +9827,6 @@
     "Raventree Hall": {
         "character_name": "Raventree Hall",
         "summary": [
-            "{|",
-            "{{Location map| File:The Riverlands",
-            "| label = Raventree Hall",
-            "| label_size = 90",
-            "| lat = 5",
-            "| long = -87",
-            "| position = right",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The riverlands and the location of Raventree Hall",
-            "| alt = The riverlands and the location of Raventree Hall",
-            "}}",
-            "|}",
-            "thumb|400px|The godswood of Raventree Hall, with its enormous weirwood and hundreds of ravens - by https://www.artstation.com/artist/ab3nd Elena Mar\u00eda Vacas",
             "Raventree Hall is the seat of House Blackwood in Blackwood Vale in the riverlands. The castle is located north of Riverrun, southwest of Oldstones, and west of Fairmarket. Ironman's Bay is to the northwest.",
             "<!--George R. R. Martin has not published the location of Raventree on maps yet, but the non-canon map for HBO's Game of Thrones places Raventree north of Riverrun and the Red Fork and south of the Whispering Wood.<ref>http://viewers-guide.hbo.com/game-of-thrones/season-1/episode-1/map/ Game of Thrones Viewer's Guide</ref> The Lands of Ice and Fire indicates the castle is north of Riverrun, west of Fairmarket, and southwest of Oldstones.-->"
         ]
@@ -10689,7 +9942,6 @@
     "Reek": {
         "character_name": "Reek",
         "summary": [
-            ":Not to be confused with Ramsay Snow or Theon Greyjoy, who have both gone by the name \"Reek\" at some point in the story.",
             "Reek is a servant in service to House Bolton. His real name may be Heke."
         ]
     },
@@ -10879,7 +10131,9 @@
     },
     "Rickard Stark": {
         "character_name": "Rickard Stark",
-        "summary": []
+        "summary": [
+            "Rickard Stark was Lord of Winterfell, Warden of the North, and head of House Stark during the reign of Aerys II Targaryen. He was the only child of Lord Edwyle Stark and Lady Marna Locke. Rickard was the father of the current Lord of Winterfell, Eddard Stark. In the television adaptation Game of Thrones he is portrayed by Wayne Foskett in a Season 6 flashback."
+        ]
     },
     "Rickard Stark (King)": {
         "character_name": "Rickard Stark (King)",
@@ -10930,20 +10184,6 @@
     "Rills": {
         "character_name": "Rills",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = The Rills",
-            "| lat = -35",
-            "| long = -135",
-            "| position = right",
-            "| mark = Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 400",
-            "| float = right",
-            "| caption = The North and the location of the Rills",
-            "| alt =  The North and the location of the Rills",
-            "}}",
-            "|}",
             "The Rills is an area in the North ruled by House Ryswell.<ref>The A Game of Thrones RPG and Resource Book by Guardians of Order states the barrowlands stretch from the Stony Shore to the Bite, which therefore suggests the landscape includes the Rills. The more recent The Lands of Ice and Fire and the Map of the North in A Dance with Dragons depict them as separate regions.</ref>",
             "Its name suggests the area has numerous streams and brooks. Rillwater Crossing, the seat of House Glenmore in Game of Thrones - A Telltale Games Series, may be located in the Rills."
         ]
@@ -10959,20 +10199,6 @@
     "Riverrun": {
         "character_name": "Riverrun",
         "summary": [
-            "{|",
-            "{{Location map| File:The Riverlands",
-            "| label = Riverrun",
-            "| label_size = 90",
-            "| lat = -23",
-            "| long = -91",
-            "| position = right",
-            "| marksize = 10",
-            "| width = 350",
-            "| float = right",
-            "| caption = The riverlands and the location of Riverrun",
-            "| alt = The riverlands and the location of Riverrun",
-            "}}",
-            "|}",
             "Riverrun is the ancestral castle of House Tully, the Lords Paramount of the Trident. It is situated in the western riverlands, at the point where the Tumblestone and Red Fork rivers meet."
         ]
     },
@@ -10985,7 +10211,6 @@
     "Robar Royce": {
         "character_name": "Robar Royce",
         "summary": [
-            ":For the historical king, see Robar II Royce.",
             "Ser Robar Royce, also known as Robar the Red, is a knight of House Royce. He is the second son of Lord Yohn Royce."
         ]
     },
@@ -11020,11 +10245,15 @@
     },
     "Robert Brax": {
         "character_name": "Robert Brax",
-        "summary": []
+        "summary": [
+            "Ser Robert Brax is a knight from House Brax, he is the second son of Lord Andros Brax."
+        ]
     },
     "Robert Brax (son of Flement)": {
         "character_name": "Robert Brax (son of Flement)",
-        "summary": []
+        "summary": [
+            "Robert Brax is a member of House Brax, the eldest son of Ser Flement Brax and Morya Frey. He is a page at Casterly Rock."
+        ]
     },
     "Robert Flowers": {
         "character_name": "Robert Flowers",
@@ -11034,11 +10263,15 @@
     },
     "Robert Frey": {
         "character_name": "Robert Frey",
-        "summary": []
+        "summary": [
+            "Robert Frey a member of House Frey, the eldest son of Rhaegar Frey and Jeyne Beesbury."
+        ]
     },
     "Robert Frey (son of Raymund)": {
         "character_name": "Robert Frey (son of Raymund)",
-        "summary": []
+        "summary": [
+            "Robert Frey is the eldest son of Ser Raymund Frey and Beony Beesbury. He is in training at the Citadel in Oldtown."
+        ]
     },
     "Robert Paege": {
         "character_name": "Robert Paege",
@@ -11054,7 +10287,9 @@
     },
     "Robin": {
         "character_name": "Robin",
-        "summary": []
+        "summary": [
+            "Robin is a brother of Septon Meribald. He died in the War of the Ninepenny Kings."
+        ]
     },
     "Robin Flint": {
         "character_name": "Robin Flint",
@@ -11143,7 +10378,6 @@
     "Rodrik Stark": {
         "character_name": "Rodrik Stark",
         "summary": [
-            ":For the Wandering Wolf, see Rodrik Stark (son of Beron).",
             "Rodrik Stark was a King in the North and head of House Stark. His statue is in the crypts of Winterfell, near that of Torrhen Stark."
         ]
     },
@@ -11213,7 +10447,6 @@
     "Rolfe": {
         "character_name": "Rolfe",
         "summary": [
-            ":Not to be confused with Red Rolfe.",
             "Rolfe is an ironborn warrior."
         ]
     },
@@ -11322,7 +10555,6 @@
     "Roone": {
         "character_name": "Roone",
         "summary": [
-            ":For the maester, see Roone (maester).",
             "Roone is a novice at the Citadel. He is a chunky boy, two years shy of manhood."
         ]
     },
@@ -11371,27 +10603,12 @@
     "Rosby": {
         "character_name": "Rosby",
         "summary": [
-            "{|",
-            "{{Location map| Crownlands",
-            "| label = Rosby",
-            "| label_size = 100",
-            "| lat = -30",
-            "| long = -38",
-            "| position = left",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Crownlands and the location of Rosby",
-            "| alt = The Crownlands and the location of Rosby",
-            "}}",
-            "|}",
             "Rosby is the seat of House Rosby, north of Blackwater Bay in the Crownlands."
         ]
     },
     "Rosey": {
         "character_name": "Rosey",
         "summary": [
-            ":For the bastard daughter of King Aegon IV Targaryen, see Rosey (daughter of Aegon IV).",
             "Rosey is the daughter of Emma, a serving wench at the Quill and Tankard in Oldtown. Early in "
         ]
     },
@@ -11410,7 +10627,6 @@
     "Rowan": {
         "character_name": "Rowan",
         "summary": [
-            ":For the noble house of the Reach, see House Rowan.",
             "Rowan is a spearwife of the free folk."
         ]
     },
@@ -11457,22 +10673,7 @@
     "Runestone": {
         "character_name": "Runestone",
         "summary": [
-            "{|",
-            "{{Location map| File:The Vale",
-            "| label = Runestone",
-            "| label_size = 100",
-            "| lat = -13",
-            "| long = 128",
-            "| position = top",
-            "| marksize = 12",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Vale of Arryn and the location of Runestone",
-            "| alt = The Vale and the location of Runestone",
-            "}}",
-            "|}",
-            "Runestone is the seat of House Royce in the Vale of Arryn. It lies on a peninsula north of the Bay of Crabs, east of Redfort and south of Old Anchor. While Runestone is on the northern shore of the peninsula, the nearby city of Gulltown is on the southern shore.<ref>A Dance with Dragons, Map of the South</ref> Helliweg is the maester at Runestone.",
-            "thumb|upright=2.0|alt=Full-length Runestone by krassenka.jpg.|Runestone"
+            "Runestone is the seat of House Royce in the Vale of Arryn. It lies on a peninsula north of the Bay of Crabs, east of Redfort and south of Old Anchor. While Runestone is on the northern shore of the peninsula, the nearby city of Gulltown is on the southern shore.<ref>A Dance with Dragons, Map of the South</ref> Helliweg is the maester at Runestone."
         ]
     },
     "Rupert Brax": {
@@ -11639,20 +10840,6 @@
     "Salt Shore": {
         "character_name": "Salt Shore",
         "summary": [
-            "{|",
-            "{{Location map| Dorne",
-            "| label = Salt Shore",
-            "| label_size = 80",
-            "| lat = -60",
-            "| long = 63",
-            "| position = bottom",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = below",
-            "| caption = Dorne and the location of the Salt Shore",
-            "| alt = Dorne and the location of the Salt Shore",
-            "}}",
-            "|}",
             "Salt Shore is the seat of House Gargalen in Dorne. It lies on the southern coast along the Summer Sea.<ref>A Feast for Crows, Map of the South</ref>"
         ]
     },
@@ -11694,7 +10881,6 @@
     "Sansa Stark": {
         "character_name": "Sansa Stark",
         "summary": [
-            ":For the historical figure, see Sansa Stark (daughter of Rickon).",
             "Sansa Stark is a member of House Stark and is the elder daughter of Lady Catelyn and Lord Eddard Stark. She has three brothers (Robb, Bran and Rickon), a younger sister, Arya, and a half-brother, Jon Snow. Sansa Stark is one of the major POV characters in the books. In the television adaptation Game of Thrones, she is played by Sophie Turner."
         ]
     },
@@ -11755,40 +10941,12 @@
     "Seagard": {
         "character_name": "Seagard",
         "summary": [
-            "{|",
-            "{{Location map| File:The Riverlands",
-            "| label = Seagard",
-            "| label_size = 90",
-            "| lat = 36",
-            "| long = -95",
-            "| position = right",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The riverlands and the location of Seagard (red)<ref>A Dance with Dragons, Map of the South</ref>",
-            "| alt = The riverlands and the location of Seagard",
-            "}}",
-            "|}",
             "Seagard is a town and castle in the northern riverlands. It is the seat of House Mallister. Located on the western coast along Ironman's Bay, Seagard is sheltered by the Cape of Eagles and is nestled near the headwaters of the Blue Fork."
         ]
     },
     "Sealskin Point": {
         "character_name": "Sealskin Point",
         "summary": [
-            "{|",
-            "{{Location map| File:The Iron Islands",
-            "| label = Sealskin Point",
-            "| label_size = 100",
-            "| lat = 25",
-            "| long = -136",
-            "| position = right",
-            "| marksize = 11",
-            "| width = 350",
-            "| float = right",
-            "| caption = The Iron Islands and the location of Sealskin Point",
-            "| alt = The Iron Islands and the location of Sealskin Point",
-            "}}",
-            "|}",
             "Sealskin Point is the seat of House Farwynd on Great Wyk."
         ]
     },
@@ -11801,7 +10959,6 @@
     "Second Sons": {
         "character_name": "Second Sons",
         "summary": [
-            ":For the television episode, see Second Sons (TV).",
             "The Second Sons are a sellsword company found in the Free Cities. Their banner is a broken sword and they take commands only from their captain.",
             "The Second Sons are not as well equipped as the Golden Company. While on campaign their camp is a circle of ragged tents, including a cook tent. Brown Ben Plumm\u2019s tent has painted canvas walls cracked and faded by years of sun and rain, as well as a floor covered with threadbare carpets in half a dozen clashing colors."
         ]
@@ -11876,21 +11033,6 @@
     "Shadow Tower": {
         "character_name": "Shadow Tower",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = Shadow Tower",
-            "| lat = 70",
-            "| long = 17",
-            "| position = right",
-            "| mark = Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 400",
-            "| float = right",
-            "| caption = The North and the location of the Shadow Tower",
-            "| alt =  The North and the location of the Shadow Tower",
-            "}}",
-            "|}",
-            "350px|thumb|right|\u00a9 Fantasy Flight Games",
             "The Shadow Tower is one of three castles along the Wall that are still inhabited by the Night's Watch. It is located next to mountains at the far end of the Wall. It lies west of Sentinel Stand and east of Westwatch-by-the-Bridge.<ref>A Storm of Swords, Map of Beyond the Wall</ref> It is commanded by Ser Denys Mallister and its maester is Mullin."
         ]
     },
@@ -11929,27 +11071,12 @@
     "Sharp Point": {
         "character_name": "Sharp Point",
         "summary": [
-            "{|",
-            "{{Location map| Crownlands",
-            "| label = Sharp Point",
-            "| label_size = 100",
-            "| lat = -12",
-            "| long = 88",
-            "| position = left",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The crownlands and the location of Sharp Point",
-            "| alt = The crownlands and the location of Sharp Point",
-            "}}",
-            "|}",
             "Sharp Point is the seat of House Bar Emmon in the crownlands. The castle is located along the Gullet at the northern end of Massey's Hook, north of Stonedance."
         ]
     },
     "Sheepstealer": {
         "character_name": "Sheepstealer",
         "summary": [
-            ":For Harrag Sheepstealer, see Harrag Sharp.",
             "Sheepstealer was a wild dragon during the Dance of the Dragons with a taste for mutton."
         ]
     },
@@ -12110,20 +11237,6 @@
     "Snakewood": {
         "character_name": "Snakewood",
         "summary": [
-            "{|",
-            "{{Location map| File:The Vale",
-            "| label = Snakewood",
-            "| label_size = 90",
-            "| lat = 38",
-            "| long = 45",
-            "| position = left",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Vale and the location of Snakewood",
-            "| alt = The Vale and the location of Snakewood",
-            "}}",
-            "|}",
             "Snakewood<ref>It is referred to as Sunkenwood in A Feast for Crows, Map of the South</ref> is the seat of House Lynderly in the Vale. It sits west of the southernmost of the Fingers, along the mountainous northern shore of a bay of the narrow sea. Nearby castles are Coldwater to the north and Heart's Home to the southwest.<ref>The Lands of Ice and Fire</ref> According to semi-canon sources it is part of the snakewood forest.<ref>A Song of Ice and Fire Campaign Guide</ref>"
         ]
     },
@@ -12146,20 +11259,6 @@
     "Southshield": {
         "character_name": "Southshield",
         "summary": [
-            "{|",
-            "{{Location map| File:The Reach",
-            "| label = Southshield",
-            "| label_size =",
-            "| lat = 14",
-            "| long = -110",
-            "| position = bottom",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Reach and the location of Southshield",
-            "| alt = The Reach and the location of Southshield",
-            "}}",
-            "|}",
             "Southshield is an island of the Shield Islands in the Reach. The southernmost of the isles, it lies near the mouth of the river Mander. It is the seat of House Serry."
         ]
     },
@@ -12250,21 +11349,6 @@
     "Starfall": {
         "character_name": "Starfall",
         "summary": [
-            "{|",
-            "{{Location map| Dorne",
-            "| label = Starfall",
-            "| label_size = 80",
-            "| lat = -12",
-            "| long = -161",
-            "| position = right",
-            "| marksize = 10",
-            "| width = 350",
-            "| float = below",
-            "| caption = Dorne and the location of Starfall",
-            "| alt = Dorne and the location of Starfall",
-            "}}",
-            "|}",
-            "thumb|Palestone Sword Guard by artist Sebastian Giacobino. \u00a9 Fantasy Flight Games.",
             "Starfall is a castle in Dorne and is the ancestral seat of House Dayne. guards the western arm of Dorne.<ref>A Game of Thrones RPG and Resource Book, Guardians of Order</ref> Northeast of Starfall is High Hermitage, the seat of a Dayne cadet branch."
         ]
     },
@@ -12366,20 +11450,6 @@
     "Stone Hedge": {
         "character_name": "Stone Hedge",
         "summary": [
-            "{|",
-            "{{Location map| File:The Riverlands",
-            "| label = Stone Hedge",
-            "| label_size = 90",
-            "| lat = -15",
-            "| long = -47",
-            "| position = right",
-            "| marksize = 10",
-            "| width = 350",
-            "| float = right",
-            "| caption = The riverlands and the location of Stone Hedge",
-            "| alt = The riverlands and the location of Stone Hedge",
-            "}}",
-            "|}",
             "Stone Hedge, sometimes called the Stone Hedge, is the seat of House Bracken in the riverlands. There is a village surrounding it.<ref>A Song of Ice and Fire Campaign Guide</ref>",
             "Stone Hedge is located south of the Red Fork and the Inn of the Kneeling Man, north of High Heart and Acorn Hall, and east of Riverrun."
         ]
@@ -12399,20 +11469,6 @@
     "Stonehelm": {
         "character_name": "Stonehelm",
         "summary": [
-            "{|",
-            "{{Location map| File:The Stormlands",
-            "| label = Stonehelm",
-            "| label_size = 90",
-            "| lat = - 37",
-            "| long = 3",
-            "| position = top",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The stormlands and the location of Stonehelm",
-            "| alt = The stormlands and the location of Stonehelm",
-            "}}",
-            "|}",
             "Stonehelm is a castle in the stormlands and is the ancient seat of House Swann.",
             "The castle is situated in the Red Watch region a major river route in the stormlands.<ref>A Song of Ice and Fire Campaign Guide</ref>"
         ]
@@ -12446,20 +11502,6 @@
     "Strongsong": {
         "character_name": "Strongsong",
         "summary": [
-            "{|",
-            "{{Location map| File:The Vale",
-            "| label = Strongsong",
-            "| label_size = 90",
-            "| lat = 16",
-            "| long = -72",
-            "| position = bottom",
-            "| marksize = 12",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Vale and the location of Strongsong",
-            "| alt = The Vale and the location of Strongsong",
-            "}}",
-            "|}",
             "Strongsong is the seat of House Belmore in the Vale of Arryn. It is situated near a series of lakes within the Mountains of the Moon; a nearby glacial river flows east through a valley to Heart's Home.<ref>The Lands of Ice and Fire</ref> The Eyrie is to the southeast.<ref>A Dance with Dragons, Map of the South</ref> According to semi-canon sources, Strongsong is within the southernmost river valley of the snakewood forest.<ref>A Song of Ice and Fire Campaign Guide</ref>"
         ]
     },
@@ -12500,20 +11542,6 @@
     "Sweetsister": {
         "character_name": "Sweetsister",
         "summary": [
-            "{|",
-            "{{Location map| File:The Vale",
-            "| label = Sweetsister",
-            "| label_size = 100",
-            "| lat = 88",
-            "| long = -61",
-            "| position = bottom",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The Vale of Arryn and the location of Sweetsister",
-            "| alt = The Vale and the location of Sweetsister",
-            "}}",
-            "|}",
             "Sweetsister is an island of the Three Sisters in the Bite. It is the seat of House Borrell, who are sworn to the Arryns of the Vale. The town of Sisterton is located on Sweetsister.<ref>A Dance with Dragons, Chapter 9, establishes Sisterton on the island Sweetsister, while the Map of the North in the same book shows Sisterton on the central island. However, The Lands of Ice and Fire labels the central island as Littlesister and the easternmost island as Sweetsister.</ref>"
         ]
     },
@@ -12669,7 +11697,9 @@
     },
     "Tansy (orphan)": {
         "character_name": "Tansy (orphan)",
-        "summary": []
+        "summary": [
+            "Tansy is an  girl orphaned by the War of the Five Kings who is currently living at the Crossroads Inn."
+        ]
     },
     "Tanton Fossoway": {
         "character_name": "Tanton Fossoway",
@@ -12692,20 +11722,6 @@
     "Tarth": {
         "character_name": "Tarth",
         "summary": [
-            "{|",
-            "{{Location map| File:The Stormlands",
-            "| label = Tarth",
-            "| label_size = 100",
-            "| lat = 44",
-            "| long = 144",
-            "| position = top",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = right",
-            "| caption = The stormlands and the location of Tarth",
-            "| alt = The stormlands and the location of Tarth",
-            "}}",
-            "|}",
             "Tarth is an island in the narrow sea off the eastern coast of Westeros. It is separated from the continent by the Straits of Tarth, and is situated northeast of Shipbreaker Bay. Tarth is considered a part of the stormlands and is ruled from Evenfall Hall by House Tarth. It is sworn to Storm's End.",
             "The island is said to be very beautiful, \"with its mountains and waterfalls, its high meadows and shadowed vales.\" It is called the Sapphire Isle for the striking blue seas in which it sits."
         ]
@@ -12871,22 +11887,6 @@
     "Three Sisters": {
         "character_name": "Three Sisters",
         "summary": [
-            "{|",
-            "{{Location map| File:The Vale",
-            "| label = Three Sisters",
-            "| label_size = 100",
-            "| lat = 87",
-            "| long = -60",
-            "| position = bottom",
-            "| marksize = 11",
-            "| width = 350",
-            "| float = right",
-            "| caption = The Vale of Arryn and the location of the Three Sisters",
-            "| alt = The Vale of Arryn and the location of the Three Sisters",
-            "}}",
-            "|}",
-            "350px|thumb|The Three Sisters by Cris Urdiales \u00a9",
-            "thumb|upright=2.0|alt=Full-length Three-sisters.|Three Sisters",
             "The Three Sisters are a group of three islands - Sweetsister, Longsister, and Littlesister<ref>A Dance with Dragons, Chapter 9, establishes Sisterton on the island Sweetsister, while the Map of the North in the same book shows Sisterton on the central island. However, The Lands of Ice and Fire labels the central island as Littlesister and the easternmost island as Sweetsister, while keeping Sisterton on the central island.</ref> - found in the Bite, located south of White Harbor and north of the Mountains of the Moon.<ref>A Dance with Dragons, Map of the North</ref> The islands owe loose allegiance to House Arryn of the Vale.",
             "The islands are considered dens of avarice and sin by septons."
         ]
@@ -12972,8 +11972,7 @@
     "Tobho Mott": {
         "character_name": "Tobho Mott",
         "summary": [
-            "Tobho Mott is a master armorer in King's Landing. His shop resides at the top of the Street of Steel. In the television adaptation Game of Thrones he is played by Andrew Wilde.<ref>http://www.hbo.com/game-of-thrones/index.html#/game-of-thrones/cast-and-crew.html/eNrjcmbOYC5kzlfPz0lxzEvMqSzJTA5ITE-1S8xN1SzLTEnNh4k65+eVpFaUsEknlpbkF+QkVtqWFJWmcjIysgEhAGCyFzg= HBO: Game of Thrones: cast and crew</ref>",
-            "thumb|right|250px|Andrew Wilde as Tobho Mott in Game of Thrones"
+            "Tobho Mott is a master armorer in King's Landing. His shop resides at the top of the Street of Steel. In the television adaptation Game of Thrones he is played by Andrew Wilde.<ref>http://www.hbo.com/game-of-thrones/index.html#/game-of-thrones/cast-and-crew.html/eNrjcmbOYC5kzlfPz0lxzEvMqSzJTA5ITE-1S8xN1SzLTEnNh4k65+eVpFaUsEknlpbkF+QkVtqWFJWmcjIysgEhAGCyFzg= HBO: Game of Thrones: cast and crew</ref>"
         ]
     },
     "Todder": {
@@ -13045,20 +12044,6 @@
     "Tor": {
         "character_name": "Tor",
         "summary": [
-            "{|",
-            "{{Location map| Dorne",
-            "| label = Tor",
-            "| label_size = 90",
-            "| lat = 8",
-            "| long = 47",
-            "| position = right",
-            "| marksize = 10",
-            "| width = 400",
-            "| float = below",
-            "| caption = Dorne and the location of the Tor",
-            "| alt = Dorne and the location of the Tor",
-            "}}",
-            "|}",
             "The Tor is the seat of House Jordayne in Dorne. It is located on the southern shore of the Sea of Dorne, north of the Scourge.<ref>A Feast for Crows, Map of the South</ref>"
         ]
     },
@@ -13107,20 +12092,6 @@
     "Torrhen%27s Square": {
         "character_name": "Torrhen%27s Square",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = Torrhen's Square",
-            "| lat = -10",
-            "| long = -60",
-            "| position = right",
-            "| mark = Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 400",
-            "| float = right",
-            "| caption = The north and the location of Torrhen's Square",
-            "| alt =  The north and the location of Torrhen's Square",
-            "}}",
-            "|}",
             "Torrhen's Square is a castle in the north and the seat of House Tallhart. It is located south of the wolfswood, southwest of Winterfell, and north of Barrowton, on the northern shore of a large lake. A river from the lake leads south to the Saltspear."
         ]
     },
@@ -13294,7 +12265,6 @@
     "Tybolt Lannister": {
         "character_name": "Tybolt Lannister",
         "summary": [
-            ":For the King of the Rock, see Tybolt Lannister (king).",
             "Tybolt Lannister was Lord of Casterly Rock and head of House Lannister. He was the eldest son and heir of Lord Damon Lannister. He had a younger brother, Gerold, who was his advisor. He wed Teora Kyndall."
         ]
     },
@@ -13337,7 +12307,6 @@
     "Tyrion Lannister": {
         "character_name": "Tyrion Lannister",
         "summary": [
-            ":For the historical kings, see Tyrion II Lannister and Tyrion III Lannister.",
             "Tyrion Lannister is a member of House Lannister and is the third and youngest child of Lord Tywin Lannister and the late Joanna Lannister. His older siblings are Cersei Lannister, the queen of King Robert Baratheon, and Ser Jaime Lannister, a knight of Robert's Kingsguard.",
             "Tyrion is a dwarf; because of this he is sometimes mockingly called the Imp and the Halfman. He is one of the major POV characters in the books. In the television adaptation Game of Thrones, Tyrion is played by Peter Dinklage.<ref>HBO: Game of Thrones:http://www.hbo.com/game-of-thrones/index.html#/game-of-thrones/cast-and-crew/index.html Cast and Crew.</ref>"
         ]
@@ -13398,11 +12367,15 @@
     },
     "Tywin Frey": {
         "character_name": "Tywin Frey",
-        "summary": []
+        "summary": [
+            "Tywin Frey, known as Ty Frey, is a member of House Frey and is the eldest son of Ser Cleos Frey and Jeyne Darry. It is not clear if he has been knighted or if he is still a squire.<ref>Within the A Feast for Crows Appendix, Ty is called \"Ser\" in the \"House Lannister\" and \"The Queen Regent\" sections, but is listed as a twelve-year-old squire in the \"House Frey\" section.</ref>"
+        ]
     },
     "Tywin Frey (son of Raymund)": {
         "character_name": "Tywin Frey (son of Raymund)",
-        "summary": []
+        "summary": [
+            "Tywin Frey is the fourth son of Ser Raymund Frey and Beony Beesbury, the twin of Jaime. He is a newborn babe."
+        ]
     },
     "Tywin Lannister": {
         "character_name": "Tywin Lannister",
@@ -13431,24 +12404,6 @@
     "Uller": {
         "character_name": "Uller",
         "summary": [
-            ":See also House Uller",
-            "{{Character",
-            "| Character_name = Uller",
-            "| image         =",
-            "| image_caption =",
-            "| Alias =",
-            "| Title =",
-            "| Allegiance = House Greyjoy",
-            "| Race =",
-            "| Culture = Ironborn",
-            "| Spouse =",
-            "| Place_of_Birth =",
-            "| Date_of_Birth =",
-            "| Place_of_Death =",
-            "| Date_of_Death =",
-            "| Books = A Clash of Kings (appears)<br>A Storm of Swords (mentioned)<br>A Feast for Crows (mentioned)",
-            "| coat-of-arms =",
-            "}}",
             "Uller is an ironborn sailor. He is sworn to Balon Greyjoy."
         ]
     },
@@ -13689,11 +12644,16 @@
     },
     "Viserys I Targaryen": {
         "character_name": "Viserys I Targaryen",
-        "summary": []
+        "summary": [
+            "Viserys I Targaryen was the fifth Targaryen Lord of the Seven Kingdoms, but the seeds for the terrifying civil war known as the Dance of the Dragons that would much later engulf the realm were inadvertently sown in his reign.",
+            "Viserys was a dragonrider who rode Balerion until the dragon died of old age during the reign of Jaehaerys. Viserys never bonded with another dragon after Balerion's death.<ref>Not a Blog: http://grrm.livejournal.com/360936.html?thread=18786792#t18786792 The Rogues are Coming, March 12th, 2014 reply</ref>"
+        ]
     },
     "Viserys II Targaryen": {
         "character_name": "Viserys II Targaryen",
-        "summary": []
+        "summary": [
+            "Viserys II Targaryen was the tenth king from House Targaryen to sit the Iron Throne as Lord of the Seven Kingdoms. He was the son of Rhaenyra Targaryen and Daemon Targaryen, the brother and Hand of King Aegon III Targaryen, and the father of King Aegon IV Targaryen, Queen Naerys Targaryen, and Prince Aemon \"the Dragonknight\"."
+        ]
     },
     "Viserys Plumm": {
         "character_name": "Viserys Plumm",
@@ -13703,7 +12663,9 @@
     },
     "Viserys Targaryen": {
         "character_name": "Viserys Targaryen",
-        "summary": []
+        "summary": [
+            "King Viserys III Targaryen is the heir of his father Aerys II Targaryen and brother Rhaegar after their deaths during Robert's Rebellion.  The war, however, turned him into an exile who can only plot to regain control of the Iron Throne. He styles himself as Viserys Targaryen, the Third of His Name, King of the Andals, the Rhoynar and the First Men, Lord of the Seven Kingdoms and Protector of the Realm, as he had been declared king by his mother Rhaella Targaryen on Dragonstone early in his exile,"
+        ]
     },
     "Vixen": {
         "character_name": "Vixen",
@@ -13743,31 +12705,45 @@
     },
     "Walda Frey (daughter of Edwyn)": {
         "character_name": "Walda Frey (daughter of Edwyn)",
-        "summary": []
+        "summary": [
+            "Walda Frey is the only child of Edwyn Frey and Janyce Hunter. As of A Dance with Dragons, she's second in line to inherit the Twins, following her father Edwyn. She is in line before her uncle \"Black\" Walder Frey."
+        ]
     },
     "Walda Frey (daughter of Lothar)": {
         "character_name": "Walda Frey (daughter of Lothar)",
-        "summary": []
+        "summary": [
+            "Walda Frey is the second daughter of Lothar Frey and Leonella Lefford."
+        ]
     },
     "Walda Frey (daughter of Merrett)": {
         "character_name": "Walda Frey (daughter of Merrett)",
-        "summary": []
+        "summary": [
+            "Walda Frey, known as Fat Walda, is the second daughter of Merrett Frey and a granddaughter of Lord Walder Frey, the head of House Frey. In the television adaptation Game of Thrones she is portrayed by Elizabeth Webster."
+        ]
     },
     "Walda Frey (daughter of Rhaegar)": {
         "character_name": "Walda Frey (daughter of Rhaegar)",
-        "summary": []
+        "summary": [
+            "Walda Frey, better known as White Walda, is the daughter of Rhaegar Frey and Jeyne Beesbury."
+        ]
     },
     "Walda Frey (daughter of Walton)": {
         "character_name": "Walda Frey (daughter of Walton)",
-        "summary": []
+        "summary": [
+            "Walda Frey, better known as Fair Walda, is the daughter of Walton Frey and Deana Hardyng."
+        ]
     },
     "Walda Rivers": {
         "character_name": "Walda Rivers",
-        "summary": []
+        "summary": [
+            "Walda Rivers is the daughter of a lady of House Charlton and Ser Walder Rivers, the eldest natural son of Lord Walder Frey."
+        ]
     },
     "Walda Rivers (daughter of Aemon)": {
         "character_name": "Walda Rivers (daughter of Aemon)",
-        "summary": []
+        "summary": [
+            "Walda Rivers is the daughter of Ser Aemon Rivers. She is no more than four."
+        ]
     },
     "Walder Brax": {
         "character_name": "Walder Brax",
@@ -13778,37 +12754,31 @@
     "Walder Frey": {
         "character_name": "Walder Frey",
         "summary": [
-            "Category:House Frey",
-            "Frey, Walder",
-            "Frey, Walder",
-            "Frey, Walder",
-            "Frey, Walder",
-            "Frey, Walder",
-            "Frey, Walder",
-            "Frey, Walder",
-            "es:Walder Frey",
-            "fa:\u0648\u0627\u0644\u062f\u0631 \u0641\u0631\u06cc",
-            "fr:Walder Frey",
-            "ru:\u0423\u043e\u043b\u0434\u0435\u0440 \u0424\u0440\u0435\u0439",
-            "zh:&#29926;&#24503;&#183;&#20315;&#38647;&#20399;&#29237;"
+            "Walder Frey is the Lord of the Crossing and head of House Frey. Though almost ninety years old and infirm, he still maintains an active hand in the running of his house. In the television adaptation Game of Thrones, he is played by David Bradley.<ref name=IMDB/>",
+            "Walder has become famous for siring many children and surviving many wives. He is to marry his eighth wife and has over a hundred descendants, base and trueborn. He has had twenty-two trueborn sons and seven trueborn daughters from his marriages, with an unknown number of bastard sons and daughters. He places a great emphasis on family loyalty, though his descendants jockey ruthlessly for his favor. Many Freys name their sons Walder and daughters Walda in hopes of honoring him."
         ]
     },
     "Walder Frey (son of Emmon)": {
         "character_name": "Walder Frey (son of Emmon)",
-        "summary": []
+        "summary": [
+            "Walder Frey better known as Red Walder is the youngest son of Lord Emmon Frey (second son of Lord Walder Frey) and Genna Lannister (only daughter of Lord Tytos Lannister), he has three brothers; Ser Cleos, Ser Lyonel and Tion Frey. He is a page at Casterly Rock."
+        ]
     },
     "Walder Frey (son of Jammos)": {
         "character_name": "Walder Frey (son of Jammos)",
-        "summary": []
+        "summary": [
+            "Walder Frey, nicknamed Big Walder, is the son of Ser Jammos Frey and Sallei Paege."
+        ]
     },
     "Walder Frey (son of Merrett)": {
         "character_name": "Walder Frey (son of Merrett)",
-        "summary": []
+        "summary": [
+            "Walder Frey, nicknamed Little Walder, is the son of Merrett Frey and Mariya Darry. His personal coat of arms is the twin towers of House Frey quartered with the brindled boar of House Crakehall and the plowman of House Darry."
+        ]
     },
     "Walder Frey (son of Ryman)": {
         "character_name": "Walder Frey (son of Ryman)",
         "summary": [
-            ":For other characters with the same and similar names, see Walder Frey (disambiguation).",
             "Walder Frey, called Black Walder to differentiate him from others with the same name, is a member of House Frey. He is the second son of Ser Ryman Frey, grandson to Ser Stevron Frey, and great-grandson of Lord Walder Frey."
         ]
     },
@@ -14077,20 +13047,6 @@
     "Widow%27s Watch": {
         "character_name": "Widow%27s Watch",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = Widow's Watch",
-            "| lat = -32",
-            "| long = 148",
-            "| position = left",
-            "| mark = Wolff2.PNG",
-            "| marksize = 8",
-            "| width = 400",
-            "| float = right",
-            "| caption = The North and the location of Widow's Watch",
-            "| alt =  The North and the location of Widow's Watch",
-            "}}",
-            "|}",
             "Widow's Watch is the seat of House Flint of Widow's Watch in the North. It is located at the end of a peninsula between the Shivering Sea and the Bite, east of Ramsgate and the Broken Branch.<ref>A Dance with Dragons, Map of the North</ref>"
         ]
     },
@@ -14280,21 +13236,6 @@
     "Winterfell": {
         "character_name": "Winterfell",
         "summary": [
-            "{|",
-            "{{Location map| File:The North.png",
-            "| label = Winterfell",
-            "| lat = 8",
-            "| long = -12",
-            "| position = right",
-            "| mark = Wolff2.PNG",
-            "| marksize = 9",
-            "| width = 350",
-            "| float = right",
-            "| caption = The north and the location of Winterfell",
-            "| alt =  The north and the location of Winterfell",
-            "}}",
-            "|}",
-            "File:Winterfell by feliche.jpg|350px|thumb|right|Winterfell by http://feliche.deviantart.com/ Feliche\u00a9",
             "Winterfell is the ancestral castle and seat of power of House Stark and is considered to be the capital of the north. It is located in the center of the northernmost province of the Seven Kingdoms, on the kingsroad that runs from Storm's End to the Wall. It is situated at the eastern edge of the wolfswood, north of the western branch of the White Knife and Castle Cerwyn. Winterfell is south of the northern mountains and southwest of Long Lake,"
         ]
     },
