@@ -62,7 +62,6 @@ Allar Deem
 Allard Seaworth
 Alliser Thorne
 Allyria Dayne
-Alton Lannister
 Alvyn Sharp
 Alyce
 Alyce Graceford
@@ -120,7 +119,6 @@ Argrave the Defiant
 Arianne Martell
 Arianne of Tarth
 Arlan of Pennytree
-Armeca
 Armen
 Armond Caswell
 Arneld
@@ -165,7 +163,6 @@ Balon Greyjoy
 Balon Swann
 Bandy
 Bannen
-Baratheon Soldier
 Barba Bracken
 Barbara Bracken
 Barbrey Dustin
@@ -234,9 +231,7 @@ Bitterbridge
 Black Balaq
 Black Bernarr
 Black Jack Bulwer
-Black Walder Rivers
 Black cells
-Blackfish
 Blackfyre Rebellion
 Blackhaven
 Blane
@@ -246,9 +241,7 @@ Bloodrider
 Bloody Gate
 Blue Bard
 Bluetooth
-Bobono
 Bodger
-Bolton Guard
 Bonifer Hasty
 Borcas
 Boremund Harlaw
@@ -273,7 +266,6 @@ Briar
 Brienne of Tarth
 Brogg
 Bronn
-Brotherhood Member
 Brotherhood without banners
 Brown Bernarr
 Brusco
@@ -400,11 +392,9 @@ Daeron Vaith
 Daeryssa
 Dafyn Vance
 Dagmer
-Dagmer Cleftjaw
 Dagon Greyjoy
 Dagon Ironmaker
 Dagos Manwoody
-Daisy
 Dake
 Dalbridge
 Dale Drumm
@@ -486,7 +476,6 @@ Dorne
 Dornish Dilly
 Dorren Stark
 Dothraki
-Dothraki Widow
 Dragonseed
 Dragonstone
 Draqaz
@@ -676,7 +665,6 @@ Godric Borrell
 Godry Farring
 Godwyn
 Goghor the Giant
-Gold Cloak
 Golden Company
 Golden Tooth
 Goldengrove
@@ -691,7 +679,6 @@ Gorold Goodbrother
 Gowen Baratheon
 Gran Goodbrother
 Grance Morrigen
-Grand Maester Pycelle
 Grassy Vale
 Grazdan
 Grazdan mo Eraz
@@ -699,7 +686,6 @@ Grazdan mo Ullhor
 Grazdan zo Galare
 Grazdar zo Galare
 Great Walrus
-Greatjon Umber
 Green Gergen
 Greenbeard
 Greenblood
@@ -763,7 +749,6 @@ Halmon Paege
 Halys Hornwood
 Hamish the Harper
 Hand of the King
-Handmaid
 Happy Port
 Harbert
 Harbert Paege
@@ -821,7 +806,6 @@ Henk
 Herbert Bolling
 Heward
 Hibald
-High Septon
 High Sparrow
 Highgarden
 Hilmar Drumm
@@ -1015,9 +999,7 @@ Jynessa Blackmont
 Jyzene
 Kaeth
 Karhold
-Karl Tanner
 Karlon Stark
-Karsi's Daughter
 Karyl Vance
 Kedge Whiteye
 Kedry
@@ -1030,15 +1012,11 @@ Ketter
 Kevan Lannister
 Kezmya
 Khal
-Khal Drogo
-Khal Moro
-Khal Moro's Wife
 Khorane Sathmantes
 Khrazz
 Kindly Man
 King of the Rock
 King's Landing
-King's Landing Page
 King-Beyond-the-Wall
 Kingdom of Sarnor
 Kingsguard
@@ -1049,7 +1027,6 @@ Kirth Vance
 Knight
 Kojja Mo
 Koss
-Kovarro
 Kraznys mo Nakloz
 Krazz
 Kromm
@@ -1072,7 +1049,6 @@ Lancel V Lannister
 Lann the Clever
 Lanna
 Lanna Lannister
-Lannister Captain
 Larence Snow
 Lark
 Larra Blackmont
@@ -1080,7 +1056,6 @@ Larraq
 Larys Strong
 Last Hearth
 Layna
-Leaf
 Leafy Lake
 Leana Frey
 Leathers
@@ -1109,16 +1084,13 @@ Lewys Piper
 Lewys the Fishwife
 Leyla Hightower
 Leyton Hightower
-Lhara
 Lharys
 Lhazareen
 Lia Serry
 Liane Vance
 Likely Luke
 Lister
-Littlefinger
 Lives of Four Kings
-Locke
 Lollys Stokeworth
 Lomas Estermont
 Lommy Greenhands
@@ -1135,7 +1107,6 @@ Lord Commander Hoare
 Lord Commander Qorgyle
 Lord Commander of the Kingsguard
 Lord Staunton
-Lord Varys
 Lordsport
 Loren Lannister
 Lorent Lorch
@@ -1210,7 +1181,6 @@ Maekar Targaryen
 Maelor Targaryen
 Maelys Blackfyre
 Maester Aemon
-Maester Luwin
 Maesters#Archmaester
 Maesters#Grand Maester
 Mag Mar Tun Doh Weg
@@ -1339,7 +1309,6 @@ Morgil
 Moribald Chester
 Morna White Mask
 Moro
-Moro's Bloodrider
 Morosh the Myrman
 Morra
 Morrec
@@ -1351,21 +1320,17 @@ Mortimer Boggs
 Morton Waynwood
 Morya Frey
 Moryn Tyrell
-Mossador
 Most Devout
 Mother Mole
 Mountains of the Moon
 Mullin
 Mully
-Mummer
-Mummer 'Background Panel'
 Munciter
 Munda
 Murch
 Murenmure
 Murmison
 Mushroom
-Musician
 Muttering Bill
 Mya Stone
 Mycah
@@ -1376,7 +1341,6 @@ Myles Manwoody
 Myles Mooton
 Myles Smallwood
 Myr
-Myranda
 Myranda Royce
 Myrcella Baratheon
 Myria Jordayne
@@ -1390,15 +1354,12 @@ Nail
 Nan
 Narbert
 Narbo
-Ned
 Ned Woods
 Nella
 Nestor Royce
 Nettles
 Night's Watch
-Night's Watch Officer
 Nightingale
-Nights Watch
 Nightsong
 Nissa Nissa
 Noho Dimittis
@@ -1429,12 +1390,9 @@ Oldcastle
 Oldtown
 Olene Tyrell
 Olenna Redwyne
-Olenna Tyrell
 Ollidor
 Ollo Lophand
-Olly
 Olymer Tyrell
-Olyvar
 Olyvar Frey
 Olyvar Oakheart
 Omer Blackberry
@@ -1538,7 +1496,6 @@ Qarlton Chelsted
 Qarro Volentin
 Qarth
 Qezza
-Qhono
 Qhorin Halfhand
 Qohor
 Qos
@@ -1641,7 +1598,6 @@ Rickard Wylde
 Rickon Stark
 Rigney
 Rills
-Rioter
 Riverlands
 Riverrun
 Rob
@@ -1657,7 +1613,6 @@ Robert Frey
 Robert Paege
 Robett Glover
 Robin
-Robin Arryn
 Robin Flint
 Robin Greyjoy
 Robin Hill
@@ -1705,7 +1660,6 @@ Roose Ryswell
 Rorge
 Roro Uhoris
 Roryn Drumm
-Ros
 Rosamund Lannister
 Rosby
 Rosey
@@ -1772,11 +1726,8 @@ Sedgekins
 Sefton Staunton
 Selmond Stackspear
 Selwyn Tarth
-Selyse Baratheon
 Selyse Florent
 Senelle
-Septa Mordane
-Septa Unella
 Serala
 Serra
 Serra Frey
@@ -1805,7 +1756,6 @@ Shyra Errol
 Sigfry Stonetree
 Sigfryd Harlaw
 Sigrin
-Silk King
 Simon Leygood
 Simon Staunton
 Simon Toyne
@@ -1820,13 +1770,11 @@ Small Paul
 Smiling Knight
 Snakewood
 Softfoot
-Soldier
 Soren Shieldbreaker
 Sour Alyn
 Southshield
 Spare Boot
 Spearwife
-Spice King
 Spotted Cat
 Spotted Pate of Maidenpool
 Spottswood
@@ -1840,7 +1788,6 @@ Standfast
 Stannis Baratheon
 Stannis Seaworth
 Starfall
-Steelshanks Walton
 Steelskin
 Steely Pate
 Steffarion Sparr
@@ -1893,7 +1840,6 @@ Taena of Myr
 Tagganaro
 Tal Toraq
 Talea
-Talisa Maegyr
 Talla Tarly
 Tallad
 Tanda Stokeworth
@@ -1913,12 +1859,10 @@ The Crag
 The Dreadfort
 The Great Spring Sickness
 The Hedge Knight
-The Hound
 The Reach
 The Twins
 The Wall
 Thenn
-Thenn Warg
 Theo Frey
 Theo Wull
 Theobald
@@ -1935,7 +1879,6 @@ Thormor Ironmaker
 Thoros of Myr
 Three Sisters
 Three Toes
-Three-Eyed Raven
 Three-Tooth
 Tickler
 Tim Stone
@@ -1963,7 +1906,6 @@ Tor
 Torbert
 Toregg
 Tormund
-Tormund Giantsbane
 Torrek
 Torren Liddle
 Torrhen Karstark
@@ -2043,7 +1985,6 @@ Utt
 Vaellyn
 Vaemond Velaryon
 Val
-Vala
 Valaena Velaryon
 Valarr Targaryen
 Vale
@@ -2071,7 +2012,6 @@ Vulture King
 Vylarr
 Vyman
 Waif
-Walda Bolton
 Walda Rivers
 Walder Brax
 Walder Frey
@@ -2113,7 +2053,6 @@ Whalen Frey
 White Harbor
 Whitewalls tourney
 Widow's Watch
-Wight
 Wilbert
 Wilbert Osgrey
 Wildling
@@ -2145,7 +2084,6 @@ Woods witch
 Woth
 Wulfe
 Wun Weg Wun Dar Wun
-Wun Wun
 Wyl Waynwood
 Wyl the Whittler
 Wylis Manderly
@@ -2158,9 +2096,7 @@ Wynton Stout
 Xaro Xhoan Daxos
 Xhondo
 Yandry
-Yara Greyjoy
 Yellow Dick
-Yezzan zo Qaggaz
 Ygon Farwynd
 Ygon Oldfather
 Ygritte
@@ -2172,7 +2108,6 @@ Yorkel
 Yorko Terys
 Yormwell
 Young Henly
-Young Ned
 Ysilla
 Ysilla Royce
 Zachery Frey

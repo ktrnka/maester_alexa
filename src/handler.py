@@ -108,11 +108,10 @@ def get_welcome_response():
 
     session_attributes = {}
     card_title = "Welcome"
-    speech_output = "Welcome to Ask a Maester. Try asking who is Jon Snow."
+    speech_output = "Hello there. You can ask who is Jon Snow, what are the words of House Stark, who plays Arya Stark, or what else has Lena Headey starred in."
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
-    reprompt_text = "Ask about a character such as, " \
-                    "who is Jon Snow."
+    reprompt_text = "Ask about a character such as, who is Jon Snow."
     should_end_session = False
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
@@ -154,14 +153,18 @@ def get_character_info(intent, session):
         base_error = "I'm not sure who you mean."
         speech_output = base_error + " " + TRY_AGAIN
         reprompt_text = base_error + " " + example
-    elif character.lower() in CHAR_INFO:
-        card_title = character
-        speech_output = CHAR_INFO[character.lower()]
-        reprompt_text = CHAR_INFO[character.lower()]
     else:
-        base_error = "I don't know about {}.".format(character)
-        speech_output = base_error + " " + TRY_AGAIN
-        reprompt_text = base_error + " " + example
+        hits = search("char_summary", {"name": character})
+        if hits:
+            result = hits[0]
+            card_title = result["_source"]["name"]
+
+            speech_output = result["_source"]["summary"]
+            reprompt_text = speech_output
+        else:
+            base_error = "I don't know about {}.".format(character)
+            speech_output = base_error + " " + TRY_AGAIN
+            reprompt_text = base_error + " " + example
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
@@ -285,7 +288,8 @@ def search(doc_type, query_doc, min_score=0):
     """
     assert isinstance(query_doc, dict)
     es = networking.get_elasticsearch()
-    res = es.search(index=private.ES_INDEX, doc_type=doc_type, body={"query": {"match": query_doc}})
+    with_and = {k: {"query": v, "operator": "and"} for k, v in query_doc.items()}
+    res = es.search(index=private.ES_INDEX, doc_type=doc_type, body={"query": {"match": with_and}})
 
     return [result for result in res["hits"]["hits"] if result["_score"] >= min_score]
 
