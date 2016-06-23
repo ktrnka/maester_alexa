@@ -1,8 +1,41 @@
 {
+    "Brienne of Tarth": {
+        "character_name": "Brienne of Tarth",
+        "summary": [
+            "Brienne Tarth, commonly called Brienne of Tarth, is the only living child and heir of Selwyn Tarth, Lord of Evenfall and head of House Tarth. Brienne is sometimes called the Maid of Tarth and mocked as Brienne the Beauty. In the television adaptation Game of Thrones she is portrayed by Gwendoline Christie."
+        ]
+    },
+    "Bronn": {
+        "character_name": "Bronn",
+        "summary": [
+            "Bronn is a low-born sellsword of great skill and cunning. In the television adaptation Game of Thrones, he is played by Jerome Flynn."
+        ]
+    },
     "Jon Snow": {
         "character_name": "Jon Snow",
         "summary": [
             "Jon Snow is the bastard son of Eddard Stark, by a mother whose identity is a source of speculation. He was raised by his father alongside his true-born half-siblings, but joins the Night's Watch when he nears adulthood. He is constantly accompanied by his albino direwolf Ghost. At the beginning of A Game of Thrones, Jon is fourteen years old.  He is one of the major POV characters in the books. In the television adaptation Game of Thrones, Jon is portrayed by Kit Harington."
         ]
+    },
+    "Pycelle": {
+        "character_name": "Pycelle",
+        "summary": ["Pycelle is a Grand Maester of the Citadel who has served in King's Landing and on the small council for over forty years. In the television adaptation Game of Thrones, he is played by Julian Glover."]
+    },
+    "Ramsay Bolton": {
+        "character_name": "Ramsay Bolton",
+        "summary": [
+            "Ramsay Snow is the bastard son of Roose Bolton, Lord of the Dreadfort and head of House Bolton, and is known as the Bastard of Bolton and the Bastard of the Dreadfort. In the television adaptation Game of Thrones he is portrayed by Iwan Rheon.",
+            "Ramsay has a group of men-at-arms who stand high in his favor and follow him loyally, although their true allegiance lies with Lord Roose. They are called the Bastard's Boys, though never within their or Ramsay's hearing, and are just as depraved as Ramsay. Ramsay's personal steed is named Blood, and he keeps a pack of female hunting hounds."
+        ]
+    },
+    "Samwell Tarly": {
+        "character_name": "Samwell Tarly",
+        "summary": [
+            "Samwell Tarly is the eldest son of Lord Randyll Tarly and his wife Melessa Florent. He is popularly called 'Sam', and disparagingly referred to as 'Ser Piggy.' He is a steward of the Night's Watch. He becomes a POV character in A Storm of Swords. In the television adaptation Game of Thrones he is played by John Bradley."
+        ]
+    },
+    "Thoros of Myr": {
+        "character_name": "Thoros of Myr",
+        "summary": ["Thoros of Myr is a red priest of R'hllor from the Free City of Myr, and a member of the court at King's Landing. In the television adaptation Game of Thrones he is portrayed by Paul Kaye."]
     }
 }
