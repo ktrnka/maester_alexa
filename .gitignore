@@ -90,3 +90,6 @@ ENV/
 .ropeproject
 
 # Created by .ignore support plugin (hsz.mobi)
+
+# don't add OS X crap
+.DS_Store

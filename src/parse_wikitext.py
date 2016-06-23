@@ -96,9 +96,15 @@ class Article(object):
         # remove the brackets used for a wiki link (which does not use a special label)
         # e.g. [[Jon Snow]]  -->  Jon Snow
         line = re.sub(r"[\[\]]+", "", line)
+        # convert dates to plain text {{Date|283}}
+        line = re.sub(r"{{[Dd]ate\|([^}]+)}}", r"\1", line)
         # remove text references in curly braces
         # e.g. {{ref|aSoS|3}}
-        line = re.sub(r"{{.+}}", "", line)
+        line = re.sub(r"{{[^}]+}}", "", line)
+        # Remove self-closing HTML tags, e.g. <ref blah=blah />
+        line = re.sub(r"<[^/]+/>", "", line)
+        # Remove ref tags and text between them, e.g. <ref>A Game of Thrones, chapter 9</ref>
+        line = re.sub(r"<ref[^<]+</ref>", "", line)
         return line
 
     def _extract_data(self, f):
