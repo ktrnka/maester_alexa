@@ -295,7 +295,7 @@ def search(doc_type, query_doc, min_score=0):
 
 
 def munge_speech_response(text):
-    mapping = {"Dany": "Danny", "POV": "P.O.V.", "Edmure": "Edmiure"}
+    mapping = {"Dany": "Danny", "POV": "P.O.V.", "Edmure": "Edmiure", "Sandor": "Sandore"}
 
     for source, target in mapping.iteritems():
         text = re.sub(r"\b{}\b".format(re.escape(source)), target, text)

@@ -140,6 +140,7 @@ Artys Arryn
 Arwood Frey
 Arwyn Frey
 Arwyn Oakheart
+Arya
 Arya Stark
 Arys Oakheart
 Asha Greyjoy
@@ -270,6 +271,7 @@ Brea
 Brella
 Brenett
 Briar
+Brienne
 Brienne of Tarth
 Brogg
 Bronn
@@ -320,6 +322,7 @@ Cedrik Storm
 Cellador
 Cerenna Lannister
 Cerrick
+Cersei
 Cersei Frey
 Cersei Lannister
 Cetheres
@@ -393,6 +396,7 @@ Daemon II Blackfyre
 Daemon Sand
 Daemon Targaryen
 Daena Targaryen
+Daenerys
 Daenerys Targaryen
 Daeron I Targaryen
 Daeron II Targaryen
@@ -428,6 +432,7 @@ Darlessa Marbrand
 Daryn Hornwood
 Daughter of the Dusk
 Daven Lannister
+Davos
 Davos Seaworth
 Deana Hardyng
 Deepwood Motte
@@ -907,6 +912,7 @@ Jaehaerys I Targaryen
 Jaehaerys II Targaryen
 Jafer Flowers
 Jaggot
+Jaime
 Jaime Frey
 Jaime Lannister
 Jalabhar Xho
@@ -987,6 +993,7 @@ Jonos Bracken
 Jonos Frey
 Jonos Stark
 Jonothor Darry
+Jorah
 Jorah Mormont
 Jorah Stark
 Joramun
@@ -1749,11 +1756,13 @@ Sallor
 Salloreon
 Salt Shore
 Sam Stoops
+Samwell
 Samwell Spicer
 Samwell Stone
 Samwell Tarly
 Sandor Clegane
 Sandor Frey
+Sansa
 Sansa Stark
 Sarella Sand
 Sargon Botley
@@ -1927,6 +1936,7 @@ Theodore Tyrell
 Theomar Smallwood
 Theomore
 Theomore Harlaw
+Theon
 Theon Greyjoy
 Theon Stark
 Thistle
@@ -2004,6 +2014,7 @@ Tygett Lannister
 Tyland Lannister
 Tymor
 Tyrek Lannister
+Tyrion
 Tyrion Lannister
 Tyrion Tanner
 Tyrosh
