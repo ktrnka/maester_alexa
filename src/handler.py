@@ -137,6 +137,7 @@ def get_character_info(intent, session):
     """Get information about a character"""
 
     card_title = intent['name']
+    title_format = "About {}"
     session_attributes = {}
     should_end_session = True
 
@@ -152,12 +153,13 @@ def get_character_info(intent, session):
         hits = search("char_summary", {"name": character})
         if hits:
             result = hits[0]
-            card_title = result["_source"]["name"]
+            card_title = title_format.format(result["_source"]["name"])
 
             speech_output = result["_source"]["summary"]
             reprompt_text = speech_output
         else:
             base_error = "I don't know about {}.".format(character)
+            card_title = title_format.format(character)
             speech_output = base_error + " " + TRY_AGAIN
             reprompt_text = base_error + " " + example
 
@@ -167,6 +169,7 @@ def get_character_info(intent, session):
 
 def get_house_words(intent, session):
     card_title = intent['name']
+    title_format = "The words of House {}"
     session_attributes = {}
     should_end_session = True
 
@@ -182,12 +185,13 @@ def get_house_words(intent, session):
         house_hits = search("house", {"name": house})
         if house_hits:
             result = house_hits[0]
-            card_title = result["_source"]["name"]
+            card_title = title_format.format(result["_source"]["name"])
 
             speech_output = result["_source"]["words"]
             reprompt_text = speech_output
         else:
             base_error = "I don't know the words of house {}.".format(house)
+            card_title = title_format.format(house)
             speech_output = base_error + " " + TRY_AGAIN
             reprompt_text = base_error + " " + example
 
