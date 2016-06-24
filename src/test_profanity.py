@@ -4,6 +4,7 @@ import unittest
 
 import profanity
 
+
 class TestProfanity(unittest.TestCase):
     def test_bastard_adjective(self):
         uncleaned = "Barra is the bastard daughter of Robert I"
@@ -32,6 +33,7 @@ class TestProfanity(unittest.TestCase):
     def test_whorehouse(self):
         uncleaned = "working at the whorehouse owned by her mother"
         cleaned = "working at the brothel owned by her mother"
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -17,6 +17,7 @@ import networking
 import elasticsearch
 import elasticsearch.helpers
 import requests
+import profanity
 
 
 def parse_args():
@@ -41,7 +42,7 @@ def main():
                 continue
 
             char_name = char_name.replace("%27", "'")
-            char_map[char_name] = " ".join(char_obj["summary"])
+            char_map[char_name] = profanity.clean(" ".join(char_obj["summary"]))
 
     with io.open(args.character_file, "w", encoding="UTF-8") as chars_out:
         for c in sorted(char_map.keys()):

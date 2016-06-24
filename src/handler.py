@@ -4,6 +4,7 @@ Main handling code for Amazon Lambda
 
 from __future__ import print_function
 
+import json
 import random
 
 import networking
@@ -63,11 +64,7 @@ def on_launch(launch_request, session):
 def on_intent(intent_request, session):
     """Called when the user specifies an intent for this skill like Alexa ask a maester who is Jon Snow"""
 
-    print("on_intent requestId={}, sessionId={}, intent={}, slots={}".format(
-                intent_request["requestId"],
-                session["sessionId"],
-                intent_request["intent"]["name"],
-                intent_request["intent"]["slots"]))
+    print("on_intent sessionId={}, request={}".format(session["sessionId"], json.dumps(intent_request)))
 
     intent = intent_request['intent']
     intent_name = intent_request['intent']['name']
@@ -113,8 +110,7 @@ def get_welcome_response():
     # that is not understood, they will be prompted again with this text.
     reprompt_text = "Ask about a character such as, who is Jon Snow."
     should_end_session = False
-    return build_response(session_attributes, build_speechlet_response(
-        card_title, speech_output, reprompt_text, should_end_session))
+    return build_response(session_attributes, build_speechlet_response(card_title, speech_output, reprompt_text, should_end_session))
 
 
 def handle_session_end_request():
@@ -122,8 +118,7 @@ def handle_session_end_request():
     speech_output = "Valar dohaeris"
     # Setting this to true ends the session and exits the skill.
     should_end_session = True
-    return build_response({}, build_speechlet_response(
-        card_title, speech_output, None, should_end_session))
+    return build_response({}, build_speechlet_response(card_title, speech_output, None, should_end_session))
 
 
 _CHAR_INFO = {
@@ -295,6 +290,9 @@ def search(doc_type, query_doc, min_score=0):
 
 
 def munge_speech_response(text):
+    if not text:
+        return text
+
     mapping = {"Dany": "Danny", "POV": "P.O.V.", "Edmure": "Edmiure", "Sandor": "Sandore"}
 
     for source, target in mapping.iteritems():
